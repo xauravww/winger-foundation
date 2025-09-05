@@ -101,9 +101,9 @@
 /* Impact Stats */
 .impact-stats {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: var(--space-8);
-  margin-top: var(--space-12);
+  margin-top: var(--space-16);
 }
 
 .impact-stat {
@@ -210,4 +210,90 @@
   margin: 0;
   font-weight: 600;
   font-size: var(--font-size-lg);
+}
+/* Resp
+onsive Design for Cards */
+@media (max-width: 768px) {
+  .programs__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+    margin-top: var(--space-8);
+  }
+  
+  .program-card {
+    padding: var(--space-6);
+  }
+  
+  .program-card__icon {
+    width: 60px;
+    height: 60px;
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--space-4);
+  }
+  
+  .program-card h3 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-3);
+  }
+  
+  .program-card p {
+    margin-bottom: var(--space-4);
+    font-size: var(--font-size-base);
+  }
+  
+  .impact-stats {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+    margin-top: var(--space-12);
+  }
+  
+  .impact-stat {
+    padding: var(--space-6);
+  }
+  
+  .impact-stat i {
+    font-size: var(--font-size-3xl);
+    width: 60px;
+    height: 60px;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+  
+  .stat-card {
+    padding: var(--space-6);
+  }
+  
+  .stat-card h3 {
+    font-size: var(--font-size-3xl);
+  }
+}
+
+@media (max-width: 480px) {
+  .programs__grid {
+    gap: var(--space-4);
+  }
+  
+  .program-card {
+    padding: var(--space-4);
+  }
+  
+  .impact-stats {
+    gap: var(--space-4);
+  }
+  
+  .impact-stat {
+    padding: var(--space-4);
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+  
+  .stat-card {
+    padding: var(--space-4);
+  }
 }

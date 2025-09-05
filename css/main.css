@@ -17,6 +17,7 @@
 
 /* Section styles */
 @import url('./sections/hero.css');
+@import url('./sections/home.css');
 @import url('./sections/cards.css');
 @import url('./sections/animations.css');
 @import url('./sections/about.css');
@@ -25,7 +26,11 @@
 @import url('./sections/get-involved.css');
 @import url('./sections/news.css');
 @import url('./sections/gallery.css');
+@import url('./sections/free-courses.css');
 @import url('./sections/contact.css');
+@import url('./sections/privacy-policy.css');
+@import url('./sections/terms-conditions.css');
+@import url('./sections/refund-policy.css');
 
 /* Utilities */
 .hidden {

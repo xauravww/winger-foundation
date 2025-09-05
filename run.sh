@@ -1,31 +1,38 @@
 #!/bin/bash
 
-# Winger Foundation Website Runner
-# This script provides multiple ways to run the website
+# Winger Foundation Development Server Launcher
+# This script starts the development server for the Winger Foundation website
 
-echo "🌟 Winger Foundation Website Runner"
-echo "=================================="
-echo ""
+echo "🌟 Winger Foundation Development Server"
+echo "======================================"
 
 # Check if Python is available
-if command -v python3 &> /dev/null; then
-    echo "✅ Python 3 found"
-    echo "🚀 Starting development server..."
-    echo ""
-    python3 server.py
-elif command -v python &> /dev/null; then
-    echo "✅ Python found"
-    echo "🚀 Starting development server..."
-    echo ""
-    python server.py
-else
-    echo "❌ Python not found. Please install Python or use one of these alternatives:"
-    echo ""
-    echo "📋 Alternative Methods:"
-    echo "1. Node.js: npx http-server -p 8000 -c-1"
-    echo "2. PHP: php -S localhost:8000"
-    echo "3. Live Server extension in VS Code"
-    echo "4. Any other local web server"
-    echo ""
-    echo "⚠️  Note: ES6 modules require a web server (not file:// protocol)"
+if ! command -v python3 &> /dev/null; then
+    echo "❌ Python 3 is required but not installed."
+    echo "   Please install Python 3 and try again."
+    exit 1
 fi
+
+# Check if server.py exists
+if [ ! -f "server.py" ]; then
+    echo "❌ server.py not found in current directory."
+    echo "   Please run this script from the project root."
+    exit 1
+fi
+
+# Check if index.html exists
+if [ ! -f "index.html" ]; then
+    echo "❌ index.html not found in current directory."
+    echo "   Please ensure you're in the correct project directory."
+    exit 1
+fi
+
+# Install watchdog if not present (optional)
+if ! python3 -c "import watchdog" 2>/dev/null; then
+    echo "💡 Installing watchdog for auto-reload functionality..."
+    pip3 install watchdog 2>/dev/null || echo "⚠️  Could not install watchdog - auto-reload will be disabled"
+fi
+
+# Start the server
+echo "🚀 Starting development server..."
+python3 server.py

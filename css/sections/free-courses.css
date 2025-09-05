@@ -1,0 +1,412 @@
+/* Free Courses Section - Simple & Fancy */
+.section--free-courses {
+  background: var(--white);
+  padding: 0;
+}
+
+/* Hero Banner */
+.courses-hero {
+  background: linear-gradient(135deg, var(--primary-orange) 0%, var(--secondary-green) 100%);
+  padding: var(--space-20) 0;
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+.courses-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  animation: float 20s linear infinite;
+}
+
+@keyframes float {
+  0% { transform: translateX(0) translateY(0); }
+  100% { transform: translateX(60px) translateY(60px); }
+}
+
+.hero-content {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: rgba(255, 255, 255, 0.2);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  margin-bottom: var(--space-6);
+  backdrop-filter: blur(10px);
+}
+
+.hero-content h1 {
+  font-size: var(--font-size-6xl);
+  font-weight: 800;
+  margin-bottom: var(--space-4);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero-subtitle {
+  font-size: var(--font-size-xl);
+  opacity: 0.95;
+  margin-bottom: var(--space-12);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-8);
+  flex-wrap: wrap;
+}
+
+.stat {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.15);
+  padding: var(--space-6);
+  border-radius: var(--radius-xl);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  min-width: 120px;
+}
+
+.stat .number {
+  display: block;
+  font-size: var(--font-size-4xl);
+  font-weight: 800;
+  margin-bottom: var(--space-2);
+}
+
+.stat .label {
+  font-size: var(--font-size-sm);
+  opacity: 0.9;
+}
+
+/* Course Overview */
+.course-overview {
+  padding: var(--space-20) 0;
+  display: grid;
+  gap: var(--space-12);
+}
+
+.overview-card {
+  background: var(--white);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-12);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--gray-100);
+  transition: all var(--transition-normal);
+}
+
+.overview-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--primary-orange), var(--primary-orange-light));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-6);
+  box-shadow: 0 8px 25px rgba(249, 115, 22, 0.3);
+}
+
+.card-icon i {
+  font-size: var(--font-size-3xl);
+  color: var(--white);
+}
+
+.overview-card h2 {
+  font-size: var(--font-size-3xl);
+  color: var(--gray-900);
+  margin-bottom: var(--space-6);
+  font-weight: 700;
+}
+
+/* Content Tabs */
+.content-tabs {
+  margin-top: var(--space-6);
+}
+
+.tab-buttons {
+  display: flex;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+}
+
+.tab-btn {
+  padding: var(--space-3) var(--space-6);
+  border: 2px solid var(--gray-200);
+  background: var(--white);
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.tab-btn.active {
+  background: var(--primary-orange);
+  border-color: var(--primary-orange);
+  color: var(--white);
+}
+
+.tab-btn:hover:not(.active) {
+  border-color: var(--primary-orange);
+  color: var(--primary-orange);
+}
+
+.tab-content {
+  display: none;
+  padding: var(--space-6);
+  background: var(--gray-50);
+  border-radius: var(--radius-lg);
+  border-left: 4px solid var(--primary-orange);
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-content p {
+  margin: 0;
+  line-height: 1.8;
+  color: var(--gray-700);
+  font-size: var(--font-size-lg);
+}
+
+/* Training Details */
+.training-details {
+  background: var(--gray-50);
+  padding: var(--space-20) 0;
+}
+
+.details-header {
+  text-align: center;
+  margin-bottom: var(--space-16);
+}
+
+.details-header h2 {
+  font-size: var(--font-size-4xl);
+  color: var(--gray-900);
+  margin-bottom: var(--space-4);
+  font-weight: 700;
+}
+
+.details-header p {
+  font-size: var(--font-size-lg);
+  color: var(--gray-600);
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-8);
+}
+
+.detail-card {
+  background: var(--white);
+  padding: var(--space-8);
+  border-radius: var(--radius-xl);
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all var(--transition-normal);
+  border: 2px solid transparent;
+}
+
+.detail-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-orange);
+  box-shadow: 0 10px 40px rgba(249, 115, 22, 0.2);
+}
+
+.detail-card i {
+  font-size: var(--font-size-4xl);
+  color: var(--primary-orange);
+  margin-bottom: var(--space-4);
+}
+
+.detail-card h3 {
+  font-size: var(--font-size-xl);
+  color: var(--gray-900);
+  margin-bottom: var(--space-3);
+  font-weight: 600;
+}
+
+.detail-card p {
+  color: var(--gray-600);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Institute Information */
+.institute-info {
+  padding: var(--space-20) 0;
+}
+
+.info-content {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--white);
+  padding: var(--space-12);
+  border-radius: var(--radius-2xl);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.info-content h2 {
+  font-size: var(--font-size-3xl);
+  color: var(--gray-900);
+  margin-bottom: var(--space-6);
+  font-weight: 700;
+}
+
+.info-content p {
+  font-size: var(--font-size-lg);
+  line-height: 1.8;
+  color: var(--gray-700);
+  margin-bottom: var(--space-4);
+}
+
+.info-content strong {
+  color: var(--primary-orange);
+  font-weight: 700;
+}
+
+/* Call to Action */
+.courses-cta {
+  background: linear-gradient(135deg, var(--gray-900) 0%, var(--gray-800) 100%);
+  padding: var(--space-20) 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.courses-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.1) 0%, rgba(34, 197, 94, 0.1) 100%);
+}
+
+.cta-content {
+  position: relative;
+  z-index: 2;
+}
+
+.cta-content h2 {
+  font-size: var(--font-size-4xl);
+  color: var(--white);
+  margin-bottom: var(--space-4);
+  font-weight: 700;
+}
+
+.cta-content p {
+  font-size: var(--font-size-xl);
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--space-8);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: var(--space-4);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-buttons .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-width: 180px;
+  justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .courses-hero {
+    padding: var(--space-16) 0;
+  }
+  
+  .hero-content h1 {
+    font-size: var(--font-size-4xl);
+  }
+  
+  .hero-stats {
+    gap: var(--space-4);
+  }
+  
+  .course-overview {
+    padding: var(--space-16) 0;
+    gap: var(--space-8);
+  }
+  
+  .overview-card {
+    padding: var(--space-8);
+  }
+  
+  .overview-card h2 {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .training-details {
+    padding: var(--space-16) 0;
+  }
+  
+  .details-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+  
+  .institute-info {
+    padding: var(--space-16) 0;
+  }
+  
+  .info-content {
+    padding: var(--space-8);
+  }
+  
+  .courses-cta {
+    padding: var(--space-16) 0;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: var(--font-size-3xl);
+  }
+  
+  .hero-stats {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .overview-card {
+    padding: var(--space-6);
+  }
+  
+  .info-content {
+    padding: var(--space-6);
+  }
+}

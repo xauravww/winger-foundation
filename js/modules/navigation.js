@@ -34,6 +34,8 @@ export class NavigationManager {
     }
 
     showSection(sectionId) {
+        console.log('Navigating to section:', sectionId);
+        
         // Hide all sections
         this.sections.forEach(section => {
             section.classList.remove('active');
@@ -44,8 +46,10 @@ export class NavigationManager {
         if (targetSection) {
             targetSection.classList.add('active');
             window.scrollTo({ top: 0, behavior: 'smooth' });
+            console.log('Section activated:', sectionId);
         } else {
             // Fallback to home
+            console.log('Section not found, falling back to home');
             document.getElementById('home').classList.add('active');
         }
     }

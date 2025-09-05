@@ -10,6 +10,8 @@ import { ContactManager } from './modules/contact.js';
 import { NewsManager } from './modules/news.js';
 import { GetInvolvedManager } from './modules/get-involved.js';
 import { FooterManager } from './modules/footer.js';
+import { BackToTop } from './modules/back-to-top.js';
+import { FreeCoursesManager } from './modules/free-courses.js';
 import { AnalyticsUtils } from './modules/utils.js';
 
 class WingerFoundationApp {
@@ -61,6 +63,8 @@ class WingerFoundationApp {
             this.modules.news = new NewsManager();
             this.modules.getInvolved = new GetInvolvedManager();
             this.modules.footer = new FooterManager();
+            this.modules.backToTop = new BackToTop();
+            this.modules.freeCourses = new FreeCoursesManager();
             
             console.log('✅ All modules initialized successfully');
             

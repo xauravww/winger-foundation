@@ -1,22 +1,23 @@
 # 🌟 Winger Foundation Website
 
-> Modular, responsive website for fighting hunger and providing education
+> Modern, responsive website for fighting hunger and providing education
 
 ## 🚀 Quick Start
 
 ### Method 1: Python Server (Recommended)
 ```bash
-# Run the custom Python server
+# Run the development server with auto-reload
 python3 server.py
 
 # Or use the shell script
 ./run.sh
 ```
 
-### Test All Sections
-- **Full Website**: `http://localhost:8000/index.html`
-- **All Sections Test**: `http://localhost:8000/test-all-sections.html`
-- **Simple Test**: `http://localhost:8000/test-modular.html`
+### Features
+- **Main Website**: `http://localhost:8000` (automatically opens)
+- **Auto-reload**: Changes to HTML, CSS, JS files trigger browser refresh
+- **CORS enabled**: For local development
+- **ES6 modules**: Full support with proper MIME types
 
 ### Method 2: Node.js
 ```bash
@@ -48,17 +49,18 @@ python3 -m http.server 8000
 ├── css/                    # Modular CSS
 │   ├── base/              # Reset, variables, typography
 │   ├── components/        # Buttons, forms, notifications
-│   ├── layout/           # Header, main layout
-│   ├── sections/         # Hero, cards, animations
+│   ├── layout/           # Header, main layout, footer
+│   ├── sections/         # All page sections
 │   └── main.css          # Main CSS file
 ├── js/                    # Modular JavaScript
 │   ├── modules/          # Individual modules
 │   └── app.js            # Main application
 ├── assets/               # Images and media
 ├── index.html            # Main website
-├── test-modular.html     # Simple test page
-├── server.py             # Development server
-└── README-MODULAR.md     # Detailed documentation
+├── server.py             # Development server with auto-reload
+├── run.sh                # Server launcher script
+├── requirements.txt      # Optional Python dependencies
+└── README.md             # This file
 ```
 
 ## 🎯 Features
@@ -82,15 +84,23 @@ python3 -m http.server 8000
 
 ## 🛠️ Development
 
+### Auto-reload Setup
+```bash
+# Install watchdog for file watching (optional)
+pip install watchdog
+```
+
 ### Adding New Features
 1. Create CSS module in `css/components/` or `css/sections/`
 2. Create JS module in `js/modules/`
 3. Import in `css/main.css` and `js/app.js`
+4. Changes will auto-reload in browser
 
 ### Debugging
 - Check browser console for module initialization logs
 - Use `window.WingerFoundation.app.getModule('name')` to access modules
 - Each module has isolated error handling
+- Server logs file changes in terminal
 
 ## 📱 Browser Support
 
@@ -118,7 +128,10 @@ Add new components in `css/components/` and `js/modules/`.
 
 ## 📞 Support
 
-For detailed documentation, see [README-MODULAR.md](README-MODULAR.md)
+- Run `python3 server.py` to start the development server
+- Server automatically opens browser to main website
+- File changes trigger automatic browser refresh
+- Check terminal for server logs and file change notifications
 
 ---
 

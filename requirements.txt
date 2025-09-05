@@ -1,0 +1,2 @@
+# Optional dependencies for development server
+watchdog>=2.1.0  # For auto-reload functionality

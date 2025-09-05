@@ -3,11 +3,6 @@
   background: var(--gray-50);
 }
 
-.about__content {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
 .about__intro {
   text-align: center;
   margin-bottom: var(--space-16);
@@ -25,14 +20,14 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: var(--space-8);
-  margin: var(--space-16) 0;
+  margin-bottom: var(--space-16);
 }
 
 .value-item {
   background: var(--white);
   padding: var(--space-8);
   border-radius: var(--radius-2xl);
-  border: 2px solid var(--gray-200);
+  border: 1px solid var(--gray-200);
   box-shadow: var(--shadow-md);
   transition: all var(--transition-normal);
 }
@@ -40,14 +35,13 @@
 .value-item:hover {
   border-color: var(--primary-orange);
   box-shadow: var(--shadow-lg);
-  transform: translateY(-2px);
+  transform: translateY(-5px);
 }
 
 .value-item h3 {
   color: var(--primary-orange);
   margin-bottom: var(--space-4);
   font-size: var(--font-size-xl);
-  font-weight: 600;
 }
 
 .value-item ul {
@@ -60,7 +54,6 @@
   position: relative;
   padding-left: var(--space-6);
   color: var(--gray-700);
-  font-weight: 500;
 }
 
 .value-item li::before {
@@ -69,74 +62,164 @@
   left: 0;
   color: var(--secondary-green);
   font-weight: 700;
-  font-size: var(--font-size-lg);
 }
 
-/* Mission Section */
-.mission {
-  padding: var(--space-20) 0;
-  background: var(--gray-50);
+.impact-section {
+    text-align: center;
+    margin-top: var(--space-20);
+    padding: var(--space-16) var(--space-8);
+    background: linear-gradient(135deg, var(--primary-orange-light) 0%, var(--secondary-green-light) 100%);
+    border-radius: var(--radius-2xl);
+    margin-bottom: var(--space-16);
+    position: relative;
+    overflow: hidden;
 }
 
-.mission__content {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
+.impact-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='m0 40l40-40h-40z'/%3E%3Cpath d='m0 40l40-40h-40z'/%3E%3C/g%3E%3C/svg%3E");
+    z-index: 1;
 }
 
-.mission h2 {
-  color: var(--primary-orange);
-  margin-bottom: var(--space-6);
+.impact-section .container {
+    position: relative;
+    z-index: 2;
 }
 
-.mission p {
-  font-size: var(--font-size-lg);
-  color: var(--gray-600);
-  line-height: 1.8;
+.impact-section h2 {
+    color: var(--white);
+    margin-bottom: var(--space-8);
 }
 
-/* Programs Section */
-.programs {
-  padding: var(--space-20) 0;
-  background: var(--white);
+.impact-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-8);
+  margin-top: var(--space-12);
 }
 
-/* CTA Section */
-.cta-section {
-  padding: var(--space-20) 0;
-  background: linear-gradient(135deg, var(--secondary-green), var(--accent-blue));
-  color: var(--white);
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+.impact-stat {
+    padding: var(--space-8);
+    background: var(--white);
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--gray-100);
+    transition: all var(--transition-normal);
 }
 
-.cta-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E");
+.impact-stat:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary-orange);
+    box-shadow: var(--shadow-xl);
 }
 
-.cta-content {
-  position: relative;
-  z-index: 2;
-}
-
-.cta-content h2 {
+.impact-stat i {
   font-size: var(--font-size-4xl);
+  color: var(--primary-orange);
   margin-bottom: var(--space-4);
-  color: var(--white);
 }
 
-.cta-content p {
-  font-size: var(--font-size-lg);
-  margin-bottom: var(--space-8);
-  color: rgba(255, 255, 255, 0.9);
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+/* === NEW STYLES FOR IMAGE COLLAGE === */
+.about-image-grid {
+    margin: var(--space-20) auto;
+    padding: var(--space-12) var(--space-8);
+    position: relative;
+    max-width: 900px;
+    height: 500px; /* Provide height for the absolutely positioned images */
+    background: var(--white);
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-lg);
+}
+
+.about-images {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.about-img {
+    position: absolute;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-xl);
+    border: 5px solid var(--white);
+    object-fit: cover;
+    transition: all var(--transition-normal);
+}
+
+.about-img:hover {
+    transform: scale(1.05) rotate(2deg);
+    z-index: 10;
+}
+
+/* Positioning for the 3 images */
+.about-img:nth-child(1) {
+    width: 60%;
+    height: 60%;
+    top: 0;
+    left: 0;
+    transform: rotate(-5deg);
+}
+
+.about-img:nth-child(2) {
+    width: 45%;
+    height: 50%;
+    top: 10%;
+    right: 0;
+    transform: rotate(3deg);
+}
+
+.about-img:nth-child(3) {
+    width: 55%;
+    height: 55%;
+    bottom: 0;
+    left: 20%;
+    transform: rotate(4deg);
+    z-index: 5;
+}
+
+/* Responsive stacking for mobile */
+@media (max-width: 768px) {
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+        margin-bottom: var(--space-12);
+    }
+    
+    .value-item {
+        padding: var(--space-6);
+    }
+    
+    .impact-section {
+        margin-top: var(--space-16);
+        padding: var(--space-12) var(--space-4);
+        margin-bottom: var(--space-12);
+    }
+    
+    .impact-stats {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+    
+    .about-image-grid {
+        height: auto; /* Let content determine height */
+        margin: var(--space-16) auto;
+        padding: var(--space-8) var(--space-4);
+    }
+
+    .about-img {
+        position: static; /* Remove absolute positioning */
+        width: 90%;
+        height: auto;
+        margin: 0 auto var(--space-6);
+        transform: rotate(0) !important; /* Reset rotation */
+    }
+
+    .about-img:hover {
+        transform: scale(1.02) !important; /* Smaller hover effect */
+    }
 }

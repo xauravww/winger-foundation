@@ -43,6 +43,10 @@
                             <a href="#projects" data-section="projects">All Projects</a>
                             <a href="#kitchen" data-section="kitchen">Global Kitchen</a>
                             <a href="#school" data-section="school">Global School</a>
+                            <a href="#hospital" data-section="hospital">Global Hospital</a>
+                            <a href="#water" data-section="water">Global Water</a>
+                            <a href="#women-empowerment" data-section="women-empowerment">Women Empowerment</a>
+                            <a href="#old-age" data-section="old-age">Old Age Support</a>
                         </div>
                     </li>
                     <li class="nav__item">
@@ -58,12 +62,15 @@
                         <a href="#gallery" class="nav__link" data-section="gallery">Gallery</a>
                     </li>
                     <li class="nav__item">
+                        <a href="#free-courses" class="nav__link" data-section="free-courses">Free Courses</a>
+                    </li>
+                    <li class="nav__item">
                         <a href="#contact" class="nav__link" data-section="contact">Contact</a>
                     </li>
                 </ul>
             </div>
             <div class="nav__actions">
-                <button class="btn btn--primary">Donate Now</button>
+                <!-- <button class="btn btn--primary">Donate Now</button> -->
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="fas fa-bars"></i>
                 </div>
@@ -78,8 +85,7 @@
             <div class="hero">
                 <div class="hero__background">
                     <div class="hero__image">
-                        <img src="assets/LG1dcf1I9tIX.jpeg/v1/fill/w_1920,h_1080,al_c,q_85,usm_0.66_1.00_0.01/LG1dcf1I9tIX.jpeg"
-                            alt="Children receiving food and education" loading="eager">
+                        <img src="assets/hero/hero1.png" alt="Children receiving food and education" loading="eager">
                     </div>
                     <div class="hero__overlay"></div>
                 </div>
@@ -332,35 +338,134 @@
         <section id="projects" class="section section--projects">
             <div class="container">
                 <h1>Our Projects</h1>
-                <p class="section__subtitle">Discover how we're making a difference through our targeted programs</p>
+                <p class="section__subtitle">Comprehensive initiatives addressing hunger, education, healthcare, and
+                    community development across India</p>
 
-                <div class="projects-overview">
-                    <div class="project-highlight">
-                        <div class="project-highlight__content">
-                            <h2>Winger Global Kitchen</h2>
-                            <p>Our flagship food program ensures that nutritious, quality meals reach those who need
-                                them most. We focus on:</p>
-                            <ul>
-                                <li>Quality food procurement from trusted sources</li>
-                                <li>Variety in meals to ensure balanced nutrition</li>
-                                <li>Nutritious portions suitable for all age groups</li>
-                                <li>No discrimination - serving anyone in need</li>
-                            </ul>
-                            <button class="btn btn--primary" data-section="kitchen">Learn More About Kitchen</button>
+                <div class="projects-grid">
+                    <!-- Winger Global Kitchen -->
+                    <div class="project-card">
+                        <div class="project-card__icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="project-card__content">
+                            <h3>Winger Global Kitchen</h3>
+                            <p>Food is a basic human need, and yet, many people across the world go hungry every day. We
+                                have established community kitchens to provide nutritious meals to those in need. These
+                                kitchens operate on the principle that no one should go hungry, and that access to food
+                                is a basic human right. Our kitchens help to nourish communities and support the most
+                                vulnerable members of society.</p>
+                            <div class="project-features">
+                                <span class="feature-tag">Nutritious Meals</span>
+                                <span class="feature-tag">Community Kitchens</span>
+                                <span class="feature-tag">Daily Service</span>
+                            </div>
+                            <button class="btn btn--primary" data-section="kitchen">Learn More</button>
                         </div>
                     </div>
 
-                    <div class="project-highlight">
-                        <div class="project-highlight__content">
-                            <h2>Winger Global School</h2>
-                            <p>Education is the key to breaking the cycle of poverty. Our school program provides:</p>
-                            <ul>
-                                <li>Quality education free of cost for poor children</li>
-                                <li>Holistic development focusing on overall growth</li>
-                                <li>Primary focus on children who will be the future of the nation</li>
-                                <li>Safe and nurturing learning environment</li>
-                            </ul>
-                            <button class="btn btn--primary" data-section="school">Learn More About School</button>
+                    <!-- Winger Global School -->
+                    <div class="project-card">
+                        <div class="project-card__icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="project-card__content">
+                            <h3>Winger Global School</h3>
+                            <p>We work with the aim of providing education to disadvantaged or marginalized communities.
+                                Our school focuses on providing a range of educational programs, from basic literacy and
+                                numeracy to vocational training and higher education. We hence play an important role in
+                                promoting education and helping to bridge the gap in educational access and quality for
+                                disadvantaged communities.</p>
+                            <div class="project-features">
+                                <span class="feature-tag">Quality Education</span>
+                                <span class="feature-tag">Vocational Training</span>
+                                <span class="feature-tag">Free Access</span>
+                            </div>
+                            <button class="btn btn--primary" data-section="school">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Winger Global Hospital -->
+                    <div class="project-card">
+                        <div class="project-card__icon">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                        <div class="project-card__content">
+                            <h3>Winger Global Hospital</h3>
+                            <p>We aim at providing healthcare to underserved communities. Access to healthcare is a
+                                fundamental human right, but unfortunately, many people across the world lack access to
+                                basic medical services. We provide healthcare to those in need, along with promoting
+                                community development. Our hospital help to improve the health and well-being of
+                                underserved populations.</p>
+                            <div class="project-features">
+                                <span class="feature-tag">Basic Healthcare</span>
+                                <span class="feature-tag">Community Health</span>
+                                <span class="feature-tag">Medical Services</span>
+                            </div>
+                            <button class="btn btn--primary" data-section="hospital">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Winger Global Water -->
+                    <div class="project-card">
+                        <div class="project-card__icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <div class="project-card__content">
+                            <h3>Winger Global Water</h3>
+                            <p>We aim at addressing water-related issues, particularly in areas where access to safe and
+                                clean water is limited. We work to improve access to clean water in areas where it is
+                                scarce or contaminated. This may involve building wells, water treatment facilities, or
+                                other infrastructure to help communities access safe and reliable water sources.</p>
+                            <div class="project-features">
+                                <span class="feature-tag">Clean Water Access</span>
+                                <span class="feature-tag">Water Treatment</span>
+                                <span class="feature-tag">Infrastructure</span>
+                            </div>
+                            <button class="btn btn--primary" data-section="water">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Women Empowerment -->
+                    <div class="project-card">
+                        <div class="project-card__icon">
+                            <i class="fas fa-female"></i>
+                        </div>
+                        <div class="project-card__content">
+                            <h3>Women Empowerment</h3>
+                            <p>Our NGO play a crucial role in empowering women by providing them with resources,
+                                training, and support to help them become more self-reliant and achieve their full
+                                potential. Our focus on women empowerment can provide a range of services, such as
+                                education and training on issues related to women's health, legal rights, and
+                                entrepreneurship. We also provide access to financial resources and business development
+                                support, which can help women start their own businesses and become financially
+                                independent.</p>
+                            <div class="project-features">
+                                <span class="feature-tag">Skills Training</span>
+                                <span class="feature-tag">Financial Support</span>
+                                <span class="feature-tag">Legal Rights</span>
+                            </div>
+                            <button class="btn btn--primary" data-section="women-empowerment">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Old Age Support -->
+                    <div class="project-card">
+                        <div class="project-card__icon">
+                            <i class="fas fa-heart-broken"></i>
+                        </div>
+                        <div class="project-card__content">
+                            <h3>Old Age Support</h3>
+                            <p>We work to provide support and advocacy for the needs and rights of the elderly, and
+                                offer a range of services and programs to help meet these needs. Our NGO provide social
+                                and emotional support to the elderly by organizing social events and offering counseling
+                                services. We also offer healthcare services designed specifically for the elderly, such
+                                as regular health check-ups, mobility aids, and medication management.</p>
+                            <div class="project-features">
+                                <span class="feature-tag">Elder Care</span>
+                                <span class="feature-tag">Health Services</span>
+                                <span class="feature-tag">Social Support</span>
+                            </div>
+                            <button class="btn btn--primary" data-section="old-age">Learn More</button>
                         </div>
                     </div>
                 </div>
@@ -369,20 +474,46 @@
                     <h2>Project Impact</h2>
                     <div class="stats-grid">
                         <div class="stat-card">
-                            <h3>25,000+</h3>
-                            <p>Meals Served</p>
+                            <div class="stat-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <h3>50,000+</h3>
+                            <p>Daily Meals Served</p>
                         </div>
                         <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3>2,500+</h3>
+                            <p>Students Educated</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-hospital"></i>
+                            </div>
+                            <h3>10,000+</h3>
+                            <p>Patients Treated</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-tint"></i>
+                            </div>
+                            <h3>100+</h3>
+                            <p>Water Sources Built</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-female"></i>
+                            </div>
+                            <h3>1,000+</h3>
+                            <p>Women Empowered</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
                             <h3>500+</h3>
-                            <p>Students Enrolled</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3>50+</h3>
-                            <p>Locations</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3>100%</h3>
-                            <p>Commitment</p>
+                            <p>Elderly Supported</p>
                         </div>
                     </div>
                 </div>
@@ -392,64 +523,176 @@
         <!-- Kitchen Section -->
         <section id="kitchen" class="section section--kitchen">
             <div class="container">
-                <h1>Winger Global Kitchen</h1>
-                <p class="section__subtitle">Feeding hope, one meal at a time</p>
-
-                <div class="kitchen-details">
-                    <div class="kitchen-description">
-                        <h2>About Our Kitchen Program</h2>
-                        <p>Providing food to poor children and people across the country with good quality and balanced
-                            meals prepared under hygienic conditions. Our kitchen operates with the highest standards of
-                            cleanliness and nutrition.</p>
-
-                        <h3>What Makes Us Different</h3>
-                        <div class="features-grid">
-                            <div class="feature">
-                                <i class="fas fa-check-circle"></i>
-                                <span>Quality food procurement</span>
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-check-circle"></i>
-                                <span>Variety in meals</span>
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-check-circle"></i>
-                                <span>Nutritious portions</span>
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-check-circle"></i>
-                                <span>No discrimination</span>
-                            </div>
+                <!-- Enhanced Hero Header with Image -->
+                <div class="project-hero-enhanced">
+                    <div class="project-hero-bg">
+                        <div class="hero-image-container">
+                            <img src="assets/winger global kitchen.avif" alt="Winger Global Kitchen serving meals"
+                                class="hero-image">
+                            <div class="hero-overlay"></div>
                         </div>
-
-                        <div class="kitchen-impact">
-                            <h3>Daily Operations</h3>
-                            <div class="operation-stats">
-                                <div class="operation-stat">
-                                    <span class="number">1,500</span>
-                                    <span class="label">Daily Meals</span>
+                        <div class="hero-content-wrapper">
+                            <div class="project-hero__badge">
+                                <i class="fas fa-utensils"></i>
+                                <span>Feeding Hope</span>
+                            </div>
+                            <h1>Winger Global Kitchen</h1>
+                            <p class="hero-subtitle">Nourishing communities, one meal at a time with love and dignity
+                            </p>
+                            <div class="hero-stats-grid">
+                                <div class="hero-stat-card">
+                                    <div class="stat-icon">
+                                        <i class="fas fa-utensils"></i>
+                                    </div>
+                                    <span class="stat-number">50,000+</span>
+                                    <span class="stat-label">People Fed Daily</span>
                                 </div>
-                                <div class="operation-stat">
-                                    <span class="number">7</span>
-                                    <span class="label">Days a Week</span>
+                                <div class="hero-stat-card">
+                                    <div class="stat-icon">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <span class="stat-number">24/7</span>
+                                    <span class="stat-label">Service Available</span>
                                 </div>
-                                <div class="operation-stat">
-                                    <span class="number">365</span>
-                                    <span class="label">Days a Year</span>
+                                <div class="hero-stat-card">
+                                    <div class="stat-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <span class="stat-number">100+</span>
+                                    <span class="stat-label">Kitchen Locations</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="support-cta">
-                    <h2>Support Our Kitchen</h2>
-                    <p>Help us expand our reach and feed more people in need</p>
-                    <a href="https://pages.razorpay.com/pl_Hy2kG1Yf5RNuZN/view" target="_blank"
-                        class="btn btn--primary btn--lg">
-                        <i class="fas fa-heart"></i>
-                        Donate for Kitchen
-                    </a>
+                <!-- Image Showcase -->
+                <div class="project-showcase">
+                    <div class="showcase-grid">
+                        <div class="showcase-image">
+                            <img src="assets/winger global kitchen.avif" alt="Community kitchen serving meals"
+                                class="showcase-img">
+                            <div class="showcase-overlay">
+                                <h3>Community Kitchens</h3>
+                                <p>Serving nutritious meals with dignity</p>
+                            </div>
+                        </div>
+                        <div class="showcase-content">
+                            <h2>Our Mission</h2>
+                            <p>Food is a basic human need, and yet, many people across the world go hungry every day. We
+                                have established community kitchens to provide nutritious meals to those in need.</p>
+                            <div class="mission-highlights">
+                                <div class="highlight-item">
+                                    <i class="fas fa-heart"></i>
+                                    <span>Food is a basic human right</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Nourishing communities</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-hands-helping"></i>
+                                    <span>Supporting vulnerable members</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Features Grid -->
+                <div class="project-features-section">
+                    <h2>What Makes Us Different</h2>
+                    <div class="enhanced-features-grid">
+                        <div class="enhanced-feature">
+                            <div class="enhanced-feature__icon">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <h4>Quality Food Procurement</h4>
+                            <p>We source fresh, nutritious ingredients from trusted suppliers to ensure every meal meets
+                                the highest quality standards.</p>
+                        </div>
+                        <div class="enhanced-feature">
+                            <div class="enhanced-feature__icon">
+                                <i class="fas fa-apple-alt"></i>
+                            </div>
+                            <h4>Variety in Meals</h4>
+                            <p>Our diverse menu ensures balanced nutrition with different meal options to cater to
+                                various dietary needs and preferences.</p>
+                        </div>
+                        <div class="enhanced-feature">
+                            <div class="enhanced-feature__icon">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <h4>Nutritious Portions</h4>
+                            <p>Each meal is carefully portioned to provide adequate nutrition for different age groups,
+                                from children to elderly.</p>
+                        </div>
+                        <div class="enhanced-feature">
+                            <div class="enhanced-feature__icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h4>No Discrimination</h4>
+                            <p>We serve everyone in need regardless of their background, religion, caste, or social
+                                status - food is a human right.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Impact Section -->
+                <div class="project-impact">
+                    <h2>Our Daily Impact</h2>
+                    <div class="impact-grid">
+                        <div class="impact-card">
+                            <div class="impact-card__icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <div class="impact-card__content">
+                                <span class="impact-number">50,000+</span>
+                                <span class="impact-label">Daily Meals Served</span>
+                                <p>Nutritious meals provided every single day across all our kitchen locations</p>
+                            </div>
+                        </div>
+                        <div class="impact-card">
+                            <div class="impact-card__icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="impact-card__content">
+                                <span class="impact-number">24/7</span>
+                                <span class="impact-label">Service Available</span>
+                                <p>Round-the-clock food service ensuring no one goes hungry at any time</p>
+                            </div>
+                        </div>
+                        <div class="impact-card">
+                            <div class="impact-card__icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="impact-card__content">
+                                <span class="impact-number">100+</span>
+                                <span class="impact-label">Kitchen Locations</span>
+                                <p>Community kitchens strategically located to serve maximum people in need</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="project-cta">
+                    <div class="cta-content">
+                        <h2>Help Us Feed More People</h2>
+                        <p>Your donation can provide meals to families in need. Every contribution makes a difference in
+                            someone's life.</p>
+                        <div class="cta-actions">
+                            <a href="https://pages.razorpay.com/pl_Hy2kG1Yf5RNuZN/view" target="_blank"
+                                class="btn btn--primary btn--lg">
+                                <i class="fas fa-heart"></i>
+                                Donate for Kitchen
+                            </a>
+                            <button class="btn btn--outline btn--lg" data-section="get-involved">
+                                <i class="fas fa-hands-helping"></i>
+                                Volunteer With Us
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -457,57 +700,1036 @@
         <!-- School Section -->
         <section id="school" class="section section--school">
             <div class="container">
-                <h1>Winger Global School</h1>
-                <p class="section__subtitle">Educating minds, building futures</p>
+                <!-- Enhanced Hero Header with Image -->
+                <div class="project-hero-enhanced">
+                    <div class="project-hero-bg">
+                        <div class="hero-image-container">
+                            <img src="assets/winger global school.avif" alt="Winger Global School students learning"
+                                class="hero-image">
+                            <div class="hero-overlay"></div>
+                        </div>
+                        <div class="hero-content-wrapper">
+                            <div class="project-hero__badge">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Education for All</span>
+                            </div>
+                            <h1>Winger Global School</h1>
+                            <p class="hero-subtitle">Empowering minds, transforming futures through quality education
+                            </p>
+                            <div class="hero-stats-grid">
+                                <div class="hero-stat-card">
+                                    <div class="stat-icon">
+                                        <i class="fas fa-user-graduate"></i>
+                                    </div>
+                                    <span class="stat-number">2,500+</span>
+                                    <span class="stat-label">Students Educated</span>
+                                </div>
+                                <div class="hero-stat-card">
+                                    <div class="stat-icon">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                    <span class="stat-number">100%</span>
+                                    <span class="stat-label">Free Education</span>
+                                </div>
+                                <div class="hero-stat-card">
+                                    <div class="stat-icon">
+                                        <i class="fas fa-school"></i>
+                                    </div>
+                                    <span class="stat-number">50+</span>
+                                    <span class="stat-label">School Locations</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <div class="school-details">
-                    <div class="school-description">
-                        <h2>About Our School Program</h2>
-                        <p>Providing holistic development of children across the country with quality education free of
-                            cost for poor children. We focus primarily on children who will be the future of the nation.
-                        </p>
+                <!-- Image Showcase -->
+                <div class="project-showcase">
+                    <div class="showcase-grid">
+                        <div class="showcase-content">
+                            <h2>Our Educational Mission</h2>
+                            <p>We work with the aim of providing education to disadvantaged or marginalized communities.
+                                Our school focuses on providing a range of educational programs, from basic literacy and
+                                numeracy to vocational training and higher education.</p>
+                            <div class="mission-highlights">
+                                <div class="highlight-item">
+                                    <i class="fas fa-book"></i>
+                                    <span>Basic literacy to higher education</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-tools"></i>
+                                    <span>Vocational training programs</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>Bridging educational gaps</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="showcase-image">
+                            <img src="assets/winger global school.avif" alt="Students learning in classroom"
+                                class="showcase-img">
+                            <div class="showcase-overlay">
+                                <h3>Quality Education</h3>
+                                <p>Empowering minds for a brighter future</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                        <h3>Our Educational Approach</h3>
-                        <div class="education-features">
-                            <div class="edu-feature">
+                <!-- Features Grid -->
+                <div class="project-features-section">
+                    <h2>Our Educational Approach</h2>
+                    <div class="enhanced-features-grid">
+                        <div class="enhanced-feature">
+                            <div class="enhanced-feature__icon">
                                 <i class="fas fa-book"></i>
-                                <h4>Quality Curriculum</h4>
-                                <p>Comprehensive education that meets national standards while addressing local needs
-                                </p>
                             </div>
-                            <div class="edu-feature">
+                            <h4>Quality Curriculum</h4>
+                            <p>Comprehensive education that meets national standards while addressing local needs and
+                                preparing students for future success.</p>
+                        </div>
+                        <div class="enhanced-feature">
+                            <div class="enhanced-feature__icon">
                                 <i class="fas fa-users"></i>
-                                <h4>Holistic Development</h4>
-                                <p>Focus on academic, social, emotional, and physical development</p>
                             </div>
-                            <div class="edu-feature">
+                            <h4>Holistic Development</h4>
+                            <p>Focus on academic, social, emotional, and physical development to nurture well-rounded
+                                individuals.</p>
+                        </div>
+                        <div class="enhanced-feature">
+                            <div class="enhanced-feature__icon">
                                 <i class="fas fa-hand-holding-heart"></i>
-                                <h4>Free Education</h4>
-                                <p>No fees, no hidden costs - education accessible to all children in need</p>
+                            </div>
+                            <h4>Free Education</h4>
+                            <p>No fees, no hidden costs - quality education accessible to all children in need, breaking
+                                barriers to learning.</p>
+                        </div>
+                        <div class="enhanced-feature">
+                            <div class="enhanced-feature__icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h4>Vocational Training</h4>
+                            <p>Practical skills training and vocational programs to prepare students for employment and
+                                entrepreneurship.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programs Section -->
+                <div class="project-impact">
+                    <h2>Programs We Offer</h2>
+                    <div class="impact-grid">
+                        <div class="impact-card">
+                            <div class="impact-card__icon">
+                                <i class="fas fa-child"></i>
+                            </div>
+                            <div class="impact-card__content">
+                                <span class="impact-label">Primary Education</span>
+                                <p>Ages 5-10: Foundation learning in literacy, numeracy, and basic life skills</p>
+                            </div>
+                        </div>
+                        <div class="impact-card">
+                            <div class="impact-card__icon">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <div class="impact-card__content">
+                                <span class="impact-label">Elementary Education</span>
+                                <p>Ages 11-14: Advanced learning with focus on critical thinking and problem-solving</p>
+                            </div>
+                        </div>
+                        <div class="impact-card">
+                            <div class="impact-card__icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <div class="impact-card__content">
+                                <span class="impact-label">Health & Nutrition</span>
+                                <p>Health education, nutrition awareness, and wellness programs for students</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="project-cta">
+                    <div class="cta-content">
+                        <h2>Support Quality Education</h2>
+                        <p>Help us provide quality education to more children and build a brighter future for our
+                            communities.</p>
+                        <div class="cta-actions">
+                            <a href="https://pages.razorpay.com/pl_Hy2kG1Yf5RNuZN/view" target="_blank"
+                                class="btn btn--primary btn--lg">
+                                <i class="fas fa-heart"></i>
+                                Donate for Education
+                            </a>
+                            <button class="btn btn--outline btn--lg" data-section="get-involved">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                Become a Teacher
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hospital Section -->
+        <section id="hospital" class="section section--hospital">
+            <div class="container">
+                <h1>Winger Global Hospital</h1>
+                <p class="section__subtitle">Healthcare for all, healing with compassion</p>
+
+                <div class="hospital-details">
+                    <div class="hospital-description">
+                        <h2>About Our Healthcare Program</h2>
+                        <p>We aim at providing healthcare to underserved communities. Access to healthcare is a
+                            fundamental human right, but unfortunately, many people across the world lack access to
+                            basic medical services. We provide healthcare to those in need, along with promoting
+                            community development. Our hospital help to improve the health and well-being of underserved
+                            populations.</p>
+
+                        <h3>Our Healthcare Services</h3>
+                        <div class="healthcare-features">
+                            <div class="healthcare-feature">
+                                <i class="fas fa-stethoscope"></i>
+                                <h4>Primary Healthcare</h4>
+                                <p>Basic medical consultations, health check-ups, and preventive care services</p>
+                            </div>
+                            <div class="healthcare-feature">
+                                <i class="fas fa-pills"></i>
+                                <h4>Medicine & Treatment</h4>
+                                <p>Essential medicines and treatment for common health conditions</p>
+                            </div>
+                            <div class="healthcare-feature">
+                                <i class="fas fa-heartbeat"></i>
+                                <h4>Emergency Care</h4>
+                                <p>24/7 emergency medical services for critical health situations</p>
                             </div>
                         </div>
 
-                        <div class="school-programs">
+                        <div class="hospital-programs">
                             <h3>Programs Offered</h3>
                             <ul>
-                                <li>Primary Education (Ages 5-10)</li>
-                                <li>Elementary Education (Ages 11-14)</li>
-                                <li>Skill Development Programs</li>
-                                <li>Health and Nutrition Education</li>
-                                <li>Extracurricular Activities</li>
+                                <li>General Health Check-ups</li>
+                                <li>Maternal and Child Health</li>
+                                <li>Vaccination Programs</li>
+                                <li>Health Education and Awareness</li>
+                                <li>Community Health Outreach</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
                 <div class="support-cta">
-                    <h2>Support Education</h2>
-                    <p>Help us provide quality education to more children</p>
+                    <h2>Support Healthcare</h2>
+                    <p>Help us provide essential healthcare services to underserved communities</p>
                     <a href="https://pages.razorpay.com/pl_Hy2kG1Yf5RNuZN/view" target="_blank"
                         class="btn btn--primary btn--lg">
                         <i class="fas fa-heart"></i>
-                        Donate for Education
+                        Donate for Healthcare
                     </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Water Section -->
+        <section id="water" class="section section--water">
+            <div class="container">
+                <h1>Winger Global Water</h1>
+                <p class="section__subtitle">Clean water for life, building sustainable communities</p>
+
+                <div class="water-details">
+                    <div class="water-description">
+                        <h2>About Our Water Program</h2>
+                        <p>We aim at addressing water-related issues, particularly in areas where access to safe and
+                            clean water is limited. We work to improve access to clean water in areas where it is scarce
+                            or contaminated. This may involve building wells, water treatment facilities, or other
+                            infrastructure to help communities access safe and reliable water sources.</p>
+
+                        <h3>Our Water Solutions</h3>
+                        <div class="water-features">
+                            <div class="water-feature">
+                                <i class="fas fa-tint"></i>
+                                <h4>Clean Water Access</h4>
+                                <p>Building wells and water sources in areas with limited access to clean water</p>
+                            </div>
+                            <div class="water-feature">
+                                <i class="fas fa-filter"></i>
+                                <h4>Water Treatment</h4>
+                                <p>Installing water treatment facilities to purify contaminated water sources</p>
+                            </div>
+                            <div class="water-feature">
+                                <i class="fas fa-tools"></i>
+                                <h4>Infrastructure Development</h4>
+                                <p>Building sustainable water infrastructure for long-term community benefit</p>
+                            </div>
+                        </div>
+
+                        <div class="water-programs">
+                            <h3>Programs Offered</h3>
+                            <ul>
+                                <li>Well Construction and Maintenance</li>
+                                <li>Water Quality Testing</li>
+                                <li>Community Water Education</li>
+                                <li>Rainwater Harvesting Systems</li>
+                                <li>Water Conservation Training</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="support-cta">
+                    <h2>Support Clean Water</h2>
+                    <p>Help us provide clean, safe water to communities in need</p>
+                    <a href="https://pages.razorpay.com/pl_Hy2kG1Yf5RNuZN/view" target="_blank"
+                        class="btn btn--primary btn--lg">
+                        <i class="fas fa-heart"></i>
+                        Donate for Water
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Women Empowerment Section -->
+        <section id="women-empowerment" class="section section--women-empowerment">
+            <div class="container">
+                <h1>Women Empowerment</h1>
+                <p class="section__subtitle">Empowering women, transforming communities</p>
+
+                <div class="women-details">
+                    <div class="women-description">
+                        <h2>About Our Women Empowerment Program</h2>
+                        <p>Our NGO play a crucial role in empowering women by providing them with resources, training,
+                            and support to help them become more self-reliant and achieve their full potential. Our
+                            focus on women empowerment can provide a range of services, such as education and training
+                            on issues related to women's health, legal rights, and entrepreneurship. We also provide
+                            access to financial resources and business development support, which can help women start
+                            their own businesses and become financially independent.</p>
+
+                        <h3>Our Empowerment Services</h3>
+                        <div class="women-features">
+                            <div class="women-feature">
+                                <i class="fas fa-graduation-cap"></i>
+                                <h4>Skills Training</h4>
+                                <p>Vocational training and skill development programs for economic independence</p>
+                            </div>
+                            <div class="women-feature">
+                                <i class="fas fa-dollar-sign"></i>
+                                <h4>Financial Support</h4>
+                                <p>Microfinance and business development support for women entrepreneurs</p>
+                            </div>
+                            <div class="women-feature">
+                                <i class="fas fa-balance-scale"></i>
+                                <h4>Legal Rights</h4>
+                                <p>Legal awareness and support for women's rights and protection</p>
+                            </div>
+                        </div>
+
+                        <div class="women-programs">
+                            <h3>Programs Offered</h3>
+                            <ul>
+                                <li>Entrepreneurship Development</li>
+                                <li>Financial Literacy Training</li>
+                                <li>Health and Wellness Education</li>
+                                <li>Legal Rights Awareness</li>
+                                <li>Leadership Development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="support-cta">
+                    <h2>Support Women Empowerment</h2>
+                    <p>Help us empower women to achieve their full potential</p>
+                    <a href="https://pages.razorpay.com/pl_Hy2kG1Yf5RNuZN/view" target="_blank"
+                        class="btn btn--primary btn--lg">
+                        <i class="fas fa-heart"></i>
+                        Donate for Women
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Old Age Support Section -->
+        <section id="old-age" class="section section--old-age">
+            <div class="container">
+                <h1>Old Age Support</h1>
+                <p class="section__subtitle">Caring for our elders with dignity and respect</p>
+
+                <div class="oldage-details">
+                    <div class="oldage-description">
+                        <h2>About Our Elder Care Program</h2>
+                        <p>We work to provide support and advocacy for the needs and rights of the elderly, and offer a
+                            range of services and programs to help meet these needs. Our NGO provide social and
+                            emotional support to the elderly by organizing social events and offering counseling
+                            services. We also offer healthcare services designed specifically for the elderly, such as
+                            regular health check-ups, mobility aids, and medication management.</p>
+
+                        <h3>Our Elder Care Services</h3>
+                        <div class="oldage-features">
+                            <div class="oldage-feature">
+                                <i class="fas fa-heart"></i>
+                                <h4>Social Support</h4>
+                                <p>Organizing social events and providing emotional support for elderly community
+                                    members</p>
+                            </div>
+                            <div class="oldage-feature">
+                                <i class="fas fa-user-md"></i>
+                                <h4>Healthcare Services</h4>
+                                <p>Regular health check-ups and specialized medical care for elderly patients</p>
+                            </div>
+                            <div class="oldage-feature">
+                                <i class="fas fa-wheelchair"></i>
+                                <h4>Mobility Support</h4>
+                                <p>Providing mobility aids and assistance for elderly individuals with physical
+                                    limitations</p>
+                            </div>
+                        </div>
+
+                        <div class="oldage-programs">
+                            <h3>Programs Offered</h3>
+                            <ul>
+                                <li>Regular Health Check-ups</li>
+                                <li>Social Activities and Events</li>
+                                <li>Counseling Services</li>
+                                <li>Medication Management</li>
+                                <li>Home Care Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="support-cta">
+                    <h2>Support Elder Care</h2>
+                    <p>Help us provide dignity and care to our elderly community members</p>
+                    <a href="https://pages.razorpay.com/pl_Hy2kG1Yf5RNuZN/view" target="_blank"
+                        class="btn btn--primary btn--lg">
+                        <i class="fas fa-heart"></i>
+                        Donate for Elder Care
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Privacy Policy Section -->
+        <section id="privacy-policy" class="section section--privacy-policy">
+            <div class="container">
+                <div class="privacy-header">
+                    <h1>Privacy Policy</h1>
+                    <p class="section__subtitle">Your privacy is important to us. Learn how we protect and use your
+                        information.</p>
+                    <div class="policy-meta">
+                        <span class="effective-date">Effective Date: May 1st, 2021</span>
+                        <span class="last-updated">Last Updated: December 2024</span>
+                    </div>
+                </div>
+
+                <div class="privacy-content">
+                    <div class="privacy-intro">
+                        <div class="intro-card">
+                            <div class="intro-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="intro-text">
+                                <h2>Our Commitment to Your Privacy</h2>
+                                <p>This privacy policy sets out how "WINGER GLOBAL FOUNDATION" uses and protects any
+                                    information that you give "WINGER GLOBAL FOUNDATION" when you use this website.
+                                    "Winger Global Foundation" is committed to ensuring that your privacy is protected.
+                                    Should we ask you to provide certain information by which you can be identified when
+                                    using this website and then you can be assured that it will only be used in
+                                    accordance with this privacy statement.</p>
+                                <p>"Winger Global Foundation" may change this policy from time to time by updating this
+                                    page. You should check this page from time to time to ensure that you are happy with
+                                    any changes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="privacy-sections">
+                        <div class="privacy-section">
+                            <div class="section-header">
+                                <div class="section-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <h3>What Information We Collect</h3>
+                            </div>
+                            <div class="section-content">
+                                <p>We may collect the following information to better serve you and keep you updated
+                                    about our organization's projects:</p>
+                                <div class="info-grid">
+                                    <div class="info-item">
+                                        <i class="fas fa-user"></i>
+                                        <div>
+                                            <h4>Personal Information</h4>
+                                            <p>Name and job title</p>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-envelope"></i>
+                                        <div>
+                                            <h4>Contact Information</h4>
+                                            <p>Email address and phone number</p>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <div>
+                                            <h4>Demographic Information</h4>
+                                            <p>Postcode, preferences, and interests</p>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-clipboard-list"></i>
+                                        <div>
+                                            <h4>Survey Information</h4>
+                                            <p>Information relevant to customer surveys and offers</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="privacy-section">
+                            <div class="section-header">
+                                <div class="section-icon">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <h3>How We Use Your Information</h3>
+                            </div>
+                            <div class="section-content">
+                                <p>We require this information to send updates about our organization projects from time
+                                    to time and in particular for the following reasons:</p>
+                                <div class="usage-list">
+                                    <div class="usage-item">
+                                        <div class="usage-number">1</div>
+                                        <div class="usage-content">
+                                            <h4>Internal Record Keeping</h4>
+                                            <p>Maintaining accurate records of our supporters and beneficiaries to
+                                                ensure effective communication and service delivery.</p>
+                                        </div>
+                                    </div>
+                                    <div class="usage-item">
+                                        <div class="usage-number">2</div>
+                                        <div class="usage-content">
+                                            <h4>Service Improvement</h4>
+                                            <p>We may use the information to improve our work, programs, and services to
+                                                better serve our community.</p>
+                                        </div>
+                                    </div>
+                                    <div class="usage-item">
+                                        <div class="usage-number">3</div>
+                                        <div class="usage-content">
+                                            <h4>Communication</h4>
+                                            <p>Sending periodic updates about our projects, impact stories, and
+                                                opportunities to get involved.</p>
+                                        </div>
+                                    </div>
+                                    <div class="usage-item">
+                                        <div class="usage-number">4</div>
+                                        <div class="usage-content">
+                                            <h4>Donation Processing</h4>
+                                            <p>Processing donations securely and providing receipts and acknowledgments
+                                                as required.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="privacy-section">
+                            <div class="section-header">
+                                <div class="section-icon">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <h3>Data Security & Protection</h3>
+                            </div>
+                            <div class="section-content">
+                                <div class="security-features">
+                                    <div class="security-item">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <h4>Secure Storage</h4>
+                                        <p>Your data is stored securely using industry-standard encryption and security
+                                            measures.</p>
+                                    </div>
+                                    <div class="security-item">
+                                        <i class="fas fa-user-shield"></i>
+                                        <h4>Limited Access</h4>
+                                        <p>Only authorized personnel have access to your personal information on a
+                                            need-to-know basis.</p>
+                                    </div>
+                                    <div class="security-item">
+                                        <i class="fas fa-ban"></i>
+                                        <h4>No Selling</h4>
+                                        <p>We never sell, trade, or rent your personal information to third parties.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="privacy-section">
+                            <div class="section-header">
+                                <div class="section-icon">
+                                    <i class="fas fa-user-check"></i>
+                                </div>
+                                <h3>Your Rights</h3>
+                            </div>
+                            <div class="section-content">
+                                <div class="rights-grid">
+                                    <div class="right-item">
+                                        <i class="fas fa-eye"></i>
+                                        <h4>Access</h4>
+                                        <p>Request access to your personal data</p>
+                                    </div>
+                                    <div class="right-item">
+                                        <i class="fas fa-edit"></i>
+                                        <h4>Correction</h4>
+                                        <p>Request correction of inaccurate data</p>
+                                    </div>
+                                    <div class="right-item">
+                                        <i class="fas fa-trash"></i>
+                                        <h4>Deletion</h4>
+                                        <p>Request deletion of your data</p>
+                                    </div>
+                                    <div class="right-item">
+                                        <i class="fas fa-times-circle"></i>
+                                        <h4>Opt-out</h4>
+                                        <p>Unsubscribe from communications</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="privacy-contact">
+                        <div class="contact-card">
+                            <h3>Questions About This Policy?</h3>
+                            <p>If you have any questions about this privacy policy or how we handle your data, please
+                                don't hesitate to contact us.</p>
+                            <div class="contact-actions">
+                                <button class="btn btn--primary" data-section="contact">
+                                    <i class="fas fa-envelope"></i>
+                                    Contact Us
+                                </button>
+                                <a href="mailto:privacy@wingerfoundation.org" class="btn btn--outline">
+                                    <i class="fas fa-at"></i>
+                                    privacy@wingerfoundation.org
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Terms and Conditions Section -->
+        <section id="terms-conditions" class="section section--terms-conditions">
+            <div class="container">
+                <div class="terms-header">
+                    <h1>Terms & Conditions</h1>
+                    <p class="section__subtitle">Please read these terms and conditions carefully before using our website and services.</p>
+                    <div class="terms-meta">
+                        <span class="effective-date">Effective Date: May 1st, 2021</span>
+                        <span class="last-updated">Last Updated: December 2024</span>
+                    </div>
+                </div>
+
+                <div class="terms-content">
+                    <div class="terms-intro">
+                        <div class="intro-card">
+                            <div class="intro-icon">
+                                <i class="fas fa-file-contract"></i>
+                            </div>
+                            <div class="intro-text">
+                                <h2>Welcome to Our Website</h2>
+                                <p>Welcome to our website. If you continue to browse and use this website you are agreeing to comply with and be bound by the following terms and conditions of use which together with our privacy policy govern "Winger Global Foundation" relationship with you in relation to this website.</p>
+                                <div class="organization-details">
+                                    <div class="detail-item">
+                                        <i class="fas fa-building"></i>
+                                        <div>
+                                            <h4>Organization</h4>
+                                            <p>"Winger Global Foundation" refers to the owner of this website</p>
+                                        </div>
+                                    </div>
+                                    <div class="detail-item">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <div>
+                                            <h4>Registered Office</h4>
+                                            <p>B-1075, 3RD FLOOR, G D COLONY, NEW DELHI, East Delhi, Delhi, India, 110096</p>
+                                        </div>
+                                    </div>
+                                    <div class="detail-item">
+                                        <i class="fas fa-id-card"></i>
+                                        <div>
+                                            <h4>Registration Number</h4>
+                                            <p>U85300DL2020NPL359865</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="terms-sections">
+                        <div class="terms-section">
+                            <div class="section-header">
+                                <div class="section-icon">
+                                    <i class="fas fa-info-circle"></i>
+                                </div>
+                                <h3>General Information</h3>
+                            </div>
+                            <div class="section-content">
+                                <p>The term 'you' refers to the user or viewer of our website. The use of this website is subject to the following terms of use:</p>
+                                <div class="terms-grid">
+                                    <div class="term-item">
+                                        <div class="term-number">1</div>
+                                        <div class="term-content">
+                                            <h4>Content Usage</h4>
+                                            <p>The content of the pages of this website is for your general information and use only. It is subject to change without notice.</p>
+                                        </div>
+                                    </div>
+                                    <div class="term-item">
+                                        <div class="term-number">2</div>
+                                        <div class="term-content">
+                                            <h4>No Warranties</h4>
+                                            <p>Neither we nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on this website for any particular purpose.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="terms-section">
+                            <div class="section-header">
+                                <div class="section-icon">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </div>
+                                <h3>Liability & Risk</h3>
+                            </div>
+                            <div class="section-content">
+                                <div class="liability-cards">
+                                    <div class="liability-card">
+                                        <div class="liability-icon">
+                                            <i class="fas fa-shield-alt"></i>
+                                        </div>
+                                        <h4>Limitation of Liability</h4>
+                                        <p>You acknowledge that such information and materials may contain inaccuracies or errors and we expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law.</p>
+                                    </div>
+                                    <div class="liability-card">
+                                        <div class="liability-icon">
+                                            <i class="fas fa-user-shield"></i>
+                                        </div>
+                                        <h4>User Responsibility</h4>
+                                        <p>Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any products, services or information available through this Website meets your specific requirements.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="terms-section">
+                            <div class="section-header">
+                                <div class="section-icon">
+                                    <i class="fas fa-copyright"></i>
+                                </div>
+                                <h3>Intellectual Property</h3>
+                            </div>
+                            <div class="section-content">
+                                <div class="ip-content">
+                                    <div class="ip-main">
+                                        <h4>Copyright & Ownership</h4>
+                                        <p>This website contains material which is owned by or licensed to us. This material includes, but is not limited to, the design, layout, look, appearance and graphics. Reproduction is prohibited other than in accordance with the copyright notice, which forms part of these terms and conditions.</p>
+                                    </div>
+                                    <div class="ip-features">
+                                        <div class="ip-feature">
+                                            <i class="fas fa-trademark"></i>
+                                            <h5>Trademarks</h5>
+                                            <p>All trademarks reproduced in this website which are not the property of, or licensed to, the operator are acknowledged on the website.</p>
+                                        </div>
+                                        <div class="ip-feature">
+                                            <i class="fas fa-ban"></i>
+                                            <h5>Unauthorized Use</h5>
+                                            <p>Unauthorized use of this website may give rise to a claim for damages and/or be a criminal offence.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="terms-section">
+                            <div class="section-header">
+                                <div class="section-icon">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <h3>Agreement & Compliance</h3>
+                            </div>
+                            <div class="section-content">
+                                <div class="compliance-grid">
+                                    <div class="compliance-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <h4>Acceptance</h4>
+                                        <p>By using this website, you agree to be bound by these terms and conditions</p>
+                                    </div>
+                                    <div class="compliance-item">
+                                        <i class="fas fa-gavel"></i>
+                                        <h4>Legal Compliance</h4>
+                                        <p>You agree to comply with all applicable laws and regulations</p>
+                                    </div>
+                                    <div class="compliance-item">
+                                        <i class="fas fa-sync-alt"></i>
+                                        <h4>Updates</h4>
+                                        <p>Terms may be updated periodically - please review regularly</p>
+                                    </div>
+                                    <div class="compliance-item">
+                                        <i class="fas fa-balance-scale"></i>
+                                        <h4>Governing Law</h4>
+                                        <p>These terms are governed by Indian law and jurisdiction</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="terms-contact">
+                        <div class="contact-card">
+                            <h3>Questions About These Terms?</h3>
+                            <p>If you have any questions about these terms and conditions or need clarification on any point, please don't hesitate to contact us.</p>
+                            <div class="contact-actions">
+                                <button class="btn btn--primary" data-section="contact">
+                                    <i class="fas fa-envelope"></i>
+                                    Contact Us
+                                </button>
+                                <a href="mailto:legal@wingerfoundation.org" class="btn btn--outline">
+                                    <i class="fas fa-at"></i>
+                                    legal@wingerfoundation.org
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Refund & Cancellation Policy Section -->
+        <section id="refund-policy" class="section section--refund-policy">
+            <div class="container">
+                <div class="refund-header">
+                    <h1>Refund & Cancellation Policy</h1>
+                    <p class="section__subtitle">We believe in helping our donors and have a liberal cancellation policy to ensure transparency and trust.</p>
+                    <div class="policy-meta">
+                        <span class="effective-date">Effective Date: May 1st, 2021</span>
+                        <span class="last-updated">Last Updated: December 2024</span>
+                    </div>
+                </div>
+
+                <div class="refund-content">
+                    <div class="refund-intro">
+                        <div class="intro-card">
+                            <div class="intro-icon">
+                                <i class="fas fa-undo-alt"></i>
+                            </div>
+                            <div class="intro-text">
+                                <h2>Our Commitment to Donors</h2>
+                                <p>"WINGER GLOBAL FOUNDATION" believes in helping DONOR'S as far as possible and has therefore a liberal cancellation policy. We understand that sometimes circumstances change, and we want to ensure that our donors feel confident and secure when contributing to our cause.</p>
+                                <div class="policy-highlights">
+                                    <div class="highlight-badge">
+                                        <i class="fas fa-clock"></i>
+                                        <span>48-Hour Window</span>
+                                    </div>
+                                    <div class="highlight-badge">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <span>Donor Protection</span>
+                                    </div>
+                                    <div class="highlight-badge">
+                                        <i class="fas fa-handshake"></i>
+                                        <span>Liberal Policy</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="refund-sections">
+                        <div class="refund-section">
+                            <div class="section-header">
+                                <div class="section-icon">
+                                    <i class="fas fa-calendar-times"></i>
+                                </div>
+                                <h3>Cancellation Policy</h3>
+                            </div>
+                            <div class="section-content">
+                                <div class="policy-timeline">
+                                    <div class="timeline-item active">
+                                        <div class="timeline-icon">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <h4>Within 48 Hours</h4>
+                                            <p>Cancellations will be considered only if the request is made within 48 hours of donation. We process these requests promptly to ensure donor satisfaction.</p>
+                                            <div class="timeline-features">
+                                                <span class="feature-tag">✓ Full Refund Available</span>
+                                                <span class="feature-tag">✓ Quick Processing</span>
+                                                <span class="feature-tag">✓ No Questions Asked</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon">
+                                            <i class="fas fa-times-circle"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <h4>After 48 Hours</h4>
+                                            <p>However, the cancellation request will not be entertained after 48 hours of donation. This policy helps us allocate funds efficiently to our ongoing programs and beneficiaries.</p>
+                                            <div class="timeline-features">
+                                                <span class="feature-tag inactive">✗ Refund Not Available</span>
+                                                <span class="feature-tag inactive">✗ Funds Already Allocated</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="refund-section">
+                            <div class="section-header">
+                                <div class="section-icon">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                </div>
+                                <h3>Refund Process</h3>
+                            </div>
+                            <div class="section-content">
+                                <div class="process-steps">
+                                    <div class="step-item">
+                                        <div class="step-number">1</div>
+                                        <div class="step-content">
+                                            <h4>Submit Request</h4>
+                                            <p>Contact us within 48 hours of your donation with your transaction details and reason for cancellation.</p>
+                                        </div>
+                                    </div>
+                                    <div class="step-item">
+                                        <div class="step-number">2</div>
+                                        <div class="step-content">
+                                            <h4>Verification</h4>
+                                            <p>We verify your donation details and ensure the request is within the eligible timeframe.</p>
+                                        </div>
+                                    </div>
+                                    <div class="step-item">
+                                        <div class="step-number">3</div>
+                                        <div class="step-content">
+                                            <h4>Processing</h4>
+                                            <p>Once verified, we initiate the refund process through the original payment method.</p>
+                                        </div>
+                                    </div>
+                                    <div class="step-item">
+                                        <div class="step-number">4</div>
+                                        <div class="step-content">
+                                            <h4>Completion</h4>
+                                            <p>Refund is processed within 5-7 business days, depending on your bank or payment provider.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="refund-section">
+                            <div class="section-header">
+                                <div class="section-icon">
+                                    <i class="fas fa-info-circle"></i>
+                                </div>
+                                <h3>Important Information</h3>
+                            </div>
+                            <div class="section-content">
+                                <div class="info-grid">
+                                    <div class="info-card">
+                                        <div class="info-icon">
+                                            <i class="fas fa-credit-card"></i>
+                                        </div>
+                                        <h4>Payment Method</h4>
+                                        <p>Refunds are processed through the original payment method used for the donation.</p>
+                                    </div>
+                                    <div class="info-card">
+                                        <div class="info-icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <h4>Processing Time</h4>
+                                        <p>Refunds typically take 5-7 business days to reflect in your account after processing.</p>
+                                    </div>
+                                    <div class="info-card">
+                                        <div class="info-icon">
+                                            <i class="fas fa-receipt"></i>
+                                        </div>
+                                        <h4>Transaction Details</h4>
+                                        <p>Please keep your donation receipt and transaction ID for quick processing of refund requests.</p>
+                                    </div>
+                                    <div class="info-card">
+                                        <div class="info-icon">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                        <h4>Confirmation</h4>
+                                        <p>You will receive email confirmation once your refund request is processed successfully.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="refund-section">
+                            <div class="section-header">
+                                <div class="section-icon">
+                                    <i class="fas fa-question-circle"></i>
+                                </div>
+                                <h3>Frequently Asked Questions</h3>
+                            </div>
+                            <div class="section-content">
+                                <div class="faq-list">
+                                    <div class="faq-item">
+                                        <div class="faq-question">
+                                            <h4>Can I cancel my donation after 48 hours?</h4>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <p>Unfortunately, cancellation requests cannot be entertained after 48 hours of donation as the funds are allocated to ongoing programs and beneficiaries.</p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item">
+                                        <div class="faq-question">
+                                            <h4>How long does the refund process take?</h4>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <p>Once your refund request is approved, it typically takes 5-7 business days for the amount to reflect in your account, depending on your bank or payment provider.</p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item">
+                                        <div class="faq-question">
+                                            <h4>What information do I need to provide for a refund?</h4>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <p>Please provide your transaction ID, donation amount, date of donation, and the reason for cancellation when submitting your refund request.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="refund-contact">
+                        <div class="contact-card">
+                            <h3>Need Help with Refunds?</h3>
+                            <p>If you need to request a refund or have questions about our cancellation policy, please contact us immediately. Our team is here to help you.</p>
+                            <div class="contact-actions">
+                                <button class="btn btn--primary" data-section="contact">
+                                    <i class="fas fa-envelope"></i>
+                                    Contact Support
+                                </button>
+                                <a href="mailto:refunds@wingerfoundation.org" class="btn btn--outline">
+                                    <i class="fas fa-at"></i>
+                                    refunds@wingerfoundation.org
+                                </a>
+                                <a href="tel:+919319051236" class="btn btn--outline">
+                                    <i class="fas fa-phone"></i>
+                                    +91 9319051236
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -571,27 +1793,6 @@
                 </div>
             </div>
             </form>
-            </div>
-
-            <div class="other-ways">
-                <h2>Other Ways to Give</h2>
-                <div class="giving-options">
-                    <div class="giving-option">
-                        <i class="fas fa-credit-card"></i>
-                        <h4>Bank Transfer</h4>
-                        <p>Direct bank transfers for larger donations</p>
-                    </div>
-                    <div class="giving-option">
-                        <i class="fas fa-building"></i>
-                        <h4>Corporate Partnerships</h4>
-                        <p>Partner with us for CSR initiatives</p>
-                    </div>
-                    <div class="giving-option">
-                        <i class="fas fa-gift"></i>
-                        <h4>In-Kind Donations</h4>
-                        <p>Donate food, books, or educational materials</p>
-                    </div>
-                </div>
             </div>
             </div>
         </section>
@@ -684,7 +1885,8 @@
             <div class="container">
                 <div class="news-intro">
                     <h1>News & Stories</h1>
-                    <p>Stay updated with our latest initiatives, success stories, and community impact as we work together to create positive change.</p>
+                    <p>Stay updated with our latest initiatives, success stories, and community impact as we work
+                        together to create positive change.</p>
                 </div>
 
                 <div class="news-filter">
@@ -709,9 +1911,13 @@
                                 <span class="news-card__date">December 15, 2024</span>
                                 <span class="news-card__author">Winger Foundation Team</span>
                             </div>
-                            <h3 class="news-card__title">Transforming Lives Through Education: Success Story from Delhi</h3>
-                            <p class="news-card__excerpt">Meet Priya, a 12-year-old girl from Delhi who has transformed her life through our education program. From struggling to read to becoming the top student in her class, her journey inspires us all.</p>
-                            <a href="#" class="news-card__read-more">Read Full Story <i class="fas fa-arrow-right"></i></a>
+                            <h3 class="news-card__title">Transforming Lives Through Education: Success Story from Delhi
+                            </h3>
+                            <p class="news-card__excerpt">Meet Priya, a 12-year-old girl from Delhi who has transformed
+                                her life through our education program. From struggling to read to becoming the top
+                                student in her class, her journey inspires us all.</p>
+                            <a href="#" class="news-card__read-more">Read Full Story <i
+                                    class="fas fa-arrow-right"></i></a>
                         </div>
                     </article>
 
@@ -728,7 +1934,9 @@
                                 <span class="news-card__author">Kitchen Team</span>
                             </div>
                             <h3 class="news-card__title">New Kitchen Opens in Mumbai Serving 1000+ Daily Meals</h3>
-                            <p class="news-card__excerpt">Our latest kitchen facility in Mumbai has officially opened, bringing nutritious meals to over 1000 people daily in the local community. This milestone represents our commitment to fighting hunger.</p>
+                            <p class="news-card__excerpt">Our latest kitchen facility in Mumbai has officially opened,
+                                bringing nutritious meals to over 1000 people daily in the local community. This
+                                milestone represents our commitment to fighting hunger.</p>
                             <a href="#" class="news-card__read-more">Learn More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </article>
@@ -746,7 +1954,9 @@
                                 <span class="news-card__author">Education Team</span>
                             </div>
                             <h3 class="news-card__title">100 Students Graduate from Our Skill Development Program</h3>
-                            <p class="news-card__excerpt">Celebrating the graduation of 100 students from our vocational training program, now equipped with skills for better employment opportunities and brighter futures.</p>
+                            <p class="news-card__excerpt">Celebrating the graduation of 100 students from our vocational
+                                training program, now equipped with skills for better employment opportunities and
+                                brighter futures.</p>
                             <a href="#" class="news-card__read-more">View Gallery <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </article>
@@ -764,7 +1974,9 @@
                                 <span class="news-card__author">Community Team</span>
                             </div>
                             <h3 class="news-card__title">Volunteer Drive Brings 200+ New Helpers to Our Cause</h3>
-                            <p class="news-card__excerpt">Our recent volunteer recruitment drive was a huge success, bringing over 200 new volunteers to help with our kitchen and education programs across multiple cities.</p>
+                            <p class="news-card__excerpt">Our recent volunteer recruitment drive was a huge success,
+                                bringing over 200 new volunteers to help with our kitchen and education programs across
+                                multiple cities.</p>
                             <a href="#" class="news-card__read-more">Join Us <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </article>
@@ -782,7 +1994,9 @@
                                 <span class="news-card__author">Leadership Team</span>
                             </div>
                             <h3 class="news-card__title">Winger Foundation Receives Community Service Award</h3>
-                            <p class="news-card__excerpt">We are honored to receive the Community Service Excellence Award for our continued efforts in fighting hunger and promoting education across India.</p>
+                            <p class="news-card__excerpt">We are honored to receive the Community Service Excellence
+                                Award for our continued efforts in fighting hunger and promoting education across India.
+                            </p>
                             <a href="#" class="news-card__read-more">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </article>
@@ -800,7 +2014,9 @@
                                 <span class="news-card__author">Impact Team</span>
                             </div>
                             <h3 class="news-card__title">Reaching 50,000 Meals Served Milestone</h3>
-                            <p class="news-card__excerpt">A celebration of our achievement in serving over 50,000 nutritious meals to communities in need across India. This milestone marks our growing impact.</p>
+                            <p class="news-card__excerpt">A celebration of our achievement in serving over 50,000
+                                nutritious meals to communities in need across India. This milestone marks our growing
+                                impact.</p>
                             <a href="#" class="news-card__read-more">See Impact <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </article>
@@ -1048,157 +2264,266 @@
             </div>
         </section>
 
+        <!-- Free Courses Section -->
+        <section id="free-courses" class="section section--free-courses">
+            <!-- Hero Banner -->
+            <div class="courses-hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Free Professional Training</span>
+                        </div>
+                        <h1>Artificial Insemination Training</h1>
+                        <p class="hero-subtitle">Government certified 90-day program to become a professional AI
+                            technician</p>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="number">90</span>
+                                <span class="label">Days Training</span>
+                            </div>
+                            <div class="stat">
+                                <span class="number">100%</span>
+                                <span class="label">Government Certified</span>
+                            </div>
+                            <div class="stat">
+                                <span class="number">₹0</span>
+                                <span class="label">Course Fee</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <!-- Course Overview -->
+                <div class="course-overview">
+                    <div class="overview-card">
+                        <div class="card-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h2>What is Artificial Insemination?</h2>
+                        <div class="content-tabs">
+                            <div class="tab-buttons">
+                                <button class="tab-btn active" data-tab="english-1">English</button>
+                                <button class="tab-btn" data-tab="hindi-1">हिंदी</button>
+                            </div>
+                            <div class="tab-content active" id="english-1">
+                                <p>In artificial insemination system, high quality male semen is stored in the
+                                    laboratory after thorough testing, preserved in frozen form in liquid nitrogen. When
+                                    the female animal comes into heat, the frozen semen is put in liquid state by
+                                    insemination device and fertilized in the genitals of the female. This scientific
+                                    technique is the best method for livestock development and breed improvement.</p>
+                            </div>
+                            <div class="tab-content" id="hindi-1">
+                                <p>कृत्रिम गर्भाधान प्रणाली में उच्च गुणवत्ता वाले नर वीर्य को पूरी तरह से परीक्षण के
+                                    बाद प्रयोगशाला में संग्रहीत किया जाता है, इसे तरल नाइट्रोजन में जमे हुए रूप में
+                                    संरक्षित किया जाता है। जब मादा पशु गर्मी में आती है, तो उस जमे हुए वीर्य को गर्भाधान
+                                    उपकरण द्वारा तरल अवस्था में डालकर महिला के जननांगों में निषेचित किया जाता है। यह
+                                    वैज्ञानिक तकनीक पशुधन विकास और नस्ल सुधार के लिए सबसे बेहतर विधि है।</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="overview-card">
+                        <div class="card-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h2>Why Choose This Training?</h2>
+                        <div class="content-tabs">
+                            <div class="tab-buttons">
+                                <button class="tab-btn active" data-tab="english-2">English</button>
+                                <button class="tab-btn" data-tab="hindi-2">हिंदी</button>
+                            </div>
+                            <div class="tab-content active" id="english-2">
+                                <p>With artificial insemination, there's no need to keep bulls. Progeny testing of bulls
+                                    is possible only through AI, allowing quality assessment and better livestock
+                                    management.</p>
+                            </div>
+                            <div class="tab-content" id="hindi-2">
+                                <p>कृत्रिम गर्भाधान पद्धति के विकास के साथ, सांडों को रखने की कोई आवश्यकता नहीं है।
+                                    झोटा/सांड की संतति परीक्षण कृत्रिम गर्भाधान से ही संभव है जिससे गुणवत्ता की जांच की
+                                    जा सकती है।</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Training Details -->
+                <div class="training-details">
+                    <div class="details-header">
+                        <h2>Training Program Details</h2>
+                        <p>Comprehensive certification program approved by Government of India</p>
+                    </div>
+
+                    <div class="details-grid">
+                        <div class="detail-card">
+                            <i class="fas fa-certificate"></i>
+                            <h3>Official Certification</h3>
+                            <p>Certified by Department of Dairying and Fisheries, Ministry of Agriculture, Government of
+                                India</p>
+                        </div>
+                        <div class="detail-card">
+                            <i class="fas fa-clock"></i>
+                            <h3>90 Days Duration</h3>
+                            <p>Intensive practical training following government guidelines</p>
+                        </div>
+                        <div class="detail-card">
+                            <i class="fas fa-briefcase"></i>
+                            <h3>Job Ready</h3>
+                            <p>Work anywhere in India as certified AI technician after completion</p>
+                        </div>
+                        <div class="detail-card">
+                            <i class="fas fa-award"></i>
+                            <h3>Innovation Institute</h3>
+                            <p>First recognized college in India for AI training</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Institute Information -->
+                <div class="institute-info">
+                    <div class="info-content">
+                        <div class="content-tabs">
+                            <div class="tab-buttons">
+                                <button class="tab-btn active" data-tab="english-3">English</button>
+                                <button class="tab-btn" data-tab="hindi-3">हिंदी</button>
+                            </div>
+                            <div class="tab-content active" id="english-3">
+                                <h2>Innovation Artificial Insemination Training Institute</h2>
+                                <p>Training should only be done from certified institutes. Only certified animal
+                                    husbandry institutes from the Department of Dairying and Fisheries, Ministry of
+                                    Agriculture, Government of India can conduct these courses.</p>
+                                <p>Innovation Artificial Insemination Training Institute is the first recognized college
+                                    in India, certified by the Central Department of Animal Husbandry, Dairying and
+                                    Fisheries, Ministry of Agriculture and Farmers Welfare, Government of India, New
+                                    Delhi-110001.</p>
+                                <p><strong>After training, workers can work as artificial insemination technicians
+                                        anywhere in India.</strong></p>
+                            </div>
+                            <div class="tab-content" id="hindi-3">
+                                <h2>इनोवेशन कृत्रिम गर्भाधान प्रशिक्षण संस्थान</h2>
+                                <p>प्रशिक्षण केवल प्रमाणित संस्थानों से ही किया जाना चाहिए। केंद्रीय पशुपालन डेयरी एवं
+                                    मत्स्य पालन विभाग, कृषि मंत्रालय, भारत सरकार से प्रमाणित पशुपालन संस्थान ही ये कोर्स
+                                    करवा सकते हैं।</p>
+                                <p>इनोवेशन कृत्रिम गर्भाधान प्रशिक्षण संस्थान सम्पूर्ण भारत वर्ष का पहला मान्यता प्राप्त
+                                    कॉलेज है जो कि केंद्रीय पशुपालन, डेयरी और मत्स्य पालन विभाग, कृषि और किसान कल्याण
+                                    मंत्रालय, भारत सरकार, नई दिल्ली-110001 द्वारा मान्यता प्राप्त है।</p>
+                                <p><strong>प्रशिक्षण के उपरान्त कार्यकर्ता सम्पूर्ण भारत में अपना कृत्रिम गर्भाधान
+                                        कार्यकर्ता के रूप में रोजगार कर सकता है।</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="courses-cta">
+                    <div class="cta-content">
+                        <h2>Ready to Start Your Career?</h2>
+                        <p>Join thousands of successful AI technicians across India</p>
+                        <div class="cta-buttons">
+                            <a href="#contact" class="btn btn--primary btn--lg" data-section="contact">
+                                <i class="fas fa-phone"></i>
+                                Enroll Now
+                            </a>
+                            <a href="#about" class="btn btn--outline btn--lg" data-section="about">
+                                <i class="fas fa-info-circle"></i>
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact Section -->
         <section id="contact" class="section section--contact">
             <div class="container">
                 <h1>Contact Us</h1>
-                <p class="section__subtitle">Get in touch with us to learn more about our work or to get involved</p>
+                <div class="contact-intro">
+                    <p>Get in touch with us to learn more about our work, volunteer opportunities, or partnership
+                        possibilities.</p>
+                </div>
 
-                <div class="contact-grid">
+                <div class="contact-content">
                     <div class="contact-info">
-                        <div class="contact-detail">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h3>Address</h3>
-                                <p>Winger Foundation<br>New Delhi, India</p>
+                        <h3>Get in Touch</h3>
+                        <div class="contact-details">
+                            <div class="contact-detail">
+                                <div class="contact-detail__icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-detail__content">
+                                    <h4>Address</h4>
+                                    <p>C-44, Sector-10, Noida<br>G.B Nagar, 201301<br>India</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail">
+                                <div class="contact-detail__icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-detail__content">
+                                    <h4>Phone</h4>
+                                    <p><a href="tel:+919319051236">+91 9319051236</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-detail">
+                                <div class="contact-detail__icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-detail__content">
+                                    <h4>Email</h4>
+                                    <p><a href="mailto:info@wingerfoundation.org">info@wingerfoundation.org</a></p>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="contact-detail">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h3>Phone</h3>
-                                <p>+91 XXXXX XXXXX</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-detail">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h3>Email</h3>
-                                <p>info@wingerfoundation.org</p>
+                        <div class="office-hours">
+                            <h4>Office Hours</h4>
+                            <div class="hours-list">
+                                <div class="hours-item">
+                                    <span class="hours-day">Monday - Friday</span>
+                                    <span class="hours-time">9:00 AM - 6:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="hours-day">Saturday</span>
+                                    <span class="hours-time">10:00 AM - 4:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="hours-day">Sunday</span>
+                                    <span class="hours-time">Closed</span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <label for="contact-name" class="form-label">Full Name</label>
-                            <input type="text" id="contact-name" class="form-control" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="contact-email" class="form-label">Email Address</label>
-                            <input type="email" id="contact-email" class="form-control" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="contact-subject" class="form-label">Subject</label>
-                            <input type="text" id="contact-subject" class="form-control" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="contact-message" class="form-label">Message</label>
-                            <textarea id="contact-message" class="form-control" rows="5" required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn--primary btn--full">Send Message</button>
-                    </form>
+                    <div class="contact-form-container">
+                        <h3>Send us a Message</h3>
+                        <form class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">Name *</label>
+                                    <input type="text" name="name" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Email *</label>
+                                    <input type="email" name="email" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Subject</label>
+                                <input type="text" name="subject" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Message *</label>
+                                <textarea name="message" class="form-control" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
-        <div class="container">
-            <h1>Contact Us</h1>
-            <p class="section__subtitle">Get in touch with us for any inquiries or support</p>
-
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h2>Reach Out to Us</h2>
-                    <div class="contact-details">
-                        <div class="contact-detail">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Our Address</h4>
-                                <p><strong>Corporate Address:</strong><br>C-44, Sector-10, Noida, G.B Nagar, 201301</p>
-                                <p><strong>Registered Address:</strong><br>B-1075, 3rd Floor, G D Colony, East Delhi,
-                                    Delhi, India, 110096</p>
-                            </div>
-                        </div>
-                        <div class="contact-detail">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>+91 9319051236</p>
-                            </div>
-                        </div>
-                        <div class="contact-detail">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>info@wingerfoundation.org<br>contact@wingerfoundation.org</p>
-                            </div>
-                        </div>
-                        <div class="contact-detail">
-                            <i class="fas fa-clock"></i>
-                            <div>
-                                <h4>Office Hours</h4>
-                                <p>Monday - Saturday: 9:00 AM - 6:00 PM<br>Sunday: Closed</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="social-links">
-                        <h4>Follow Us</h4>
-                        <div class="social-icons">
-                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-form-container">
-                    <h2>Send Us a Message</h2>
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <label for="contact-name" class="form-label">Full Name</label>
-                            <input type="text" id="contact-name" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="contact-email" class="form-label">Email Address</label>
-                            <input type="email" id="contact-email" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="contact-subject" class="form-label">Subject</label>
-                            <select id="contact-subject" class="form-control" required>
-                                <option value="">Select a subject</option>
-                                <option value="general">General Inquiry</option>
-                                <option value="volunteer">Volunteer Opportunities</option>
-                                <option value="donation">Donation Information</option>
-                                <option value="partnership">Partnership Inquiry</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="contact-message" class="form-label">Message</label>
-                            <textarea id="contact-message" class="form-control" rows="6" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn--primary btn--lg">Send Message</button>
-                    </form>
-                </div>
-            </div>
-
-            <div class="map-placeholder">
-                <div class="map-container">
-                    <h3>Find Us Here</h3>
-                    <div class="map-placeholder-content">
-                        <i class="fas fa-map-marked-alt"></i>
-                        <p>Interactive map would be embedded here showing our office location</p>
-                    </div>
-                </div>
-            </div>
-        </div>
         </section>
     </main>
 
@@ -1209,8 +2534,9 @@
                 <!-- Brand Section -->
                 <div class="footer__section footer__brand">
                     <h3>Winger Foundation</h3>
-                    <p>Striving to remove hunger and provide quality education to build a better tomorrow for all. Together, we can create lasting change in communities across India.</p>
-                    
+                    <p>Striving to remove hunger and provide quality education to build a better tomorrow for all.
+                        Together, we can create lasting change in communities across India.</p>
+
                     <div class="footer__social">
                         <a href="#" class="social-icon social-icon--facebook" aria-label="Facebook">
                             <i class="fab fa-facebook-f"></i>
@@ -1245,9 +2571,18 @@
                     <ul>
                         <li><a href="#home" data-section="home"><i class="fas fa-home"></i>Home</a></li>
                         <li><a href="#about" data-section="about"><i class="fas fa-info-circle"></i>About Us</a></li>
-                        <li><a href="#projects" data-section="projects"><i class="fas fa-project-diagram"></i>Our Projects</a></li>
+                        <li><a href="#projects" data-section="projects"><i class="fas fa-project-diagram"></i>Our
+                                Projects</a></li>
                         <li><a href="#news" data-section="news"><i class="fas fa-newspaper"></i>News & Stories</a></li>
                         <li><a href="#gallery" data-section="gallery"><i class="fas fa-images"></i>Gallery</a></li>
+                        <li><a href="#free-courses" data-section="free-courses"><i
+                                    class="fas fa-graduation-cap"></i>Free Courses</a></li>
+                        <li><a href="#privacy-policy" data-section="privacy-policy"><i
+                                    class="fas fa-shield-alt"></i>Privacy Policy</a></li>
+                        <li><a href="#terms-conditions" data-section="terms-conditions"><i
+                                    class="fas fa-file-contract"></i>Terms & Conditions</a></li>
+                        <li><a href="#refund-policy" data-section="refund-policy"><i
+                                    class="fas fa-undo-alt"></i>Refund Policy</a></li>
                     </ul>
                 </div>
 
@@ -1255,9 +2590,12 @@
                 <div class="footer__section">
                     <h4>Programs</h4>
                     <ul>
-                        <li><a href="#kitchen" data-section="kitchen"><i class="fas fa-utensils"></i>Global Kitchen</a></li>
-                        <li><a href="#school" data-section="school"><i class="fas fa-graduation-cap"></i>Global School</a></li>
-                        <li><a href="#get-involved" data-section="get-involved"><i class="fas fa-hands-helping"></i>Get Involved</a></li>
+                        <li><a href="#kitchen" data-section="kitchen"><i class="fas fa-utensils"></i>Global Kitchen</a>
+                        </li>
+                        <li><a href="#school" data-section="school"><i class="fas fa-graduation-cap"></i>Global
+                                School</a></li>
+                        <li><a href="#get-involved" data-section="get-involved"><i class="fas fa-hands-helping"></i>Get
+                                Involved</a></li>
                         <li><a href="#donate" data-section="donate"><i class="fas fa-heart"></i>Donate Now</a></li>
                         <li><a href="#contact" data-section="contact"><i class="fas fa-envelope"></i>Contact Us</a></li>
                     </ul>
@@ -1296,6 +2634,11 @@
             </div>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <script type="module" src="js/app.js" defer></script>
 </body>
