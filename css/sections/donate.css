@@ -1,0 +1,215 @@
+/* Donate Section Styles */
+.section--donate {
+  background: var(--gray-50);
+  padding: var(--space-16) 0;
+}
+
+.donate-hero {
+  text-align: center;
+  margin-bottom: var(--space-12);
+}
+
+.donate-hero h1 {
+  font-size: var(--font-size-6xl);
+  font-weight: 700;
+  color: var(--gray-700);
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.donate-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: var(--white);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+.donate-text {
+  padding: var(--space-12);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+}
+
+.donate-paragraph {
+  color: var(--gray-700);
+  line-height: 1.7;
+}
+
+.donate-paragraph p {
+  margin-bottom: var(--space-6);
+  font-size: var(--font-size-base);
+  text-align: justify;
+}
+
+.donate-action {
+  background: var(--white);
+  padding: var(--space-8);
+  text-align: center;
+  border-top: 1px solid var(--gray-200);
+}
+
+/* Donation Form Styles */
+.donation-form {
+  max-width: 600px;
+  margin: var(--space-8) auto;
+  background: var(--white);
+  padding: var(--space-8);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.donation-types {
+  display: flex;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.donation-type {
+  flex: 1;
+  padding: var(--space-4);
+  border: 2px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.donation-type.active {
+  border-color: var(--primary-orange);
+  background: rgba(255, 107, 53, 0.1);
+}
+
+.donation-type:hover {
+  border-color: var(--primary-orange);
+}
+
+.amount-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.amount-btn {
+  padding: var(--space-3);
+  border: 2px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  background: var(--white);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  font-weight: 500;
+}
+
+.amount-btn.active {
+  border-color: var(--primary-orange);
+  background: var(--primary-orange);
+  color: var(--white);
+}
+
+.amount-btn:hover {
+  border-color: var(--primary-orange);
+}
+
+.custom-amount {
+  margin-top: var(--space-4);
+  display: none;
+}
+
+.impact-display {
+  background: var(--gray-50);
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+  margin: var(--space-4) 0;
+}
+
+.impact-display ul {
+  list-style: none;
+  padding: 0;
+}
+
+.impact-display li {
+  padding: var(--space-1) 0;
+  position: relative;
+  padding-left: var(--space-4);
+}
+
+.impact-display li::before {
+  content: '🍽️';
+  position: absolute;
+  left: 0;
+}
+
+/* Other Ways to Give */
+.other-ways {
+  margin-top: var(--space-16);
+}
+
+.giving-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-6);
+  margin-top: var(--space-8);
+}
+
+.giving-option {
+  background: var(--white);
+  padding: var(--space-6);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  transition: all var(--transition-normal);
+}
+
+.giving-option:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+}
+
+.giving-option i {
+  font-size: var(--font-size-4xl);
+  color: var(--primary-orange);
+  margin-bottom: var(--space-4);
+}
+
+.giving-option h3 {
+  margin-bottom: var(--space-3);
+  color: var(--gray-900);
+}
+
+.giving-option p {
+  color: var(--gray-600);
+  margin-bottom: var(--space-4);
+}
+
+/* Mobile responsive for donate section */
+@media (max-width: 768px) {
+  .donate-hero h1 {
+    font-size: var(--font-size-4xl);
+  }
+  
+  .donate-text {
+    grid-template-columns: 1fr;
+    padding: var(--space-8);
+    gap: var(--space-6);
+  }
+  
+  .donate-paragraph p {
+    font-size: var(--font-size-sm);
+    text-align: left;
+  }
+  
+  .donate-action {
+    padding: var(--space-6);
+  }
+  
+  .donation-types {
+    flex-direction: column;
+  }
+  
+  .amount-buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

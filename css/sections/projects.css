@@ -1,0 +1,211 @@
+/* Projects Section Styles */
+.section--projects {
+  background: var(--white);
+}
+
+.projects-overview {
+  margin: var(--space-16) 0;
+}
+
+.project-highlight {
+  background: var(--gray-50);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-8);
+  margin-bottom: var(--space-8);
+  border: 1px solid var(--gray-200);
+  transition: all var(--transition-normal);
+}
+
+.project-highlight:hover {
+  border-color: var(--primary-orange);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.project-highlight h2 {
+  color: var(--primary-orange);
+  margin-bottom: var(--space-4);
+}
+
+.project-highlight ul {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-4) 0;
+}
+
+.project-highlight li {
+  padding: var(--space-2) 0;
+  position: relative;
+  padding-left: var(--space-6);
+  color: var(--gray-600);
+}
+
+.project-highlight li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--primary-orange);
+  font-weight: 600;
+  font-size: var(--font-size-lg);
+}
+
+.project-stats {
+  margin-top: var(--space-16);
+}
+
+.project-stats h2 {
+  text-align: center;
+  margin-bottom: var(--space-8);
+  color: var(--gray-900);
+}
+
+/* Kitchen & School Sections */
+.section--kitchen,
+.section--school {
+  background: var(--gray-50);
+}
+
+.kitchen-details,
+.school-details {
+  margin: var(--space-16) 0;
+}
+
+.kitchen-description,
+.school-description {
+  background: var(--white);
+  padding: var(--space-8);
+  border-radius: var(--radius-2xl);
+  margin-bottom: var(--space-8);
+  box-shadow: var(--shadow-md);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-4);
+  margin: var(--space-6) 0;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  background: var(--gray-50);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-fast);
+}
+
+.feature:hover {
+  background: var(--primary-orange);
+  color: var(--white);
+}
+
+.feature:hover i {
+  color: var(--white) !important;
+}
+
+.feature i {
+  color: var(--secondary-green);
+  font-size: var(--font-size-lg);
+}
+
+.feature span {
+  color: var(--gray-700);
+  font-weight: 500;
+}
+
+.kitchen-impact,
+.school-programs {
+  margin-top: var(--space-8);
+}
+
+.operation-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--space-6);
+  margin-top: var(--space-6);
+}
+
+.operation-stat {
+  text-align: center;
+  padding: var(--space-4);
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+}
+
+.operation-stat:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.operation-stat .number {
+  display: block;
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--primary-orange);
+  margin-bottom: var(--space-1);
+}
+
+.operation-stat .label {
+  font-size: var(--font-size-sm);
+  color: var(--gray-600);
+  font-weight: 500;
+}
+
+.education-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-6);
+  margin: var(--space-8) 0;
+}
+
+.edu-feature {
+  text-align: center;
+  padding: var(--space-6);
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-normal);
+}
+
+.edu-feature:hover {
+  transform: translateY(-4px);
+}
+
+.edu-feature i {
+  font-size: var(--font-size-4xl);
+  color: var(--primary-orange);
+  margin-bottom: var(--space-4);
+}
+
+.edu-feature h4 {
+  margin-bottom: var(--space-3);
+  color: var(--gray-900);
+}
+
+.edu-feature p {
+  color: var(--gray-600);
+  margin: 0;
+}
+
+.support-cta {
+  text-align: center;
+  padding: var(--space-12);
+  background: linear-gradient(135deg, var(--primary-orange), var(--secondary-green));
+  color: var(--white);
+  border-radius: var(--radius-2xl);
+  margin-top: var(--space-16);
+}
+
+.support-cta h2 {
+  color: var(--white);
+  margin-bottom: var(--space-4);
+}
+
+.support-cta p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--space-6);
+}

@@ -1,0 +1,81 @@
+/* Main CSS File - Imports all modules */
+
+/* Base styles */
+@import url('./base/variables.css');
+@import url('./base/reset.css');
+@import url('./base/typography.css');
+
+/* Layout */
+@import url('./layout/main.css');
+@import url('./layout/header.css');
+@import url('./layout/footer.css');
+
+/* Components */
+@import url('./components/buttons.css');
+@import url('./components/forms.css');
+@import url('./components/notifications.css');
+
+/* Section styles */
+@import url('./sections/hero.css');
+@import url('./sections/cards.css');
+@import url('./sections/animations.css');
+@import url('./sections/about.css');
+@import url('./sections/projects.css');
+@import url('./sections/donate.css');
+@import url('./sections/get-involved.css');
+@import url('./sections/news.css');
+@import url('./sections/gallery.css');
+@import url('./sections/contact.css');
+
+/* Utilities */
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.rounded {
+  border-radius: var(--radius-md);
+}
+
+.rounded-lg {
+  border-radius: var(--radius-lg);
+}
+
+.rounded-xl {
+  border-radius: var(--radius-xl);
+}
+
+.rounded-full {
+  border-radius: var(--radius-full);
+}
+
+.shadow {
+  box-shadow: var(--shadow-md);
+}
+
+.shadow-lg {
+  box-shadow: var(--shadow-lg);
+}

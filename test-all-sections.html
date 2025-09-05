@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Sections Test - Winger Foundation</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <img src="assets/wingerfoundationlogo.avif" alt="Winger Foundation Logo" class="nav__logo-img">
+                <h2 class="nav__logo">Winger Foundation</h2>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active" data-section="home">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link" data-section="about">About Us</a>
+                    </li>
+                    <li class="nav__item dropdown">
+                        <a href="#projects" class="nav__link" data-section="projects">Our Projects</a>
+                        <div class="dropdown-content">
+                            <a href="#projects" data-section="projects">All Projects</a>
+                            <a href="#kitchen" data-section="kitchen">Global Kitchen</a>
+                            <a href="#school" data-section="school">Global School</a>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#donate" class="nav__link" data-section="donate">Donate</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#get-involved" class="nav__link" data-section="get-involved">Get Involved</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#news" class="nav__link" data-section="news">News & Stories</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#gallery" class="nav__link" data-section="gallery">Gallery</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link" data-section="contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__actions">
+                <button class="btn btn--primary" data-section="donate">Donate Now</button>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Home Section -->
+        <section id="home" class="section section--home active">
+            <div class="hero">
+                <div class="hero__background">
+                    <div class="hero__image">
+                        <img src="assets/hero-bg.jpg" alt="Children receiving food and education" loading="eager" onerror="this.src='https://via.placeholder.com/1920x1080/ff6b35/ffffff?text=Hero+Image'">
+                    </div>
+                    <div class="hero__overlay"></div>
+                </div>
+                <div class="hero__content container">
+                    <div class="hero__text">
+                        <div class="hero__badge">
+                            <i class="fas fa-heart"></i>
+                            <span>Making a Difference Since 2020</span>
+                        </div>
+                        <h1>Striving To Remove Hunger</h1>
+                        <p class="hero__subtitle">With the aim of removing hunger, Winger Global Foundation aims at forming Winger Global Kitchen for providing food to poor children and people across the country.</p>
+                        <div class="hero__actions">
+                            <a href="#" class="btn btn--primary btn--lg" data-section="donate">
+                                <i class="fas fa-heart"></i>
+                                Donate Now
+                            </a>
+                            <button class="btn btn--outline btn--lg" data-section="about">
+                                <i class="fas fa-info-circle"></i>
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero__stats">
+                        <div class="stat">
+                            <div class="stat__icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <span class="stat__number">50,000+</span>
+                            <span class="stat__label">People Fed Daily</span>
+                        </div>
+                        <div class="stat">
+                            <div class="stat__icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <span class="stat__number">2,500+</span>
+                            <span class="stat__label">Children Educated</span>
+                        </div>
+                        <div class="stat">
+                            <div class="stat__icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <span class="stat__number">100+</span>
+                            <span class="stat__label">Communities Served</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section section--about">
+            <div class="container">
+                <h1>About Winger Foundation</h1>
+                <div class="about__intro">
+                    <p class="lead">Winger Global Foundation is dedicated to removing hunger and providing quality education to those who need it most. We believe that no person should sleep hungry and every child deserves access to education.</p>
+                </div>
+
+                <div class="values-grid">
+                    <div class="value-item">
+                        <h3>Our Vision</h3>
+                        <p>Our vision is to ensure that the needy person around us gets good quality nutritious food and that no one is hungry in our area. We aim at reducing the world hunger and play our role in this moral value by honestly devoting ourselves to the cause of humanity.</p>
+                    </div>
+                    <div class="value-item">
+                        <h3>Our Values</h3>
+                        <ul>
+                            <li>Quality in everything we do</li>
+                            <li>Humanity as our guiding principle</li>
+                            <li>No discrimination in our services</li>
+                            <li>Holistic development approach</li>
+                            <li>Constitutional objectives adherence</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="impact-section">
+                    <h2>Our Impact</h2>
+                    <div class="impact-stats">
+                        <div class="impact-stat">
+                            <i class="fas fa-heart"></i>
+                            <h3>Lives Touched</h3>
+                            <p>We serve poor kids, toddlers, beggars, adults - anyone who needs food for their sustenance.</p>
+                        </div>
+                        <div class="impact-stat">
+                            <i class="fas fa-hands-helping"></i>
+                            <h3>Community Focus</h3>
+                            <p>Working directly with communities to understand their needs and provide targeted support.</p>
+                        </div>
+                        <div class="impact-stat">
+                            <i class="fas fa-seedling"></i>
+                            <h3>Sustainable Growth</h3>
+                            <p>Building programs that create lasting change and empower communities for the future.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section section--projects">
+            <div class="container">
+                <h1>Our Projects</h1>
+                <p class="section__subtitle">Discover how we're making a difference through our targeted programs</p>
+
+                <div class="programs__grid">
+                    <div class="program-card">
+                        <div class="program-card__icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Winger Global Kitchen</h3>
+                        <p>Providing nutritious, quality meals to poor children and people across the country. Our kitchens operate under strict hygienic conditions.</p>
+                        <button class="btn btn--secondary" data-section="kitchen">Learn More</button>
+                    </div>
+                    <div class="program-card">
+                        <div class="program-card__icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Winger Global School</h3>
+                        <p>Providing holistic development and quality education free of cost for underprivileged children.</p>
+                        <button class="btn btn--secondary" data-section="school">Learn More</button>
+                    </div>
+                    <div class="program-card">
+                        <div class="program-card__icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Community Outreach</h3>
+                        <p>Direct community engagement programs that identify and address local needs.</p>
+                        <button class="btn btn--secondary" data-section="get-involved">Get Involved</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kitchen Section -->
+        <section id="kitchen" class="section section--kitchen">
+            <div class="container">
+                <h1>Winger Global Kitchen</h1>
+                <p class="section__subtitle">Feeding hope, one meal at a time</p>
+
+                <div class="kitchen-details">
+                    <div class="kitchen-description">
+                        <h2>About Our Kitchen Program</h2>
+                        <p>Providing food to poor children and people across the country with good quality and balanced meals prepared under hygienic conditions.</p>
+
+                        <h3>What Makes Us Different</h3>
+                        <div class="features-grid">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Quality food procurement</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Variety in meals</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Nutritious portions</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>No discrimination</span>
+                            </div>
+                        </div>
+
+                        <div class="kitchen-impact">
+                            <h3>Daily Operations</h3>
+                            <div class="operation-stats">
+                                <div class="operation-stat">
+                                    <span class="number">1,500</span>
+                                    <span class="label">Daily Meals</span>
+                                </div>
+                                <div class="operation-stat">
+                                    <span class="number">7</span>
+                                    <span class="label">Days a Week</span>
+                                </div>
+                                <div class="operation-stat">
+                                    <span class="number">365</span>
+                                    <span class="label">Days a Year</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="support-cta">
+                    <h2>Support Our Kitchen</h2>
+                    <p>Help us expand our reach and feed more people in need</p>
+                    <button class="btn btn--primary btn--lg" data-section="donate">
+                        <i class="fas fa-heart"></i>
+                        Donate for Kitchen
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- School Section -->
+        <section id="school" class="section section--school">
+            <div class="container">
+                <h1>Winger Global School</h1>
+                <p class="section__subtitle">Educating minds, building futures</p>
+
+                <div class="school-details">
+                    <div class="school-description">
+                        <h2>About Our School Program</h2>
+                        <p>Providing holistic development of children across the country with quality education free of cost for poor children.</p>
+
+                        <h3>Our Educational Approach</h3>
+                        <div class="education-features">
+                            <div class="edu-feature">
+                                <i class="fas fa-book"></i>
+                                <h4>Quality Curriculum</h4>
+                                <p>Comprehensive education that meets national standards while addressing local needs</p>
+                            </div>
+                            <div class="edu-feature">
+                                <i class="fas fa-users"></i>
+                                <h4>Holistic Development</h4>
+                                <p>Focus on academic, social, emotional, and physical development</p>
+                            </div>
+                            <div class="edu-feature">
+                                <i class="fas fa-hand-holding-heart"></i>
+                                <h4>Free Education</h4>
+                                <p>No fees, no hidden costs - education accessible to all children in need</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="support-cta">
+                    <h2>Support Education</h2>
+                    <p>Help us provide quality education to more children</p>
+                    <button class="btn btn--primary btn--lg" data-section="donate">
+                        <i class="fas fa-heart"></i>
+                        Donate for Education
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donate Section -->
+        <section id="donate" class="section section--donate">
+            <div class="container">
+                <div class="donate-hero">
+                    <h1>DONATE</h1>
+                </div>
+
+                <div class="donate-content">
+                    <div class="donate-text">
+                        <div class="donate-paragraph">
+                            <p>Our NGO, Winger Global Foundation aims at providing holistic development of children across the country. Our primary focus are the children of the nation, who will be the future of our nation one day.</p>
+                            <p>We aim at developing our kids to fullest, so that no child remains illiterate. Breaking the shackles of ignorance and poverty, can be achieved through the means of education only.</p>
+                        </div>
+                        <div class="donate-paragraph">
+                            <p>Nothing is more blissful than giving food to a hungry. Feeding him with all the good quality diet is necessary so that a proper growth of their bodies is ensured.</p>
+                            <p>Your contribution can help feed a hungry child or provide education to someone in need. Every donation matters, and together we can create lasting change.</p>
+                        </div>
+                    </div>
+                    <div class="donate-action">
+                        <a href="https://pages.razorpay.com/pl_Hy2kG1Yf5RNuZN/view" target="_blank" class="donate-btn">
+                            DONATE NOW
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Get Involved Section -->
+        <section id="get-involved" class="section section--get-involved">
+            <div class="container">
+                <h1>Get Involved</h1>
+                <div class="involvement-intro">
+                    <p>There are many ways you can join our mission to fight hunger and provide education. Whether you have time, skills, or resources to share, we welcome your support.</p>
+                </div>
+
+                <div class="involvement-options">
+                    <!-- Options will be populated by JavaScript -->
+                </div>
+
+                <form class="volunteer-form">
+                    <h3>Volunteer Application</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Full Name *</label>
+                            <input type="text" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email *</label>
+                            <input type="email" name="email" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Phone *</label>
+                            <input type="tel" name="phone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Availability</label>
+                            <select name="availability" class="form-control">
+                                <option value="weekends">Weekends</option>
+                                <option value="weekdays">Weekdays</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Why do you want to volunteer?</label>
+                        <textarea name="motivation" class="form-control" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">Submit Application</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section id="news" class="section section--news">
+            <div class="container">
+                <h1>News & Stories</h1>
+                <div class="news-intro">
+                    <p>Stay updated with our latest activities, success stories, and impact in communities across India.</p>
+                </div>
+
+                <div class="news-filter">
+                    <button class="filter-btn active" data-filter="all">All News</button>
+                    <button class="filter-btn" data-filter="kitchen">Kitchen Program</button>
+                    <button class="filter-btn" data-filter="education">Education</button>
+                    <button class="filter-btn" data-filter="events">Events</button>
+                </div>
+
+                <div class="news-grid">
+                    <!-- News items will be populated by JavaScript -->
+                </div>
+
+                <div class="newsletter-signup">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter to receive the latest updates about our work and impact.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section section--gallery">
+            <div class="container">
+                <h1>Gallery</h1>
+                <div class="gallery-intro">
+                    <p>See our work in action through photos from our kitchen programs, schools, and community events.</p>
+                </div>
+
+                <div class="gallery-filter">
+                    <button class="filter-btn active" data-filter="all">All Photos</button>
+                    <button class="filter-btn" data-filter="kitchen">Kitchen</button>
+                    <button class="filter-btn" data-filter="school">School</button>
+                    <button class="filter-btn" data-filter="events">Events</button>
+                </div>
+
+                <div class="gallery-grid">
+                    <!-- Sample gallery items -->
+                    <div class="gallery-item" data-category="kitchen">
+                        <div class="gallery-item__image">
+                            <img src="https://via.placeholder.com/400x300/ff6b35/ffffff?text=Kitchen+Program" alt="Kitchen Program">
+                        </div>
+                        <div class="gallery-item__overlay"></div>
+                        <div class="gallery-item__content">
+                            <h3 class="gallery-item__title">Daily Meal Service</h3>
+                            <p class="gallery-item__description">Serving nutritious meals to children in Mumbai</p>
+                        </div>
+                        <div class="gallery-item__category">Kitchen</div>
+                    </div>
+                    <div class="gallery-item" data-category="school">
+                        <div class="gallery-item__image">
+                            <img src="https://via.placeholder.com/400x300/2ecc71/ffffff?text=School+Program" alt="School Program">
+                        </div>
+                        <div class="gallery-item__overlay"></div>
+                        <div class="gallery-item__content">
+                            <h3 class="gallery-item__title">Classroom Learning</h3>
+                            <p class="gallery-item__description">Quality education for underprivileged children</p>
+                        </div>
+                        <div class="gallery-item__category">School</div>
+                    </div>
+                    <div class="gallery-item" data-category="events">
+                        <div class="gallery-item__image">
+                            <img src="https://via.placeholder.com/400x300/3498db/ffffff?text=Community+Event" alt="Community Event">
+                        </div>
+                        <div class="gallery-item__overlay"></div>
+                        <div class="gallery-item__content">
+                            <h3 class="gallery-item__title">Community Gathering</h3>
+                            <p class="gallery-item__description">Volunteers and community members working together</p>
+                        </div>
+                        <div class="gallery-item__category">Events</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section section--contact">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <div class="contact-intro">
+                    <p>Get in touch with us to learn more about our work, volunteer opportunities, or partnership possibilities.</p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <div class="contact-details">
+                            <div class="contact-detail">
+                                <div class="contact-detail__icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-detail__content">
+                                    <h4>Address</h4>
+                                    <p>123 Foundation Street<br>Mumbai, Maharashtra 400001<br>India</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail">
+                                <div class="contact-detail__icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-detail__content">
+                                    <h4>Phone</h4>
+                                    <p><a href="tel:+911234567890">+91 12345 67890</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-detail">
+                                <div class="contact-detail__icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-detail__content">
+                                    <h4>Email</h4>
+                                    <p><a href="mailto:info@wingerfoundation.org">info@wingerfoundation.org</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="office-hours">
+                            <h4>Office Hours</h4>
+                            <div class="hours-list">
+                                <div class="hours-item">
+                                    <span class="hours-day">Monday - Friday</span>
+                                    <span class="hours-time">9:00 AM - 6:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="hours-day">Saturday</span>
+                                    <span class="hours-time">10:00 AM - 4:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="hours-day">Sunday</span>
+                                    <span class="hours-time">Closed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <h3>Send us a Message</h3>
+                        <form class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">Name *</label>
+                                    <input type="text" name="name" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Email *</label>
+                                    <input type="email" name="email" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Subject</label>
+                                <input type="text" name="subject" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Message *</label>
+                                <textarea name="message" class="form-control" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    </main>
+
+    <!-- Enhanced Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <!-- Brand Section -->
+                <div class="footer__section footer__brand">
+                    <h3>Winger Foundation</h3>
+                    <p>Striving to remove hunger and provide quality education to build a better tomorrow for all. Together, we can create lasting change in communities across India.</p>
+                    
+                    <div class="footer__social">
+                        <a href="#" class="social-icon social-icon--facebook" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon social-icon--twitter" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon social-icon--instagram" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon social-icon--linkedin" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-icon social-icon--youtube" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+
+                    <div class="footer__newsletter">
+                        <h5>Stay Updated</h5>
+                        <p>Subscribe to our newsletter for the latest updates and stories.</p>
+                        <form class="footer__newsletter-form">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer__section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home" data-section="home"><i class="fas fa-home"></i>Home</a></li>
+                        <li><a href="#about" data-section="about"><i class="fas fa-info-circle"></i>About Us</a></li>
+                        <li><a href="#projects" data-section="projects"><i class="fas fa-project-diagram"></i>Our Projects</a></li>
+                        <li><a href="#news" data-section="news"><i class="fas fa-newspaper"></i>News & Stories</a></li>
+                        <li><a href="#gallery" data-section="gallery"><i class="fas fa-images"></i>Gallery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Programs -->
+                <div class="footer__section">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="#kitchen" data-section="kitchen"><i class="fas fa-utensils"></i>Global Kitchen</a></li>
+                        <li><a href="#school" data-section="school"><i class="fas fa-graduation-cap"></i>Global School</a></li>
+                        <li><a href="#get-involved" data-section="get-involved"><i class="fas fa-hands-helping"></i>Get Involved</a></li>
+                        <li><a href="#donate" data-section="donate"><i class="fas fa-heart"></i>Donate Now</a></li>
+                        <li><a href="#contact" data-section="contact"><i class="fas fa-envelope"></i>Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer__section">
+                    <h4>Contact Info</h4>
+                    <div class="footer__contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>C-44, Sector-10, Noida<br>G.B Nagar, 201301<br>India</p>
+                    </div>
+                    <div class="footer__contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p><a href="tel:+911234567890">+91 12345 67890</a></p>
+                    </div>
+                    <div class="footer__contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p><a href="mailto:info@wingerfoundation.org">info@wingerfoundation.org</a></p>
+                    </div>
+                    <div class="footer__contact-item">
+                        <i class="fas fa-globe"></i>
+                        <p><a href="https://wingerfoundation.org" target="_blank">wingerfoundation.org</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back to Top Button -->
+            <button class="footer__back-to-top" aria-label="Back to top">
+                <i class="fas fa-chevron-up"></i>
+            </button>
+
+            <!-- Footer Bottom -->
+            <div class="footer__bottom">
+                <p>&copy; 2025 Winger Foundation. All rights reserved. | Made with ❤️ for humanity</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

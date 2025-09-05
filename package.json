@@ -1,0 +1,25 @@
+{
+  "name": "winger-foundation-website",
+  "version": "2.0.0",
+  "description": "Modular website for Winger Foundation - Fighting hunger and providing education",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 server.py",
+    "dev": "python3 server.py",
+    "serve": "npx http-server -p 8000 -c-1 --cors",
+    "test": "npx http-server -p 8000 -c-1 --cors -o test-modular.html"
+  },
+  "keywords": [
+    "charity",
+    "ngo",
+    "hunger-relief",
+    "education",
+    "modular",
+    "responsive"
+  ],
+  "author": "Winger Foundation",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
