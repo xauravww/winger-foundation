@@ -18,8 +18,13 @@
 }
 
 @keyframes newsPattern {
-  0% { transform: translateX(0) translateY(0); }
-  100% { transform: translateX(40px) translateY(40px); }
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+
+  100% {
+    transform: translateX(40px) translateY(40px);
+  }
 }
 
 .news-intro {
@@ -59,8 +64,15 @@
 }
 
 @keyframes titleUnderline {
-  0% { width: 100px; opacity: 0.8; }
-  100% { width: 140px; opacity: 1; }
+  0% {
+    width: 100px;
+    opacity: 0.8;
+  }
+
+  100% {
+    width: 140px;
+    opacity: 1;
+  }
 }
 
 .news-intro p {
@@ -149,6 +161,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -160,6 +173,7 @@
     opacity: 0;
     transform: scale(0.9);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -253,12 +267,10 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    transparent 60%,
-    rgba(0, 0, 0, 0.3) 100%
-  );
+  background: linear-gradient(to bottom,
+      transparent 0%,
+      transparent 60%,
+      rgba(0, 0, 0, 0.3) 100%);
   opacity: 0;
   transition: opacity var(--transition-normal);
 }
@@ -659,8 +671,13 @@
 }
 
 @keyframes newsletterPattern {
-  0% { transform: translateX(0) translateY(0); }
-  100% { transform: translateX(60px) translateY(60px); }
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+
+  100% {
+    transform: translateX(60px) translateY(60px);
+  }
 }
 
 .newsletter-signup h2 {
@@ -748,50 +765,50 @@
   .section--news {
     padding: 80px 0;
   }
-  
+
   .news-intro h1 {
     font-size: 2.5rem;
   }
-  
+
   .news-intro p {
     font-size: 1.1rem;
   }
-  
+
   .news-grid {
     grid-template-columns: 1fr;
     gap: 30px;
     margin-bottom: 60px;
   }
-  
+
   .news-card__content {
     padding: 24px;
   }
-  
+
   .news-card__title {
     font-size: 1.3rem;
   }
-  
+
   .newsletter-signup {
     padding: 60px 30px;
     margin-top: 80px;
   }
-  
+
   .newsletter-signup h2 {
     font-size: 2rem;
   }
-  
+
   .newsletter-input-group {
     flex-direction: column;
     gap: 16px;
   }
-  
+
   .news-filter {
     justify-content: flex-start;
     overflow-x: auto;
     padding-bottom: 8px;
     gap: 12px;
   }
-  
+
   .filter-btn {
     white-space: nowrap;
     padding: 12px 24px;
@@ -804,15 +821,15 @@
     grid-template-columns: 1fr;
     gap: 24px;
   }
-  
+
   .news-card__content {
     padding: 20px;
   }
-  
+
   .newsletter-signup {
     padding: 40px 20px;
   }
-  
+
   .newsletter-signup h2 {
     font-size: 1.8rem;
   }
