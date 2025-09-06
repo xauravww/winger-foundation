@@ -14,11 +14,13 @@
     display: block;
   }
   
-  .section--home {
-    padding: 0;
-    min-height: 100vh;
-    margin-bottom: 0;
-  }
+.section--home {
+  padding: 0;
+  min-height: 100vh;
+  margin-bottom: 0;
+  /* ADD THIS LINE to pull the section up and remove the gap */
+  margin-top: calc(-1 * var(--header-height));
+}
   
   /* Container */
   .container {

@@ -120,9 +120,13 @@
   gap: var(--space-2);
 }
 
+/* In css/sections/home.css */
+
 .floating-donate-btn:hover {
   background: var(--primary-orange-dark);
-  transform: scale(1.05);
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px rgba(249, 115, 22, 0.4);
+  color: var(--white); /* ADD THIS to ensure icon stays white */
 }
 
 /* Scroll to top button */

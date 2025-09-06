@@ -25,7 +25,7 @@
     padding: 0 var(--space-6);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     .nav {
         padding: 0 var(--space-4);
     }
@@ -210,27 +210,13 @@
 
 
 /* --- NEW: Polished Mobile Navigation --- */
-@media (max-width: 1024px) {
-
+@media (max-width: 1700px) {
     /* Prevent body scroll when menu is open */
     body.menu-open {
         overflow: hidden;
         position: fixed;
         width: 100%;
     }
-
-    /* Overlay for when the menu is open
-    body.menu-open::before {
-      content: '';
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.7);
-      z-index: 10000;
-      transition: opacity var(--transition-normal);
-    } */
 
     /* Menu container - slides in from the right */
     .nav__menu {
