@@ -12,11 +12,11 @@
 .donate-hero h1 {
   font-size: var(--font-size-6xl);
   font-weight: 800;
-  color: var(--gray-800);
-  background: linear-gradient(135deg, var(--primary-orange), var(--secondary-green));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--gray-900);
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  background-clip: unset;
   margin: 0;
   position: relative;
   display: inline-block;
@@ -82,7 +82,7 @@
 /* Re-using the button style from buttons.css but enhancing it here */
 .donate-btn {
   display: inline-block;
-  background: linear-gradient(135deg, #ff1744, #ff6b35);
+  background: linear-gradient(135deg, var(--accent-red), var(--primary-orange));
   color: var(--white);
   padding: var(--space-5) var(--space-10);
   border-radius: var(--radius-full);

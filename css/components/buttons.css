@@ -77,7 +77,7 @@
 /* Special donate button */
 .donate-btn {
   display: inline-block;
-  background: #ff1744;
+  background: var(--accent-red);
   color: var(--white);
   padding: var(--space-6) var(--space-12);
   border-radius: var(--radius-full);
@@ -93,7 +93,7 @@
 }
 
 .donate-btn:hover {
-  background: #d50000;
+  background: var(--accent-red-dark);
   color: var(--white);
   transform: translateY(-3px);
   box-shadow: var(--shadow-xl);

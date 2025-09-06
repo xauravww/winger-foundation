@@ -1,3 +1,6 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Montserrat:wght@400;500;600;700&display=swap');
+
 /* Header Layout */
 .header {
     position: fixed;
@@ -43,10 +46,17 @@
 }
 
 .nav__logo {
+    font-family: 'Oswald', sans-serif;
     font-size: var(--font-size-2xl);
     font-weight: 700;
-    color: var(--primary-orange);
+    background: linear-gradient(135deg, #FFD700, #FFA500, #FF8C00, #FFD700);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: metallic-shine 3s ease-in-out infinite;
     margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav__menu {
@@ -386,5 +396,18 @@
 
     .dropdown.active>.nav__link::after {
         transform: rotate(180deg);
+    }
+}
+
+/* Metallic Shine Animation */
+@keyframes metallic-shine {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
     }
 }

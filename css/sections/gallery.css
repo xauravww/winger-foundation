@@ -1,16 +1,9 @@
-/* Gallery Section Styles - V3 (Fancy Masonry Layout) */
+/* Gallery Section */
 .section--gallery {
   background: var(--gray-50);
   padding: var(--space-20) 0;
-  overflow-x: hidden; /* Prevent horizontal scroll on animations */
 }
 
-.gallery-intro {
-  text-align: center;
-  margin-bottom: var(--space-16);
-}
-
-/* Polished Filter Buttons */
 .gallery-filters {
   display: flex;
   justify-content: center;
@@ -19,113 +12,84 @@
   flex-wrap: wrap;
 }
 
-.gallery-filters .filter-btn {
-  padding: var(--space-3) var(--space-6);
-  border: 2px solid var(--gray-200);
-  border-radius: var(--radius-full);
-  background: var(--white);
-  color: var(--gray-700);
-  cursor: pointer;
-  transition: all var(--transition-normal);
-  font-weight: 600;
-  box-shadow: var(--shadow-sm);
-}
-
-.gallery-filters .filter-btn.active,
-.gallery-filters .filter-btn:hover {
-  border-color: var(--primary-orange);
-  background: var(--primary-orange);
-  color: var(--white);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
-}
-
-/* --- NEW: Fancy Masonry Gallery Grid --- */
 .gallery-grid {
-  width: 100%;
-  columns: 3; /* Creates the masonry effect */
-  column-gap: var(--space-6);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-8);
+  align-items: stretch;
 }
 
 .gallery-item {
-  position: relative;
-  margin-bottom: var(--space-6);
-  break-inside: avoid; /* Prevents items from breaking across columns */
-  border-radius: var(--radius-xl);
-  overflow: hidden;
+  background: var(--white);
+  border-radius: var(--radius-2xl);
   box-shadow: var(--shadow-lg);
-  transition: all var(--transition-slow);
-  cursor: pointer;
+  border: 1px solid var(--gray-200);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-normal);
 }
 
 .gallery-item:hover {
-  transform: translateY(-8px) rotate(1.5deg) scale(1.02);
+  transform: translateY(-8px);
   box-shadow: var(--shadow-xl);
-  z-index: 10;
+  border-color: var(--primary-orange);
 }
 
-.gallery-item img {
+.gallery-placeholder {
+  position: relative;
   width: 100%;
-  height: auto; /* Allows for variable image heights */
-  display: block;
-  transition: transform var(--transition-slow);
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
 }
 
-.gallery-item:hover img {
-  transform: scale(1.1);
+.gallery-placeholder i {
+  font-size: var(--font-size-5xl);
+  color: var(--primary-orange);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-/* --- NEW: Enhanced Overlay Effect --- */
 .gallery-overlay {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 70%);
+  padding: var(--space-4);
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.7));
+  color: var(--white);
   opacity: 0;
-  transition: opacity var(--transition-normal);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: var(--space-6);
+  transition: opacity var(--transition-fast);
 }
 
 .gallery-item:hover .gallery-overlay {
   opacity: 1;
 }
 
-.gallery-item .gallery-overlay h3,
-.gallery-item .gallery-overlay p {
-    color: var(--white);
-    transform: translateY(20px);
-    opacity: 0;
-    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+.gallery-overlay h4 {
+  margin: 0;
+  font-weight: 700;
+  text-align: center;
 }
 
-.gallery-item .gallery-overlay p {
-    font-size: var(--font-size-sm);
-    transition-delay: 0.1s;
+.gallery-overlay p {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  line-height: 1.4;
+  text-align: center;
 }
 
-.gallery-item:hover .gallery-overlay h3,
-.gallery-item:hover .gallery-overlay p {
-    transform: translateY(0);
-    opacity: 1;
+/* Gallery CTA */
+.gallery-cta {
+  text-align: center;
+  margin-top: var(--space-20);
 }
 
-/* Responsive adjustments for Masonry */
-@media (max-width: 1024px) {
-  .gallery-grid {
-    columns: 2;
-    gap: var(--space-6);
-  }
+.gallery-cta h2,
+.gallery-cta p {
+  margin: 0 auto;
+  max-width: 700px;
+  text-align: center;
 }
-
-@media (max-width: 768px) {
-  .gallery-grid {
-    columns: 1;
-  }
-}
-

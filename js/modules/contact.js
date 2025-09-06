@@ -65,26 +65,47 @@ export class ContactManager {
     handleContactSubmission(form) {
         const formData = new FormData(form);
         const data = Object.fromEntries(formData);
-        
+
         // Validate required fields
         if (!data.name || !data.email || !data.message) {
             this.notification.show('Please fill in all required fields.', 'error');
             return;
         }
-        
+
         // Validate email
         if (!ValidationUtils.isValidEmail(data.email)) {
             this.notification.show('Please enter a valid email address.', 'error');
             return;
         }
-        
-        // Simulate form submission
+
+        // Send email using SMTP.js
         this.notification.show('Sending your message...', 'info');
-        
-        setTimeout(() => {
-            this.notification.show('Thank you for your message! We will get back to you within 24 hours.', 'success');
-            form.reset();
-        }, 1500);
+
+        Email.send({
+            Host: "smtp.yourmailserver.com",
+            Username: "your@email.com",
+            Password: "your_smtp_password",
+            To: "receiver@example.com",
+            From: data.email,
+            Subject: data.subject || "Contact Form Message",
+            Body: `
+                <h3>New message from contact form</h3>
+                <p><strong>Name:</strong> ${data.name}</p>
+                <p><strong>Email:</strong> ${data.email}</p>
+                <p><strong>Subject:</strong> ${data.subject || "N/A"}</p>
+                <p><strong>Message:</strong><br/>${data.message.replace(/\n/g, "<br/>")}</p>
+            `
+        }).then(
+            message => {
+                if (message === 'OK') {
+                    this.notification.show('Thank you for your message! We will get back to you within 24 hours.', 'success');
+                    form.reset();
+                } else {
+                    this.notification.show('Failed to send message. Please try again later.', 'error');
+                    console.error('Email send error:', message);
+                }
+            }
+        );
     }
 
     // Public methods

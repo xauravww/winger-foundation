@@ -89,7 +89,7 @@
   }
   
   .hero__badge i {
-    color: #ff6b9d;
+    color: var(--accent-pink);
   }
   
   .hero__text h1 {

@@ -197,7 +197,7 @@
 
 .timeline-item:not(.active) {
   background: rgba(231, 76, 60, 0.1);
-  border-left-color: #e74c3c;
+  border-left-color: var(--error);
 }
 
 .timeline-icon {
@@ -216,7 +216,7 @@
 }
 
 .timeline-item:not(.active) .timeline-icon {
-  background: #e74c3c;
+  background: var(--error);
   color: var(--white);
 }
 
@@ -258,8 +258,8 @@
 }
 
 .timeline-item:not(.active) .feature-tag.inactive {
-  color: #e74c3c;
-  border-color: #e74c3c;
+  color: var(--error);
+  border-color: var(--error);
 }
 
 /* Process Steps */

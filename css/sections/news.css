@@ -9,6 +9,11 @@
   margin-bottom: var(--space-16);
 }
 
+.news-intro h1,
+.news-intro p {
+  text-align: center;
+}
+
 .news-filter {
   display: flex;
   justify-content: center;

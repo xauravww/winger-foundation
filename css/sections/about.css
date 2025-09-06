@@ -75,6 +75,15 @@
     overflow: hidden;
 }
 
+.impact-section .section__title,
+.impact-section .section__subtitle {
+    text-align: center;
+}
+
+.about__intro p.lead {
+    text-align: center;
+}
+
 .impact-section::before {
     content: '';
     position: absolute;
@@ -89,11 +98,6 @@
 .impact-section .container {
     position: relative;
     z-index: 2;
-}
-
-.impact-section h2 {
-    color: var(--white);
-    margin-bottom: var(--space-8);
 }
 
 .impact-stats {

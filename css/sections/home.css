@@ -70,7 +70,7 @@
     margin-bottom: var(--space-16);
 }
 
-/* Impact Section */
+Impact Section
 .impact-section {
     background: linear-gradient(135deg, var(--primary-orange-light) 0%, var(--secondary-green-light) 100%);
     padding: var(--space-20) 0;
@@ -85,7 +85,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='m0 40l40-40h-40z'/%3E%3Cpath d='m0 40l40-40h-40z'/%3E%3C/g%3E%3C/svg%3E");
+    background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='m0 40l40-40h-40z'/%3E%3Cpath d='m0 40l40-40h-40z'/%3E%3C/g%3E%3C/svg%3E");
     z-index: 1;
 }
 
@@ -95,13 +95,15 @@
 }
 
 .impact-section .section__title {
-    color: var(--white);
+    color: var(--gray-900);
     margin-bottom: var(--space-4);
+    font-weight: 700;
 }
 
 .impact-section .section__subtitle {
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--gray-800);
     margin-bottom: var(--space-16);
+    font-weight: 600;
 }
 
 /* CTA Section */
@@ -166,7 +168,7 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
     font-size: var(--font-size-sm);
     font-weight: 500;
-    color: var(--white);
+    color: var(--gray-900);
 }
 
 .hero__feature i {
