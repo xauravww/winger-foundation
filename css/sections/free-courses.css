@@ -71,26 +71,28 @@
   flex-wrap: wrap;
 }
 
-.stat {
+.section--free-courses .stat {
   text-align: center;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.85); /* Further increased opacity for stronger contrast */
   padding: var(--space-6);
   border-radius: var(--radius-xl);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* Removed backdrop-filter for better text clarity */
+  border: 1px solid rgba(255, 255, 255, 0.6); /* Stronger border */
   min-width: 120px;
 }
 
-.stat .number {
+.section--free-courses .stat .number {
   display: block;
   font-size: var(--font-size-4xl);
   font-weight: 800;
   margin-bottom: var(--space-2);
+  color: var(--gray-900);
 }
 
-.stat .label {
+.section--free-courses .stat .label {
   font-size: var(--font-size-sm);
   opacity: 0.9;
+  color: var(--gray-900);
 }
 
 /* Course Overview */
@@ -103,10 +105,20 @@
 .overview-card {
   background: var(--white);
   border-radius: var(--radius-2xl);
-  padding: var(--space-12);
+  padding: var(--space-16); /* Increased padding for better spacing */
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-  border: 1px solid var(--gray-100);
+  border: 1px solid var(--gray-300); /* Darker border for better visibility */
   transition: all var(--transition-normal);
+}
+
+.detail-card {
+  background: var(--white);
+  padding: var(--space-8);
+  border-radius: var(--radius-xl);
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+  transition: all var(--transition-normal);
+  border: 2px solid var(--gray-300); /* Darker border for better visibility */
 }
 
 .overview-card:hover {
@@ -192,7 +204,7 @@
 /* Training Details */
 .training-details {
   background: var(--gray-50);
-  padding: var(--space-20) 0;
+  padding: var(--space-20) var(--space-12);
 }
 
 .details-header {

@@ -70,7 +70,7 @@
     margin-bottom: var(--space-16);
 }
 
-Impact Section
+/* Impact Section */
 .impact-section {
     background: linear-gradient(135deg, var(--primary-orange-light) 0%, var(--secondary-green-light) 100%);
     padding: var(--space-20) 0;
