@@ -51,7 +51,7 @@ textarea.form-control {
 }
 
 .form-control:invalid:not(:focus):not(:placeholder-shown) {
-  border-color: var(--error);
+  border-color: none;
 }
 
 /* Form layouts */

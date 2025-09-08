@@ -9,6 +9,18 @@
   text-align: center;
 }
 
+.get-involved__container {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+html body main.main section#get-involved.section.section--get-involved.active div.container h1{
+  text-align: center;
+   font-size: var(--font-size-6xl);   font-weight: 800;   margin-bottom: var(--space-4);   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 /* Main Involvement Grid */
 .involvement-grid {
   display: grid;

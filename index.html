@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
 </head>
 
 <body>
@@ -2198,10 +2198,10 @@
                     <h2>Want to See More?</h2>
                     <p>Follow us on social media for daily updates and behind-the-scenes content</p>
                     <div class="social-icons">
-                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/WingerGlobal" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <!-- <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a> -->
+                        <a href="https://x.com/wingerglobal" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <!-- <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a> -->
                     </div>
                 </div>
             </div>
@@ -2219,7 +2219,7 @@
 
         <!-- Get Involved Section -->
         <section id="get-involved" class="section section--get-involved">
-            <div class="container">
+            <div class="container get-involved__container">
                 <h1>Get Involved</h1>
                 <p class="section__subtitle">Join us in making a difference - every contribution counts</p>
 
@@ -2515,24 +2515,24 @@
 
                     <div class="contact-form-container">
                         <h3>Send us a Message</h3>
-                        <form class="contact-form">
+                        <form class="contact-form" onsubmit="sendMail(event)">
                             <div class="form-row">
                                 <div class="form-group">
                                     <label class="form-label">Name *</label>
-                                    <input type="text" name="name" class="form-control" required>
+                                    <input type="text" id="name" name="name" class="form-control" required>
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label">Email *</label>
-                                    <input type="email" name="email" class="form-control" required>
+                                    <input type="email" id="email" name="email" class="form-control" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="form-label">Subject</label>
-                                <input type="text" name="subject" class="form-control">
+                                <input type="text" id="subject" name="subject" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label class="form-label">Message *</label>
-                                <textarea name="message" class="form-control" rows="5" required></textarea>
+                                <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
                             </div>
                             <button type="submit" class="btn btn--primary btn--full">Send Message</button>
                         </form>
@@ -2554,13 +2554,13 @@
                         Together, we can create lasting change in communities across India.</p>
 
                     <div class="footer__social">
-                        <a href="#" class="social-icon social-icon--facebook" aria-label="Facebook">
+                        <a href="https://www.facebook.com/WingerGlobal" target="_blank" class="social-icon social-icon--facebook" aria-label="Facebook">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#" class="social-icon social-icon--twitter" aria-label="Twitter">
+                        <a href="https://x.com/wingerglobal" target="_blank" class="social-icon social-icon--twitter" aria-label="Twitter">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#" class="social-icon social-icon--instagram" aria-label="Instagram">
+                        <!-- <a href="#" class="social-icon social-icon--instagram" aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
                         <a href="#" class="social-icon social-icon--linkedin" aria-label="LinkedIn">
@@ -2568,17 +2568,17 @@
                         </a>
                         <a href="#" class="social-icon social-icon--youtube" aria-label="YouTube">
                             <i class="fab fa-youtube"></i>
-                        </a>
+                        </a> -->
                     </div>
 
-                    <div class="footer__newsletter">
+  <div class="footer__newsletter">
                         <h5>Stay Updated</h5>
                         <p>Subscribe to our newsletter for the latest updates and stories.</p>
                         <form class="footer__newsletter-form">
-                            <input type="email" placeholder="Enter your email" required>
-                            <button type="submit">Subscribe</button>
+                            <input type="email" placeholder="Enter your email" required class="form-control" />
+                            <button type="submit" class="btn btn--primary">Subscribe</button>
                         </form>
-                    </div>
+                    </div> 
                 </div>
 
                 <!-- Quick Links -->
@@ -2650,6 +2650,23 @@
             </div>
         </div>
     </footer>
+    <script>
+        function sendMail(e) {
+            e.preventDefault();
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const subject = document.getElementById("subject").value || "Contact Form Message";
+            const message = document.getElementById("message").value;
+
+            const mailtoSubject = encodeURIComponent(subject);
+            const mailtoBody = encodeURIComponent(
+                "Name: " + name + "\nEmail: " + email + "\nSubject: " + subject + "\nMessage:\n" + message
+            );
+
+            window.location.href = `mailto:info@wingerfoundation.org?subject=${mailtoSubject}&body=${mailtoBody}`;
+        }
+    </script>
     <script type="module" src="js/app.js" defer></script>
 </body>
 

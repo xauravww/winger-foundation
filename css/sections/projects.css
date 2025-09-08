@@ -222,10 +222,10 @@
 }
 
 .hero-content-wrapper h1 {
-  font-size: var(--font-size-5xl);
-  font-weight: 700;
+ font-size: var(--font-size-6xl);
+  font-weight: 800;
   margin-bottom: var(--space-4);
-  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .hero-subtitle {
@@ -404,6 +404,12 @@
   gap: var(--space-4);
   flex-wrap: wrap;
 }
+
+html body main.main section#projects.section.section--projects.active div.container div.container div.section__header h1.section__title{
+   font-size: var(--font-size-6xl);   font-weight: 800;   margin-bottom: var(--space-4);   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
 
 /* Responsive Styles */
 @media (max-width: 992px) {

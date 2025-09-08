@@ -10,9 +10,47 @@ export class ContactManager {
 
     init() {
         this.initContactForm();
+        this.initNewsletterForm();
         this.initFAQ();
         this.initMap();
         console.log('✅ Contact module initialized');
+    }
+
+    initNewsletterForm() {
+        const newsletterForm = document.querySelector('.footer__newsletter-form');
+        if (!newsletterForm) return;
+
+        newsletterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            this.handleNewsletterSubmission(newsletterForm);
+        });
+    }
+
+    handleNewsletterSubmission(form) {
+        const emailInput = form.querySelector('input[type="email"]');
+        const email = emailInput ? emailInput.value.trim() : '';
+
+        if (!email) {
+            this.notification.show('Please enter your email address.', 'error');
+            return;
+        }
+
+        // Simple email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            this.notification.show('Please enter a valid email address.', 'error');
+            return;
+        }
+
+        const mailtoSubject = encodeURIComponent('Newsletter Subscription');
+        const mailtoBody = encodeURIComponent(`Please subscribe me to the newsletter.\nEmail: ${email}`);
+
+        const mailtoLink = `mailto:info@wingerfoundation.org?subject=${mailtoSubject}&body=${mailtoBody}`;
+
+        window.location.href = mailtoLink;
+
+        this.notification.show('Opening your mail client...', 'info');
+        form.reset();
     }
 
     initContactForm() {
@@ -63,49 +101,36 @@ export class ContactManager {
     }
 
     handleContactSubmission(form) {
-        const formData = new FormData(form);
-        const data = Object.fromEntries(formData);
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const subject = document.getElementById('subject').value.trim() || 'Contact Form Message';
+        const message = document.getElementById('message').value.trim();
 
         // Validate required fields
-        if (!data.name || !data.email || !data.message) {
+        if (!name || !email || !message) {
             this.notification.show('Please fill in all required fields.', 'error');
             return;
         }
 
         // Validate email
-        if (!ValidationUtils.isValidEmail(data.email)) {
+        if (!ValidationUtils.isValidEmail(email)) {
             this.notification.show('Please enter a valid email address.', 'error');
             return;
         }
 
-        // Send email using SMTP.js
-        this.notification.show('Sending your message...', 'info');
-
-        Email.send({
-            Host: "smtp.yourmailserver.com",
-            Username: "your@email.com",
-            Password: "your_smtp_password",
-            To: "receiver@example.com",
-            From: data.email,
-            Subject: data.subject || "Contact Form Message",
-            Body: `
-                <h3>New message from contact form</h3>
-                <p><strong>Name:</strong> ${data.name}</p>
-                <p><strong>Email:</strong> ${data.email}</p>
-                <p><strong>Subject:</strong> ${data.subject || "N/A"}</p>
-                <p><strong>Message:</strong><br/>${data.message.replace(/\n/g, "<br/>")}</p>
-            `
-        }).then(
-            message => {
-                if (message === 'OK') {
-                    this.notification.show('Thank you for your message! We will get back to you within 24 hours.', 'success');
-                    form.reset();
-                } else {
-                    this.notification.show('Failed to send message. Please try again later.', 'error');
-                    console.error('Email send error:', message);
-                }
-            }
+        // Compose mailto link
+        const mailtoSubject = encodeURIComponent(subject);
+        const mailtoBody = encodeURIComponent(
+            `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage:\n${message}`
         );
+
+        const mailtoLink = `mailto:info@wingerfoundation.org?subject=${mailtoSubject}&body=${mailtoBody}`;
+
+        // Open mail client
+        window.location.href = mailtoLink;
+
+        this.notification.show('Opening your mail client...', 'info');
+        form.reset();
     }
 
     // Public methods

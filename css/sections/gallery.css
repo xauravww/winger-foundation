@@ -115,6 +115,14 @@
     opacity: 1;
 }
 
+html body main.main section#gallery.section.section--gallery.active div.container h1{
+  text-align: center;
+   font-size: var(--font-size-6xl);
+  font-weight: 800;
+  margin-bottom: var(--space-4);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 /* Responsive adjustments for Masonry */
 @media (max-width: 1024px) {
   .gallery-grid {
