@@ -9,9 +9,8 @@ class ImageManager {
 
             // Hero images from dedicated folder
             hero: {
-                hero1: 'assets/hero/hero1.png',
-                hero2: 'assets/hero/hero2.png',
-                hero3: 'assets/hero/hero3.png'
+                hero2: 'assets/hero/hero2.avif',
+                hero3: 'assets/hero/hero3.avif'
             },
 
             // About images from dedicated folder
