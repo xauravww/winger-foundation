@@ -22,7 +22,7 @@
 
 .form-control:focus {
   outline: none;
-  border-color: var(--primary-orange);
+  border-color: var(--primary-blue);
   box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
 }
 
@@ -83,7 +83,7 @@ textarea.form-control {
 .form-check input[type="radio"] {
   width: 18px;
   height: 18px;
-  accent-color: var(--primary-orange);
+  accent-color: var(--primary-blue);
 }
 
 /* Newsletter form */

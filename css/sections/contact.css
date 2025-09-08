@@ -11,7 +11,7 @@
 /* Main Content Grid */
 .contact-content {
   display: grid;
-  grid-template-columns: 1fr 1.2fr; /* Give form slightly more space */
+  grid-template-columns: 1fr 1fr; /* Equal width columns for better balance */
   gap: var(--space-12);
   align-items: start;
 }
@@ -23,6 +23,16 @@
   margin-bottom: var(--space-8);
   position: relative;
   padding-bottom: var(--space-1);
+  text-align: center;
+}
+
+.contact-info p, .contact-info a {
+  color: var(--gray-600);
+  margin: 0 auto var(--space-4);
+  line-height: 1.6;
+  max-width: 320px;
+  text-align: center;
+  display: block;
 }
 
 .contact-form input[type="text"] {
@@ -36,8 +46,8 @@
 
 .contact-form input[type="text"]:focus {
   background-color: var(--white);
-  border-color: var(--primary-orange);
-  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.15);
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px rgba(96, 197, 225, 0.15);
 }
 
 .contact-info h3::after {
@@ -47,30 +57,32 @@
   left: 0;
   width: 60px;
   height: 3px;
-  background: var(--primary-orange);
+  background: var(--primary-blue);
 }
 
 .contact-detail {
   display: flex;
-  align-items: flex-start;
+  align-items: center; /* Center align icons and text vertically */
   gap: var(--space-4);
   margin-bottom: var(--space-6);
   padding: var(--space-4);
   border-radius: var(--radius-xl);
   transition: all var(--transition-normal);
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
 }
 
 .contact-detail:hover {
   background-color: var(--white);
-  box-shadow: var(--shadow-lg);
-  transform: translateX(5px);
+  box-shadow: var(--shadow-md);
+  transform: translateX(3px);
 }
 
 .contact-detail__icon {
   flex-shrink: 0;
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, var(--primary-orange), var(--primary-orange-light));
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-blue-light));
   color: var(--white);
   border-radius: 50%;
   display: flex;
@@ -99,7 +111,7 @@
 }
 
 .contact-detail__content a:hover {
-  color: var(--primary-orange-dark);
+  color: var(--primary-blue-dark);
 }
 
 /* Contact Form Styling */
@@ -132,19 +144,33 @@
   background-color: var(--gray-50);
   border: 2px solid var(--gray-200);
   padding: var(--space-4);
+  height: 40px;
+  font-size: var(--font-size-base);
+  transition: border-color 0.3s ease;
+}
+
+.contact-form textarea.form-control {
+  height: 120px;
+  resize: vertical;
 }
 
 .contact-form .form-control:focus {
   background-color: var(--white);
-  border-color: var(--primary-orange);
-  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.15);
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px rgba(96, 197, 225, 0.15);
 }
 
 .contact-form .btn--primary {
   padding: var(--space-4);
   font-size: var(--font-size-lg);
   font-weight: 600;
-  margin-top: var(--space-4);
+  margin-top: var(--space-6);
+  transition: background-color 0.3s ease;
+}
+
+.contact-form .btn--primary:hover {
+  background-color: var(--primary-blue-dark);
+  cursor: pointer;
 }
 
 /* Office Hours Styling */

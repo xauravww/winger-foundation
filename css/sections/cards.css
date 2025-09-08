@@ -54,7 +54,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--primary-orange), var(--secondary-green));
+  background: linear-gradient(90deg, var(--primary-blue), var(--secondary-green));
   transform: scaleX(0);
   transition: transform var(--transition-normal);
 }
@@ -64,7 +64,7 @@
 }
 
 .program-card:hover {
-  border-color: var(--primary-orange);
+  border-color: var(--primary-blue);
   transform: translateY(-8px);
   box-shadow: var(--shadow-xl);
   background: var(--gray-50);
@@ -73,7 +73,7 @@
 .program-card__icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, var(--primary-orange), var(--primary-orange-light));
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-blue-light));
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -125,18 +125,18 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--primary-orange), var(--secondary-green));
+  background: linear-gradient(90deg, var(--primary-blue), var(--secondary-green));
 }
 
 .impact-stat:hover {
   transform: translateY(-4px);
-  border-color: var(--primary-orange);
+  border-color: var(--primary-blue);
   box-shadow: var(--shadow-xl);
 }
 
 .impact-stat i {
   font-size: var(--font-size-4xl);
-  color: var(--primary-orange);
+  color: var(--primary-blue);
   margin-bottom: var(--space-4);
   background: var(--gray-50);
   width: 80px;
@@ -189,18 +189,18 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: var(--primary-orange);
+  background: var(--primary-blue);
 }
 
 .stat-card:hover {
   transform: translateY(-4px);
-  border-color: var(--primary-orange);
+  border-color: var(--primary-blue);
   box-shadow: var(--shadow-xl);
 }
 
 .stat-card h3 {
   font-size: var(--font-size-4xl);
-  color: var(--primary-orange);
+  color: var(--primary-blue);
   margin-bottom: var(--space-3);
   font-weight: 700;
 }

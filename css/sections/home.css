@@ -43,7 +43,7 @@
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background: linear-gradient(90deg, var(--primary-orange), var(--secondary-green));
+    background: linear-gradient(90deg, var(--primary-blue), var(--secondary-green));
     border-radius: 2px;
 }
 
@@ -72,7 +72,7 @@
 
 /* Impact Section */
 .impact-section {
-    background: linear-gradient(135deg, var(--primary-orange-light) 0%, var(--secondary-green-light) 100%);
+    background: linear-gradient(135deg, var(--primary-blue-light) 0%, var(--secondary-green-light) 100%);
     padding: var(--space-20) 0;
     position: relative;
     overflow: hidden;
@@ -168,11 +168,10 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
     font-size: var(--font-size-sm);
     font-weight: 500;
-    color: var(--gray-900);
 }
 
 .hero__feature i {
-    color: var(--primary-orange-light);
+    color: var(--primary-blue-light);
 }
 
 /* Floating Action Button */
@@ -187,7 +186,7 @@
     display: flex;
     align-items: center;
     gap: var(--space-2);
-    background: var(--primary-orange);
+    background: var(--primary-blue);
     color: var(--white);
     padding: var(--space-4) var(--space-6);
     border-radius: var(--radius-full);
@@ -199,7 +198,7 @@
 }
 
 .floating-donate-btn:hover {
-    background: var(--primary-orange-dark);
+    background: var(--primary-blue-dark);
     transform: translateY(-2px);
     box-shadow: 0 20px 40px rgba(249, 115, 22, 0.4);
 }

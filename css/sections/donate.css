@@ -30,7 +30,7 @@
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background: var(--primary-orange);
+    background: var(--primary-blue);
     border-radius: 2px;
 }
 
@@ -82,7 +82,7 @@
 /* Re-using the button style from buttons.css but enhancing it here */
 .donate-btn {
   display: inline-block;
-  background: linear-gradient(135deg, var(--accent-red), var(--primary-orange));
+  background: linear-gradient(135deg, var(--accent-red), var(--primary-blue));
   color: var(--white);
   padding: var(--space-5) var(--space-10);
   border-radius: var(--radius-full);
@@ -95,6 +95,10 @@
   border: none;
   cursor: pointer;
   text-transform: uppercase;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  position: relative;
+  z-index: 10;
 }
 
 .donate-btn:hover {

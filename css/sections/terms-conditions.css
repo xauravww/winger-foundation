@@ -66,7 +66,7 @@
 .intro-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, var(--primary-orange), var(--secondary-green));
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-green));
     border-radius: var(--radius-xl);
     display: flex;
     align-items: center;
@@ -108,7 +108,7 @@
 }
 
 .detail-item:hover {
-    background: var(--primary-orange);
+    background: var(--primary-blue);
     color: var(--white);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
@@ -117,7 +117,7 @@
 .detail-item i {
     width: 40px;
     height: 40px;
-    background: var(--primary-orange);
+    background: var(--primary-blue);
     color: var(--white);
     border-radius: var(--radius-full);
     display: flex;
@@ -130,7 +130,7 @@
 
 .detail-item:hover i {
     background: var(--white);
-    color: var(--primary-orange);
+    color: var(--primary-blue);
 }
 
 .detail-item h4 {
@@ -174,7 +174,7 @@
 }
 
 .section-header {
-    background: linear-gradient(135deg, var(--primary-orange), var(--secondary-green));
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-green));
     color: var(--white);
     padding: var(--space-8);
     display: flex;
@@ -242,7 +242,7 @@
 .term-number {
     width: 40px;
     height: 40px;
-    background: var(--primary-orange);
+    background: var(--primary-blue);
     color: var(--white);
     border-radius: var(--radius-full);
     display: flex;
@@ -286,7 +286,7 @@
     background: var(--white);
     box-shadow: var(--shadow-lg);
     transform: translateY(-4px);
-    border-color: var(--primary-orange);
+    border-color: var(--primary-blue);
 }
 
 .liability-icon {
@@ -366,12 +366,12 @@
 .ip-feature:hover {
     box-shadow: var(--shadow-md);
     transform: translateX(4px);
-    border-color: var(--primary-orange);
+    border-color: var(--primary-blue);
 }
 
 .ip-feature i {
     font-size: var(--font-size-xl);
-    color: var(--primary-orange);
+    color: var(--primary-blue);
     margin-bottom: var(--space-3);
 }
 
@@ -451,7 +451,7 @@
 }
 
 .contact-card {
-    background: linear-gradient(135deg, var(--primary-orange), var(--secondary-green));
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-green));
     color: var(--white);
     padding: var(--space-12);
     border-radius: var(--radius-2xl);

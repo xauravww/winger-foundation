@@ -42,13 +42,13 @@ p {
 }
 
 a {
-  color: var(--primary-orange);
+  color: var(--primary-blue);
   text-decoration: none;
   transition: color var(--transition-fast);
 }
 
 a:hover {
-  color: var(--primary-orange-dark);
+  color: var(--primary-blue-dark);
 }
 
 .lead {

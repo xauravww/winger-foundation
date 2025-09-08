@@ -22,6 +22,24 @@
   flex-wrap: wrap;
 }
 
+.filter-btn {
+  background: var(--white);
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3) var(--space-6);
+  font-weight: 600;
+  color: var(--gray-700);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  border-color: var(--primary-blue);
+  color: var(--primary-blue);
+  background: var(--gray-50);
+}
+
 .news-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -44,7 +62,7 @@
 .news-card:hover {
   transform: translateY(-8px);
   box-shadow: var(--shadow-xl);
-  border-color: var(--primary-orange);
+  border-color: var(--primary-blue);
 }
 
 .news-image {
@@ -62,6 +80,21 @@
 
 .news-card:hover .news-image img {
   transform: scale(1.05);
+}
+
+.news-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(135deg, var(--gray-100), var(--gray-200));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.news-placeholder i {
+  font-size: var(--font-size-4xl);
+  color: var(--gray-400);
 }
 
 .news-content {
@@ -94,9 +127,34 @@
   flex-grow: 1; /* Pushes the 'Read More' link down */
 }
 
+.news-card__category {
+  display: inline-block;
+  background: var(--primary-blue);
+  color: var(--white);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-lg);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--space-3);
+}
+
+.news-card__meta {
+  display: flex;
+  gap: var(--space-4);
+  margin-bottom: var(--space-3);
+  font-size: var(--font-size-sm);
+  color: var(--gray-500);
+}
+
+.news-card__author {
+  font-weight: 500;
+}
+
 .read-more {
   display: inline-block;
-  color: var(--primary-orange);
+  color: var(--primary-blue);
   font-weight: 600;
   text-decoration: none;
   margin-top: auto; /* Pushes this to the bottom of the card */
@@ -105,13 +163,13 @@
 }
 
 .read-more:hover {
-  color: var(--primary-orange-dark);
+  color: var(--primary-blue-dark);
 }
 
 /* Newsletter Signup */
 .newsletter-signup {
   margin-top: var(--space-20);
-  background: linear-gradient(135deg, var(--primary-orange), var(--secondary-green));
+  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-green));
   color: var(--white);
   padding: var(--space-12);
   border-radius: var(--radius-2xl);
@@ -140,6 +198,32 @@
 #news > div > h1{
   text-align: center;
    font-size: var(--font-size-6xl);   font-weight: 800;   margin-bottom: var(--space-4);   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Load More Button */
+.load-more-btn {
+  background: var(--primary-blue);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius-lg);
+  padding: var(--space-4) var(--space-8);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.load-more-btn:hover {
+  background: var(--primary-blue-dark);
+  transform: translateY(-2px);
+}
+
+.load-more-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
 }
 
 @media (max-width: 480px) {

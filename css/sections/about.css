@@ -48,13 +48,13 @@
 }
 
 .value-item:hover {
-  border-color: var(--primary-orange);
+  border-color: var(--primary-blue);
   box-shadow: var(--shadow-lg);
   transform: translateY(-5px);
 }
 
 .value-item h3 {
-  color: var(--primary-orange);
+  color: var(--primary-blue);
   margin-bottom: var(--space-4);
   font-size: var(--font-size-xl);
 }
@@ -83,7 +83,7 @@
     text-align: center;
     margin-top: var(--space-20);
     padding: var(--space-16) var(--space-8);
-    background: linear-gradient(135deg, var(--primary-orange-light) 0%, var(--secondary-green-light) 100%);
+    background: linear-gradient(135deg, var(--primary-blue-light) 0%, var(--secondary-green-light) 100%);
     border-radius: var(--radius-2xl);
     margin-bottom: var(--space-16);
     position: relative;
@@ -133,13 +133,13 @@
 
 .impact-stat:hover {
     transform: translateY(-4px);
-    border-color: var(--primary-orange);
+    border-color: var(--primary-blue);
     box-shadow: var(--shadow-xl);
 }
 
 .impact-stat i {
   font-size: var(--font-size-4xl);
-  color: var(--primary-orange);
+  color: var(--primary-blue);
   margin-bottom: var(--space-4);
 }
 

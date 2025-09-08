@@ -1,18 +1,18 @@
 /* CSS Custom Properties */
 :root {
   /* Primary Brand Colors */
-  --primary-orange: #d66e33;
-  --primary-orange-dark: #b85a27;
-  --primary-orange-light: #e7854d;
-  --primary-orange-lighter: #f4a97b;
+  --primary-blue: #0e3d59;
+  --primary-blue-dark: #0a2a3d;
+  --primary-blue-light: #60c5e1;
+  --primary-blue-lighter: #a3d7f0;
 
   /* Secondary Colors */
-  --secondary-blue: #2c97b4;
-  --secondary-blue-dark: #227a91;
-  --secondary-blue-light: #5ab5cc;
-  --accent-dark-blue: #103b51;
+  --secondary-blue: #60c5e1;
+  --secondary-blue-dark: #0e3d59;
+  --secondary-blue-light: #8dd3e8;
+  --accent-dark-blue: #0e3d59;
   --accent-light: #d7e9eb;
-  --accent-black: #020304;
+  --accent-black: #000000;
 
   /* Neutrals */
   --white: #eaf5f7; /* bluish-white matching the logo theme */
@@ -28,9 +28,9 @@
   --gray-900: #0f172a;
 
   /* Dark Theme Colors */
-  --dark-bg: #103b51;
-  --dark-bg-light: #2c97b4;
-  --dark-text: #d7e9eb;
+  --dark-bg: #0e3d59;
+  --dark-bg-light: #60c5e1;
+  --dark-text: #ffffff;
   --dark-text-muted: #94a3b8;
 
   /* Semantic Colors */
@@ -40,8 +40,8 @@
   --warning-light: #fbbf24;
   --error: #ef4444;
   --error-light: #f87171;
-  --info: #2c97b4;
-  --info-light: #5ab5cc;
+  --info: #60c5e1;
+  --info-light: #8dd3e8;
 
   /* Social Media Brand Colors */
   --facebook: #1877f2;

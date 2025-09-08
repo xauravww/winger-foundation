@@ -157,20 +157,20 @@ export class NewsManager {
         card.setAttribute('data-category', news.category);
         
         card.innerHTML = `
-            <div class="news-card__image">
+            <div class="news-image">
                 <div class="news-placeholder">
                     <i class="fas ${this.getCategoryIcon(news.category)}"></i>
                 </div>
             </div>
-            <div class="news-card__content">
+            <div class="news-content">
                 <span class="news-card__category">${this.getCategoryLabel(news.category)}</span>
                 <div class="news-card__meta">
-                    <span class="news-card__date">${this.formatDate(news.date)}</span>
+                    <span class="news-date">${this.formatDate(news.date)}</span>
                     <span class="news-card__author">${news.author}</span>
                 </div>
-                <h3 class="news-card__title">${news.title}</h3>
-                <p class="news-card__excerpt">${news.excerpt}</p>
-                <a href="#" class="news-card__read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                <h3 class="news-content h3">${news.title}</h3>
+                <p class="news-content p">${news.excerpt}</p>
+                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
             </div>
         `;
         

@@ -247,7 +247,7 @@ export class FooterManager {
     }
 
     // Method to create particle effects
-    createParticleEffect(x, y, color = 'var(--primary-orange)') {
+    createParticleEffect(x, y, color = 'var(--primary-blue)') {
         const particle = document.createElement('div');
         particle.style.cssText = `
             position: fixed;

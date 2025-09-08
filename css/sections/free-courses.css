@@ -6,7 +6,7 @@
 
 /* Hero Banner */
 .courses-hero {
-  background: linear-gradient(135deg, var(--primary-orange) 0%, var(--secondary-green) 100%);
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-green) 100%);
   padding: var(--space-20) 0;
   color: var(--white);
   position: relative;
@@ -129,13 +129,13 @@
 .card-icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, var(--primary-orange), var(--primary-orange-light));
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-blue-light));
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: var(--space-6);
-  box-shadow: 0 8px 25px rgba(249, 115, 22, 0.3);
+  box-shadow: 0 8px 25px rgba(96, 197, 225, 0.3);
 }
 
 .card-icon i {
@@ -172,14 +172,14 @@
 }
 
 .tab-btn.active {
-  background: var(--primary-orange);
-  border-color: var(--primary-orange);
+  background: var(--primary-blue);
+  border-color: var(--primary-blue);
   color: var(--white);
 }
 
 .tab-btn:hover:not(.active) {
-  border-color: var(--primary-orange);
-  color: var(--primary-orange);
+  border-color: var(--primary-blue);
+  color: var(--primary-blue);
 }
 
 .tab-content {
@@ -187,7 +187,7 @@
   padding: var(--space-6);
   background: var(--gray-50);
   border-radius: var(--radius-lg);
-  border-left: 4px solid var(--primary-orange);
+  border-left: 4px solid var(--primary-blue);
 }
 
 .tab-content.active {
@@ -242,13 +242,13 @@
 
 .detail-card:hover {
   transform: translateY(-5px);
-  border-color: var(--primary-orange);
+  border-color: var(--primary-blue);
   box-shadow: 0 10px 40px rgba(249, 115, 22, 0.2);
 }
 
 .detail-card i {
   font-size: var(--font-size-4xl);
-  color: var(--primary-orange);
+  color: var(--primary-blue);
   margin-bottom: var(--space-4);
 }
 
@@ -294,7 +294,7 @@
 }
 
 .info-content strong {
-  color: var(--primary-orange);
+  color: var(--primary-blue);
   font-weight: 700;
 }
 

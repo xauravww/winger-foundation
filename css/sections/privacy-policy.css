@@ -66,7 +66,7 @@
 .intro-icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, var(--primary-orange), var(--secondary-green));
+  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-green));
   border-radius: var(--radius-xl);
   display: flex;
   align-items: center;
@@ -112,7 +112,7 @@
 }
 
 .section-header {
-  background: linear-gradient(135deg, var(--primary-orange), var(--secondary-green));
+  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-green));
   color: var(--white);
   padding: var(--space-8);
   display: flex;
@@ -172,7 +172,7 @@
 }
 
 .info-item:hover {
-  background: var(--primary-orange);
+  background: var(--primary-blue);
   color: var(--white);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
@@ -181,7 +181,7 @@
 .info-item i {
   width: 40px;
   height: 40px;
-  background: var(--primary-orange);
+  background: var(--primary-blue);
   color: var(--white);
   border-radius: var(--radius-full);
   display: flex;
@@ -194,7 +194,7 @@
 
 .info-item:hover i {
   background: var(--white);
-  color: var(--primary-orange);
+  color: var(--primary-blue);
 }
 
 .info-item h4 {
@@ -246,7 +246,7 @@
 .usage-number {
   width: 40px;
   height: 40px;
-  background: var(--primary-orange);
+  background: var(--primary-blue);
   color: var(--white);
   border-radius: var(--radius-full);
   display: flex;
@@ -377,7 +377,7 @@
 }
 
 .contact-card {
-  background: linear-gradient(135deg, var(--primary-orange), var(--secondary-green));
+  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-green));
   color: var(--white);
   padding: var(--space-12);
   border-radius: var(--radius-2xl);

@@ -95,14 +95,21 @@
 }
 
 .project-showcase-card .btn {
-  background: var(--primary-orange);
+  background: var(--primary-blue);
   color: var(--white);
-  border: none;
+  border: 1px solid var(--white);
+  outline: none;
   align-self: flex-start;
 }
 
+.project-showcase-card .btn:focus,
 .project-showcase-card .btn:hover {
-  background: var(--primary-orange-dark);
+  outline: none;
+  border: 1px solid var(--white);
+}
+
+.project-showcase-card .btn:hover {
+  background: var(--primary-blue-dark);
 }
 
 .project-impact-stats {
@@ -143,7 +150,7 @@
 .impact-stat-card__number {
   font-size: var(--font-size-5xl);
   font-weight: 700;
-  color: var(--primary-orange);
+  color: var(--primary-blue);
   margin-bottom: var(--space-2);
 }
 
@@ -190,8 +197,12 @@
 
 .hero-image {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+ height: 100%;
+object-fit: cover;
+}
+
+.hero-overlay {
+  background: none;
 }
 
 .hero-overlay {
@@ -322,7 +333,7 @@
 }
 
 .highlight-item i {
-  color: var(--primary-orange);
+  color: var(--primary-blue);
 }
 
 /* Features Section for Detail Pages */
@@ -359,7 +370,7 @@
   height: 70px;
   margin: 0 auto var(--space-6);
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--primary-orange), var(--secondary-blue));
+  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
   color: var(--white);
   display: flex;
   align-items: center;
@@ -408,6 +419,8 @@
 html body main.main section#projects.section.section--projects.active div.container div.container div.section__header h1.section__title{
    font-size: var(--font-size-6xl);   font-weight: 800;   margin-bottom: var(--space-4);   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+
 
 
 

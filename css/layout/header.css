@@ -40,8 +40,8 @@
 }
 
 .nav__logo-img {
-    width: 40px;
-    height: 40px;
+    width: 190px;
+    height: 190px;
     object-fit: contain;
 }
 
@@ -124,8 +124,8 @@
 
 .nav__link:hover,
 .nav__link.active {
-    color: var(--primary-orange);
-    background: rgba(255, 107, 53, 0.1);
+    color: var(--primary-blue);
+    background: rgba(96, 197, 225, 0.1);
 }
 
 .nav__actions {
@@ -205,7 +205,7 @@
 
 .dropdown-content a:hover {
     background: var(--gray-50);
-    color: var(--primary-orange);
+    color: var(--primary-blue);
 }
 
 
@@ -283,8 +283,7 @@
 
     .nav__link:hover,
     .nav__link.active {
-        color: var(--primary-orange);
-        background: rgba(255, 107, 53, 0.1);
+        color: var(--primary-blue);
     }
 
     /* Hamburger Toggle Icon - Animates to an "X" */
@@ -371,8 +370,8 @@
     }
 
     .dropdown-content a:hover {
-        color: var(--primary-orange);
-        background: rgba(255, 107, 53, 0.05);
+        color: var(--primary-blue);
+        background: rgba(152, 203, 233, 0.05);
     }
 
     .dropdown>.nav__link::after {

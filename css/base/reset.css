@@ -53,7 +53,7 @@ input, textarea, select {
 
 /* Focus styles for accessibility */
 :focus {
-  outline: 2px solid var(--primary-orange);
+  outline: 2px solid var(--primary-blue);
   outline-offset: 2px;
 }
 

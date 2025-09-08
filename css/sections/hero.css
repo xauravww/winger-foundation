@@ -46,10 +46,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg,
-        rgba(255, 107, 53, 0.85) 0%,
-        rgba(46, 204, 113, 0.75) 50%,
-        rgba(52, 152, 219, 0.8) 100%);
+    background: rgba(0, 0, 0, 0.6); 
   }
   
   .hero__overlay::before {
@@ -92,24 +89,26 @@
     color: var(--accent-pink);
   }
   
-  .hero__text h1 {
-    font-size: var(--font-size-6xl);
-    font-weight: 700;
-    margin-bottom: var(--space-6);
-    color: var(--white);
-    line-height: 1.1;
-    animation: fadeInUp 0.5s ease-out 0.4s backwards;
-  }
+.hero__text h1 {
+  font-size: var(--font-size-6xl); 
+  font-weight: 700;
+  margin-bottom: var(--space-6);
+  color: var(--white);
+  line-height: 1.1;
+  animation: fadeInUp 0.5s ease-out 0.4s backwards; 
+}
   
-  .hero__subtitle {
-    font-size: var(--font-size-xl);
-    margin-bottom: var(--space-8);
-    opacity: 0.95;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    animation: fadeInUp 0.5s ease-out 0.6s backwards;
-  }
+.hero__subtitle {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-8);
+  opacity: 1; /* Make text fully opaque */
+  font-weight: 500; /* Add a bolder font weight */
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInUp 0.5s ease-out 0.6s backwards;
+  color: var(--white);
+}
   
   .hero__actions {
     display: flex;

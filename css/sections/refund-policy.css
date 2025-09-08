@@ -66,7 +66,7 @@
 .intro-icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, var(--primary-orange), var(--secondary-green));
+  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-green));
   border-radius: var(--radius-xl);
   display: flex;
   align-items: center;
@@ -111,7 +111,7 @@
 }
 
 .highlight-badge:hover {
-  background: var(--primary-orange);
+  background: var(--primary-blue);
   color: var(--white);
   transform: translateY(-2px);
 }
@@ -137,7 +137,7 @@
 }
 
 .section-header {
-  background: linear-gradient(135deg, var(--primary-orange), var(--secondary-green));
+  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-green));
   color: var(--white);
   padding: var(--space-8);
   display: flex;
@@ -288,7 +288,7 @@
 .step-number {
   width: 40px;
   height: 40px;
-  background: var(--primary-orange);
+  background: var(--primary-blue);
   color: var(--white);
   border-radius: var(--radius-full);
   display: flex;
@@ -333,13 +333,13 @@
   background: var(--white);
   box-shadow: var(--shadow-md);
   transform: translateY(-4px);
-  border-color: var(--primary-orange);
+  border-color: var(--primary-blue);
 }
 
 .info-icon {
   width: 60px;
   height: 60px;
-  background: var(--primary-orange);
+  background: var(--primary-blue);
   color: var(--white);
   border-radius: var(--radius-full);
   display: flex;
@@ -397,7 +397,7 @@
 }
 
 .faq-question:hover {
-  background: var(--primary-orange);
+  background: var(--primary-blue);
   color: var(--white);
 }
 
@@ -444,7 +444,7 @@
 }
 
 .contact-card {
-  background: linear-gradient(135deg, var(--primary-orange), var(--secondary-green));
+  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-green));
   color: var(--white);
   padding: var(--space-12);
   border-radius: var(--radius-2xl);

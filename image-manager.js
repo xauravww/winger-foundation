@@ -4,7 +4,7 @@ class ImageManager {
         this.images = {
             // Branding
             branding: {
-                logo: 'assets/wingerfoundationlogo.avif'
+                logo: 'assets/wingerlogofull.jpg'
             },
 
             // Hero images from dedicated folder
@@ -81,9 +81,8 @@ class ImageManager {
     // Update hero section with rotating background images
     updateHeroImages() {
         const heroImages = [
-            this.images.hero.hero1,
-            this.images.hero.hero2,
-            this.images.hero.hero3
+            this.images.hero.hero3,
+            this.images.hero.hero2
         ];
 
         let currentImageIndex = 0;
@@ -406,7 +405,6 @@ class ImageManager {
     // Method to preload critical images
     preloadImages() {
         const criticalImages = [
-            this.images.hero.hero1,
             this.images.hero.hero2,
             this.images.hero.hero3,
             this.images.branding.logo,

@@ -42,7 +42,7 @@ html body main.main section#get-involved.section.section--get-involved.active di
 .involvement-option:hover {
   transform: translateY(-10px);
   box-shadow: var(--shadow-xl);
-  border-color: var(--primary-orange);
+  border-color: var(--primary-blue);
 }
 
 .involvement-option img {
@@ -86,7 +86,7 @@ html body main.main section#get-involved.section.section--get-involved.active di
 }
 
 .campaign-showcase h2 {
-  color: var(--primary-orange);
+  color: var(--primary-blue);
   margin-bottom: var(--space-8);
 }
 
