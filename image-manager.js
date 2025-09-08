@@ -55,7 +55,7 @@ class ImageManager {
                 cleanliness: 'assets/Cleanliness Awareness Campaign.avif',
                 voter: 'assets/Voter Awareness Campaign.avif',
                 water: 'assets/Water Awareness Campaign.avif',
-                health: 'assets/Because it\'s the time for a healthy India.avif'
+                health: 'assets/health.avif'
             },
 
             // Get involved and volunteering

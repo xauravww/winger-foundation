@@ -66,18 +66,18 @@ export class NavigationManager {
     }
 
     updateURL(sectionId) {
-        history.pushState({ section: sectionId }, '', '#' + sectionId);
+        history.pushState({ section: sectionId }, '', '/' + sectionId);
     }
 
     getInitialSection() {
-        const hash = window.location.hash.substring(1);
-        return hash && document.getElementById(hash) ? hash : 'home';
+        const path = window.location.pathname.substring(1);
+        return path && document.getElementById(path) ? path : 'home';
     }
 
     handleInitialLoad() {
         const initialSection = this.getInitialSection();
         this.showSection(initialSection);
         this.updateActiveNavLink(initialSection);
-        history.replaceState({ section: initialSection }, '', '#' + initialSection);
+        history.replaceState({ section: initialSection }, '', '/' + initialSection);
     }
 }
