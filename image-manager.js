@@ -105,19 +105,10 @@ class ImageManager {
         const gallerySection = document.getElementById('gallery');
         if (!gallerySection) return;
 
-        const galleryHTML = `
+       const galleryHTML = `
             <div class="container">
                 <h1>Our Gallery</h1>
                 <p class="section__subtitle">Witness the impact of our work through these powerful moments</p>
-                
-                <div class="gallery-filters">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="education">Education</button>
-                    <button class="filter-btn" data-filter="programs">Programs</button>
-                    <button class="filter-btn" data-filter="community">Community</button>
-                    <button class="filter-btn" data-filter="campaigns">Campaigns</button>
-                    <button class="filter-btn" data-filter="women">Women Empowerment</button>
-                </div>
                 
                 <div class="gallery-grid">
                     ${this.generateGalleryItems()}

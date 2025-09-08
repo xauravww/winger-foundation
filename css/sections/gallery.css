@@ -33,8 +33,8 @@
 
 .gallery-filters .filter-btn.active,
 .gallery-filters .filter-btn:hover {
-  border-color: var(--primary-blue);
-  background: var(--primary-blue);
+  border-color: var(--primary-orange);
+  background: var(--primary-orange);
   color: var(--white);
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
@@ -123,6 +123,70 @@ html body main.main section#gallery.section.section--gallery.active div.containe
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* --- Image Modal Styles --- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.9); /* A dark, semi-transparent background */
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  backdrop-filter: blur(5px);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* This class will be added by JavaScript to show the modal */
+.modal-overlay.visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal-image {
+  max-width: 90vw; /* Max 90% of viewport width */
+  max-height: 85vh; /* Max 85% of viewport height */
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  border: 3px solid white;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.modal-overlay.visible .modal-image {
+    transform: scale(1);
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 44px;
+  height: 44px;
+  background: white;
+  color: #0e3d59; /* Your primary blue color */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  font-weight: 300;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.modal-close:hover {
+  transform: scale(1.1) rotate(90deg);
+}
+
+
 /* Responsive adjustments for Masonry */
 @media (max-width: 1024px) {
   .gallery-grid {
@@ -136,3 +200,5 @@ html body main.main section#gallery.section.section--gallery.active div.containe
     columns: 1;
   }
 }
+
+
