@@ -218,9 +218,6 @@ class ImageManager {
         if (container) {
             const imageDiv = document.createElement('div');
             imageDiv.className = 'section-image';
-            imageDiv.innerHTML = `
-                <img src="${imageSrc}" alt="${altText}" class="section-hero-image">
-            `;
             container.insertBefore(imageDiv, container.firstChild.nextSibling);
         }
     }

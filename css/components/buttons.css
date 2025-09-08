@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   padding: var(--space-3) var(--space-6);
-  border: none;
+  border: 1px solid var(--white);
   border-radius: var(--radius-lg);
   font-size: var(--font-size-base);
   font-weight: 500;
