@@ -79,8 +79,8 @@
   border-top: 1px solid var(--gray-200);
 }
 
-/* Re-using the button style from buttons.css but enhancing it here */
-.donate-btn {
+/* Removed donate-btn styles to unify with theme buttons */
+/* .donate-btn {
   display: inline-block;
   background: linear-gradient(135deg, var(--accent-red), var(--primary-blue));
   color: var(--white);
@@ -108,7 +108,7 @@
 
 .donate-btn:active {
   transform: translateY(-1px);
-}
+} */
 
 /* Mobile responsive for donate section */
 @media (max-width: 768px) {
