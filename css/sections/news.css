@@ -51,7 +51,7 @@
 .news-card {
   background: var(--white);
   border-radius: var(--radius-2xl);
-  box-shadow: var(--shadow-lg);
+  box-shadow: none;
   border: 1px solid var(--gray-200);
   overflow: hidden;
   display: flex;
@@ -61,7 +61,7 @@
 
 .news-card:hover {
   transform: translateY(-8px);
-  box-shadow: var(--shadow-xl);
+  box-shadow: none;
   border-color: var(--primary-blue);
 }
 

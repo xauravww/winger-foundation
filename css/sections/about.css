@@ -43,13 +43,13 @@
   padding: var(--space-8);
   border-radius: var(--radius-2xl);
   border: 1px solid var(--gray-200);
-  box-shadow: var(--shadow-md);
+  box-shadow: none;
   transition: all var(--transition-normal);
 }
 
 .value-item:hover {
   border-color: var(--primary-blue);
-  box-shadow: var(--shadow-lg);
+  box-shadow: none;
   transform: translateY(-5px);
 }
 
@@ -134,7 +134,7 @@
 .impact-stat:hover {
     transform: translateY(-4px);
     border-color: var(--primary-blue);
-    box-shadow: var(--shadow-xl);
+  box-shadow: none;
 }
 
 .impact-stat i {
@@ -152,7 +152,7 @@
     height: 500px; /* Provide height for the absolutely positioned images */
     background: var(--white);
     border-radius: var(--radius-2xl);
-    box-shadow: var(--shadow-lg);
+  box-shadow: none;
 }
 
 .about-images {

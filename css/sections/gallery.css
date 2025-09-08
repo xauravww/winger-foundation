@@ -53,14 +53,14 @@
   break-inside: avoid; /* Prevents items from breaking across columns */
   border-radius: var(--radius-xl);
   overflow: hidden;
-  box-shadow: var(--shadow-lg);
+  box-shadow: none;
   transition: all var(--transition-slow);
   cursor: pointer;
 }
 
 .gallery-item:hover {
   transform: translateY(-8px) rotate(1.5deg) scale(1.02);
-  box-shadow: var(--shadow-xl);
+  box-shadow: none;
   z-index: 10;
 }
 

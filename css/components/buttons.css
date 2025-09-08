@@ -24,14 +24,14 @@
   background: var(--primary-blue);
   color: var(--white);
   font-weight: 600;
-  box-shadow: var(--shadow-md);
+  box-shadow: none;
 }
 
 .btn--primary:hover {
   background: var(--primary-blue-dark);
   color: var(--white);
   transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
+  box-shadow: none;
 }
 
 .btn--secondary {
@@ -39,14 +39,14 @@
   color: var(--primary-blue);
   border: 2px solid var(--primary-blue);
   font-weight: 600;
-  box-shadow: var(--shadow-sm);
+  box-shadow: none;
 }
 
 .btn--secondary:hover {
   background: var(--primary-blue);
   color: var(--white);
   transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+  box-shadow: none;
 }
 
 .btn--outline {
@@ -68,7 +68,7 @@
   color: var(--white);
   padding: var(--space-4);
   border-radius: var(--radius-full);
-  box-shadow: var(--shadow-xl);
+  box-shadow: none;
   z-index: 1000;
   transition: all var(--transition-normal);
   display: flex;
@@ -79,7 +79,7 @@
 .floating-donate-btn:hover {
   background: var(--primary-blue-dark);
   transform: translateY(-2px);
-  box-shadow: 0 20px 40px rgba(96, 197, 225, 0.4);
+  box-shadow: none;
   color: var(--white); /* ADD THIS to ensure icon stays white */
 }
 
@@ -102,7 +102,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: var(--shadow-lg);
+  box-shadow: none;
 }
 
 .scroll-to-top.visible {
