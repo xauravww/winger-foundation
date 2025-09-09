@@ -66,10 +66,9 @@ main {
   font-weight: 700;
   display: inline-block;
   margin-bottom: 0.75rem;
-  background: linear-gradient(to right, var(--primary-blue), var(--primary-blue-light));
+  color: var(--white);
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;
 }
 
 .footer__brand p {

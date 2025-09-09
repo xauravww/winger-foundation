@@ -78,12 +78,13 @@
 }
 
 .shadow {
-  box-shadow: var(--shadow-md);
+  /* box-shadow: var(--shadow-md); */
 }
 
 .shadow-lg {
-  box-shadow: var(--shadow-lg);
+  /* box-shadow: var(--shadow-lg); */
 }
+
 
 /* *{
   border:1px solid red;

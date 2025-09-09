@@ -30,7 +30,7 @@
 /* Program Cards */
 .programs__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: var(--space-8);
   margin-top: var(--space-12);
 }
@@ -304,8 +304,21 @@
   font-weight: 600;
   font-size: var(--font-size-lg);
 }
-/* Resp
-onsive Design for Cards */
+/* Responsive Design for Cards */
+@media (max-width: 1024px) {
+  .programs__grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-6);
+    margin-top: var(--space-10);
+  }
+
+  .impact-stats {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-6);
+    margin-top: var(--space-12);
+  }
+}
+
 @media (max-width: 768px) {
   .programs__grid {
     grid-template-columns: 1fr;

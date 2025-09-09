@@ -23,8 +23,8 @@ class ImageManager {
             // About images from dedicated folder
             about: {
                 about1: 'assets/about/about1',
-                about2: 'assets/about/about2',
-                about3: 'assets/about/about3'
+                about2: 'assets/about/about2.webp',
+                about3: 'assets/about/about3.webp'
             },
 
             // Core programs
