@@ -204,7 +204,7 @@
   padding: var(--space-8);
   background: var(--white);
   border-radius: var(--radius-2xl);
-  box-shadow: var(--shadow-md);
+  box-shadow: none;
   border: 2px solid var(--gray-100);
   transition: all var(--transition-normal);
   position: relative;
@@ -224,7 +224,7 @@
 .impact-stat:hover {
   transform: translateY(-4px);
   border-color: var(--primary-blue);
-  box-shadow: var(--shadow-xl);
+  box-shadow: none;
 }
 
 .impact-stat i {
