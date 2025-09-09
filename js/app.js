@@ -12,7 +12,7 @@ import { GetInvolvedManager } from './modules/get-involved.js';
 import { FooterManager } from './modules/footer.js';
 import { BackToTop } from './modules/back-to-top.js';
 import { FreeCoursesManager } from './modules/free-courses.js';
-import { AnalyticsUtils } from './modules/utils.js';
+import './modules/slider.js';
 
 class WingerFoundationApp {
     constructor() {
