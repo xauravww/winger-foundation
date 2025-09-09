@@ -23,8 +23,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    transform: scale(1.1); /* Start slightly zoomed in */
-    animation: slowZoom 20s infinite alternate ease-in-out;
+    transform: scale(1); /* Removed zoom */
+    animation: none; /* Removed zoom animation */
   }
   
   .hero__image img {
@@ -41,22 +41,11 @@
   
   
   .hero__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.6); 
+    display: none; /* Removed overlay effect */
   }
   
   .hero__overlay::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.08'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    content: none; /* Removed overlay pattern */
   }
   
   .hero__content {

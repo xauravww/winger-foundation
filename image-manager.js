@@ -9,8 +9,15 @@ class ImageManager {
 
             // Hero images from dedicated folder
             hero: {
-                hero2: 'assets/hero/hero2.avif',
-                hero3: 'assets/hero/hero3.avif'
+                hero1: 'assets/hero/hero1.jpg',
+                hero2: 'assets/hero/hero2.jpg',
+                hero3: 'assets/hero/hero3.jpg',
+                hero4: 'assets/hero/hero3.jpg',
+                hero5: 'assets/hero/hero4.jpg',
+                hero6: 'assets/hero/hero5.jpg',
+                hero7: 'assets/hero/hero6.jpg',
+                hero8: 'assets/hero/hero7.jpg',
+                hero9: 'assets/hero/hero8.jpg',
             },
 
             // About images from dedicated folder
@@ -81,8 +88,15 @@ class ImageManager {
     // Update hero section with rotating background images
     updateHeroImages() {
         const heroImages = [
+            this.images.hero.hero1,
+            this.images.hero.hero2,
             this.images.hero.hero3,
-            this.images.hero.hero2
+            this.images.hero.hero4,
+            this.images.hero.hero5,
+            this.images.hero.hero6,
+            this.images.hero.hero7,
+            this.images.hero.hero8,
+            this.images.hero.hero9
         ];
 
         let currentImageIndex = 0;
@@ -393,8 +407,15 @@ class ImageManager {
     // Method to preload critical images
     preloadImages() {
         const criticalImages = [
+            this.images.hero.hero1,
             this.images.hero.hero2,
             this.images.hero.hero3,
+            this.images.hero.hero4,
+            this.images.hero.hero5,
+            this.images.hero.hero6,
+            this.images.hero.hero7,
+            this.images.hero.hero8,
+            this.images.hero.hero9,
             this.images.branding.logo,
             this.images.about.about1,
             this.images.about.about2,
