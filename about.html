@@ -305,5 +305,69 @@
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-theme text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 z-40" style="display: none;">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('mobile-sidebar');
+            const content = document.getElementById('sidebar-content');
+            if (sidebar.classList.contains('hidden')) {
+                sidebar.classList.remove('hidden');
+                setTimeout(() => content.classList.remove('translate-x-full'), 10); // small delay to allow display
+            } else {
+                content.classList.add('translate-x-full');
+                setTimeout(() => sidebar.classList.add('hidden'), 300);
+            }
+        }
+
+        function closeSidebar() {
+            const sidebar = document.getElementById('mobile-sidebar');
+            const content = document.getElementById('sidebar-content');
+            content.classList.add('translate-x-full');
+            setTimeout(() => sidebar.classList.add('hidden'), 300);
+        }
+
+        function sendEmail(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const zip = document.getElementById('zip').value;
+            const subject = 'Get Involved Inquiry';
+            const body = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nZip Code: ${zip}`;
+            const mailto = `mailto:contact@wingerfoundation.org?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            window.location.href = mailto;
+        }
+
+        function sendNewsletter(event) {
+            event.preventDefault();
+            const email = document.getElementById('newsletter-email').value;
+            const subject = 'Newsletter Subscription';
+            const body = `Email: ${email}\n\nI would like to subscribe to the newsletter.`;
+            const mailto = `mailto:contact@wingerfoundation.org?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            window.location.href = mailto;
+        }
+
+        // Back to Top Button
+        const backToTopBtn = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.style.display = 'block';
+                backToTopBtn.classList.remove('opacity-0');
+                backToTopBtn.classList.add('opacity-100');
+            } else {
+                backToTopBtn.classList.remove('opacity-100');
+                backToTopBtn.classList.add('opacity-0');
+                setTimeout(() => backToTopBtn.style.display = 'none', 300);
+            }
+        });
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
 </body>
 </html>

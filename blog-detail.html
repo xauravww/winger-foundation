@@ -221,6 +221,11 @@
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-theme text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 z-40" style="display: none;">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script>
         // Get blog slug from URL parameters
         function getBlogSlug() {
@@ -308,6 +313,35 @@
             const mailto = `mailto:contact@wingerfoundation.org?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
             window.location.href = mailto;
         }
+
+        function sendEmail(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const zip = document.getElementById('zip').value;
+            const subject = 'Get Involved Inquiry';
+            const body = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nZip Code: ${zip}`;
+            const mailto = `mailto:contact@wingerfoundation.org?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            window.location.href = mailto;
+        }
+
+        // Back to Top Button
+        const backToTopBtn = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.style.display = 'block';
+                backToTopBtn.classList.remove('opacity-0');
+                backToTopBtn.classList.add('opacity-100');
+            } else {
+                backToTopBtn.classList.remove('opacity-100');
+                backToTopBtn.classList.add('opacity-0');
+                setTimeout(() => backToTopBtn.style.display = 'none', 300);
+            }
+        });
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
     </script>
 
 </body>
