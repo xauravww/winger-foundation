@@ -1,0 +1,374 @@
+<!doctype html>
+<html class="no-js" lang="zxx" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Our Projects - Winger Global Foundation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        theme: '#ff7e02',
+                        'theme-dark': '#122F2A',
+                        title: '#1F1F1F',
+                        body: '#797E88',
+                        smoke: '#F8F8F8',
+                        'black-4': '#00110E',
+                        'black-2': '#141414',
+                    },
+                    fontFamily: {
+                        sans: ['Nunito Sans', 'sans-serif'],
+                        title: ['Poppins', 'sans-serif'],
+                        caveat: ['Caveat', 'cursive'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header-wrapper absolute top-0 left-0 w-full z-50 bg-black-4/80 backdrop-blur-md">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between py-4">
+                <div class="logo">
+                    <a href="index.html" class="inline-block bg-white border border-white/50 rounded p-1 hover:bg-white/70 hover:shadow-lg transition-all"><img src="assets/img/winger_logo.png" alt="Winger" class="h-12"></a>
+                </div>
+                <nav class="hidden lg:block">
+                    <ul class="flex space-x-8 text-white font-title font-medium">
+                        <li><a href="index.html" class="hover:text-theme transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-theme transition-colors">About Us</a></li>
+                        <li><a href="work.html" class="text-theme transition-colors">Projects</a></li>
+                        <li><a href="gallery.html" class="hover:text-theme transition-colors">Gallery</a></li>
+                        <li><a href="blog.html" class="hover:text-theme transition-colors">Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-theme transition-colors">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <a href="https://rzp.io/l/U8cB2mvK" target="_blank" rel="noopener noreferrer"
+                        class="hidden md:inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-theme hover:bg-theme-dark transition-all duration-300">Donate
+                        Now</a>
+                    <button onclick="toggleSidebar()" class="lg:hidden text-white text-2xl"><i class="fas fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div id="mobile-sidebar" class="fixed inset-0 z-50 lg:hidden hidden">
+        <div class="absolute inset-0 bg-black/50" id="sidebar-overlay" onclick="closeSidebar()"></div>
+        <div class="absolute right-0 top-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform" id="sidebar-content">
+            <div class="p-4">
+                <button onclick="closeSidebar()" class="text-gray-500 text-2xl">&times;</button>
+                <nav class="mt-8">
+                    <ul class="space-y-4">
+                        <li><a href="index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Home</a></li>
+                        <li><a href="about.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">About Us</a></li>
+                        <li><a href="work.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Projects</a></li>
+                        <li><a href="gallery.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Gallery</a></li>
+                        <li><a href="blog.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Blog</a></li>
+                        <li><a href="contact.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Contact</a></li>
+                        <li><a href="get-involved.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Get Involved</a></li>
+                        <li><a href="donate.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Donate</a></li>
+                        <li><a href="free-courses.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Free Courses</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="relative bg-black-4 pt-40 pb-20" data-bg-src="assets/img/breadcumb-bg.jpg">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="absolute inset-0 bg-cover bg-center z-0"
+            style="background-image: url('assets/img/breadcumb-bg.jpg');"></div>
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h1 class="text-5xl font-bold text-white font-title mb-4">Our Projects</h1>
+            <ul class="flex justify-center space-x-2 text-white/80">
+                <li><a href="index.html" class="hover:text-theme">Home</a></li>
+                <li><i class="fas fa-chevron-right text-xs"></i></li>
+                <li>Projects</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[80vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 id="modal-title" class="text-2xl font-bold text-theme-dark"></h2>
+                    <button onclick="closeProjectModal()" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+                </div>
+                <p id="modal-description" class="text-body leading-relaxed"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <section id="work" class="py-24 lg:py-32 bg-smoke">
+        <div class="container mx-auto px-8">
+            <div class="text-center mb-16">
+                <div class="flex items-center justify-center mb-4">
+                    <i class="fas fa-project-diagram text-theme text-3xl mr-3"></i>
+                    <span class="text-theme font-caveat text-2xl">Our Initiatives</span>
+                </div>
+                <h2 class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-theme-dark to-theme bg-clip-text text-transparent font-title mb-6 leading-tight">Our Core Programmes</h2>
+                <hr class="w-24 border-theme my-6 mx-auto">
+                <p class="mt-4 text-lg text-body max-w-3xl mx-auto">
+                    We focus on key areas where we can make the greatest impact, creating a ripple effect of positive
+                    change that transforms lives and communities.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col"
+                    data-title="Winger Global School"
+                    data-description="We work with the aim of providing education to disadvantaged or marginalized communities. Our school focuses on providing a range of educational programs, from basic literacy and numeracy to vocational training and higher education. We hence play an important role in promoting education and helping to bridge the gap in educational access and quality for disadvantaged communities.">
+                    <img class="w-full h-56 object-cover" src="assets/winger_global_school.avif"
+                        alt="Children in a classroom">
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="font-bold text-2xl text-theme-dark mb-3">Winger Global School</h3>
+                        <p class="text-body mb-6 flex-grow">Providing educational programs to bridge the gap in access
+                            and quality for disadvantaged communities.</p>
+                        <button
+                            class="learn-more-btn font-bold text-theme hover:text-theme-dark self-start mt-auto">Learn
+                            More &rarr;</button>
+                    </div>
+                </div>
+
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col"
+                    data-title="Winger Global Hospital"
+                    data-description="We aim at providing healthcare to underserved communities. Access to healthcare is a fundamental human right, but unfortunately, many people across the world lack access to basic medical services. We provide healthcare to those in need, along with promoting community development. Our hospital help to improve the health and well-being of underserved populations.">
+                    <img class="w-full h-56 object-cover" src="assets/winger%20global%20hospital.avif"
+                        alt="Healthcare services">
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="font-bold text-2xl text-theme-dark mb-3">Winger Global Hospital</h3>
+                        <p class="text-body mb-6 flex-grow">Delivering essential healthcare to underserved communities
+                            to improve their health and well-being.</p>
+                        <button
+                            class="learn-more-btn font-bold text-theme hover:text-theme-dark self-start mt-auto">Learn
+                            More &rarr;</button>
+                    </div>
+                </div>
+
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col"
+                    data-title="Winger Global Kitchen"
+                    data-description="Food is a basic human need, and yet, many people across the world go hungry every day. We have established community kitchens to provide nutritious meals to those in need. These kitchens operate on the principle that no one should go hungry, and that access to food is a basic human right. Our kitchens help to nourish communities and support the most vulnerable members of society.">
+                    <img class="w-full h-56 object-cover" src="assets/winger%20global%20kitchen.avif"
+                        alt="Community kitchen providing food">
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="font-bold text-2xl text-theme-dark mb-3">Winger Global Kitchen</h3>
+                        <p class="text-body mb-6 flex-grow">Establishing community kitchens to provide nutritious meals
+                            and support the most vulnerable members of society.</p>
+                        <button
+                            class="learn-more-btn font-bold text-theme hover:text-theme-dark self-start mt-auto">Learn
+                            More &rarr;</button>
+                    </div>
+                </div>
+
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col"
+                    data-title="Winger Global Water"
+                    data-description="We aim at addressing water-related issues, particularly in areas where access to safe and clean water is limited. We work to improve access to clean water in areas where it is scarce or contaminated. This may involve building wells, water treatment facilities, or other infrastructure to help communities access safe and reliable water sources.">
+                    <img class="w-full h-56 object-cover" src="assets/winger_global_water.avif"
+                        alt="Clean water access project">
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="font-bold text-2xl text-theme-dark mb-3">Winger Global Water</h3>
+                        <p class="text-body mb-6 flex-grow">Improving access to safe and clean water in areas where it
+                            is scarce or contaminated.</p>
+                        <button
+                            class="learn-more-btn font-bold text-theme hover:text-theme-dark self-start mt-auto">Learn
+                            More &rarr;</button>
+                    </div>
+                </div>
+
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col"
+                    data-title="Women Empowerment"
+                    data-description="Our NGO play a crucial role in empowering women by providing them with resources, training, and support to help them become more self-reliant and achieve their full potential. Our focus on women empowerment can provide a range of services, such as education and training on issues related to women's health, legal rights, and entrepreneurship. We also provide access to financial resources and business development support, which can help women start their own businesses and become financially independent.">
+                    <img class="w-full h-56 object-cover" src="assets/Women%20Empowerment.avif"
+                        alt="Women empowerment program">
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="font-bold text-2xl text-theme-dark mb-3">Women Empowerment</h3>
+                        <p class="text-body mb-6 flex-grow">Providing resources, training, and support to help women
+                            become self-reliant and achieve their full potential.</p>
+                        <button
+                            class="learn-more-btn font-bold text-theme hover:text-theme-dark self-start mt-auto">Learn
+                            More &rarr;</button>
+                    </div>
+                </div>
+
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col"
+                    data-title="Old Age Support"
+                    data-description="We work to provide support and advocacy for the needs and rights of the elderly, and offer a range of services and programs to help meet these needs. Our NGO provide social and emotional support to the elderly by organizing social events and offering counseling services. We also offer healthcare services designed specifically for the elderly, such as regular health check-ups, mobility aids, and medication management.">
+                    <img class="w-full h-56 object-cover" src="assets/Old%20Age.avif" alt="Elderly care and support">
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="font-bold text-2xl text-theme-dark mb-3">Old Age Support</h3>
+                        <p class="text-body mb-6 flex-grow">Offering social, emotional, and healthcare support to
+                            advocate for the needs and rights of the elderly.</p>
+                        <button
+                            class="learn-more-btn font-bold text-theme hover:text-theme-dark self-start mt-auto">Learn
+                            More &rarr;</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black-2 text-white py-16 border-t border-white/5">
+        <div class="container mx-auto px-4">
+            <!-- Newsletter Section -->
+            <div class="text-center mb-12">
+                <h4 class="text-2xl font-bold mb-4">Subscribe to Our Newsletter</h4>
+                <p class="text-white/80 mb-6">Regular inspections and feedback mechanisms</p>
+                <form onsubmit="sendNewsletter(event)" class="max-w-md mx-auto flex">
+                    <input type="email" id="newsletter-email" placeholder="Enter Email Address" class="flex-1 px-4 py-3 bg-white/10 border border-white/20 rounded-l text-white placeholder-white/60 focus:outline-none focus:border-theme" required>
+                    <button type="submit" class="px-6 py-3 bg-theme text-white rounded-r hover:bg-theme-dark transition"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+
+            <!-- Widgets -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Logo and Description -->
+                <div>
+                    <a href="index.html" class="inline-block bg-white border border-white/50 rounded p-1 hover:bg-white/70 hover:shadow-lg transition-all mb-4"><img src="assets/img/winger_logo.png" alt="Winger" class="h-12"></a>
+                    <p class="text-white/60 mb-4">Empowering communities through education, health, and welfare initiatives.</p>
+                    <a href="donate.html" class="inline-flex items-center px-6 py-3 bg-theme text-white rounded hover:bg-theme-dark transition"><i class="fas fa-heart mr-2"></i> Donate Now</a>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-white/80 hover:text-theme transition">About Us</a></li>
+                        <li><a href="work.html" class="text-white/80 hover:text-theme transition">Projects</a></li>
+                        <li><a href="blog.html" class="text-white/80 hover:text-theme transition">Blog</a></li>
+                        <li><a href="contact.html" class="text-white/80 hover:text-theme transition">Contact Us</a></li>
+                        <li><a href="get-involved.html" class="text-white/80 hover:text-theme transition">Get Involved</a></li>
+                        <li><a href="free-courses.html" class="text-white/80 hover:text-theme transition">Free Courses</a></li>
+                        <li><a href="privacy-policy.html" class="text-white/80 hover:text-theme transition">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html" class="text-white/80 hover:text-theme transition">Terms of Service</a></li>
+                        <li><a href="refund-policy.html" class="text-white/80 hover:text-theme transition">Refund Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Our Service -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Our Service</h3>
+                    <ul class="space-y-2">
+                        <li><a href="donate.html" class="text-white/80 hover:text-theme transition">Give Donation</a></li>
+                        <li><a href="work.html" class="text-white/80 hover:text-theme transition">Education Support</a></li>
+                        <li><a href="work.html" class="text-white/80 hover:text-theme transition">Food Support</a></li>
+                        <li><a href="work.html" class="text-white/80 hover:text-theme transition">Health Support</a></li>
+                        <li><a href="gallery.html" class="text-white/80 hover:text-theme transition">Our Gallery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-theme mr-3"></i>
+                            <div>
+                                <p class="text-white/80 text-sm">Call us any time:</p>
+                                <a href="tel:+919319051236" class="text-white hover:text-theme transition">+91 93 1905 1236</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-theme mr-3"></i>
+                            <div>
+                                <p class="text-white/80 text-sm">Email us any time:</p>
+                                <a href="mailto:contact@wingerfoundation.org" class="text-white hover:text-theme transition">contact@wingerfoundation.org</a>
+                            </div>
+                        </div>
+                        <div class="flex space-x-4 mt-4">
+                            <a href="https://x.com/wingerglobal" target="_blank" class="text-white/80 hover:text-theme transition"><i class="fab fa-twitter text-xl"></i></a>
+                            <a href="https://www.facebook.com/WingerGlobal" target="_blank" class="text-white/80 hover:text-theme transition"><i class="fab fa-facebook text-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-white/10 mt-12 pt-8 text-center">
+                <p class="text-white/60"><i class="fas fa-copyright mr-2"></i> Copyright 2025 <a href="index.html" class="hover:text-theme transition">Winger Global Foundation</a>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Project Modal Functionality
+        function openProjectModal(title, description) {
+            document.getElementById('modal-title').textContent = title;
+            document.getElementById('modal-description').textContent = description;
+            document.getElementById('project-modal').classList.remove('hidden');
+        }
+
+        function closeProjectModal() {
+            document.getElementById('project-modal').classList.add('hidden');
+        }
+
+        // Attach event listeners to Learn More buttons
+        document.addEventListener('DOMContentLoaded', function() {
+            const learnMoreButtons = document.querySelectorAll('.learn-more-btn');
+            learnMoreButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const projectCard = this.closest('.project-card');
+                    const title = projectCard.getAttribute('data-title');
+                    const description = projectCard.getAttribute('data-description');
+                    openProjectModal(title, description);
+                });
+            });
+        });
+
+        // Close modal when clicking outside
+        document.getElementById('project-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeProjectModal();
+            }
+        });
+
+        function toggleSidebar() {
+            const sidebar = document.getElementById('mobile-sidebar');
+            const content = document.getElementById('sidebar-content');
+            if (sidebar.classList.contains('hidden')) {
+                sidebar.classList.remove('hidden');
+                setTimeout(() => content.classList.remove('translate-x-full'), 10);
+            } else {
+                content.classList.add('translate-x-full');
+                setTimeout(() => sidebar.classList.add('hidden'), 300);
+            }
+        }
+
+        function closeSidebar() {
+            const sidebar = document.getElementById('mobile-sidebar');
+            const content = document.getElementById('sidebar-content');
+            content.classList.add('translate-x-full');
+            setTimeout(() => sidebar.classList.add('hidden'), 300);
+        }
+
+        function sendNewsletter(event) {
+            event.preventDefault();
+            const email = document.getElementById('newsletter-email').value;
+            const subject = 'Newsletter Subscription';
+            const body = `Email: ${email}\n\nI would like to subscribe to the newsletter.`;
+            const mailto = `mailto:contact@wingerfoundation.org?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            window.location.href = mailto;
+        }
+    </script>
+
+</body>
+</html>
