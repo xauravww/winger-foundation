@@ -1,9 +1,5 @@
 ErrorDocument 404 /index.html
 
-RewriteEngine On
-# Redirect .html URLs to clean URLs
-RewriteRule ^(.+)\.html$ /$1 [R=301,L]
-# Serve clean URLs as .html files
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([^.]+)$ $1.html [L]
+AddType text/html .shtml
+AddOutputFilter INCLUDES .shtml
+Options +Includes

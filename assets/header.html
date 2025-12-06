@@ -1,0 +1,67 @@
+<!-- Header -->
+<header class="header-wrapper absolute top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between py-4">
+            <div class="logo">
+                <a href="/" class="inline-block transition-all"><img src="assets/img/winger_logo.png" alt="Winger" class="h-16"></a>
+            </div>
+                <nav class="hidden xl:block">
+                <ul class="flex space-x-8 text-black font-title font-medium">
+                    <li><a href="/" class="hover:text-theme transition-colors">Home</a></li>
+                    <li><a href="/about.html" class="hover:text-theme transition-colors">About Us</a></li>
+                    <li><a href="/work.html" class="hover:text-theme transition-colors">Projects</a></li>
+                    <li><a href="/gallery.html" class="hover:text-theme transition-colors">Gallery</a></li>
+                    <li><a href="/blog.html" class="hover:text-theme transition-colors">Blog</a></li>
+                    <li><a href="/contact.html" class="hover:text-theme transition-colors">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="https://rzp.io/l/U8cB2mvK" target="_blank" rel="noopener noreferrer"
+                    class="hidden md:inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-theme hover:bg-theme-dark transition-all duration-300">Donate
+                    Now</a>
+                <button onclick="toggleSidebar()" class="xl:hidden text-black text-2xl"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Sidebar -->
+ <div id="mobile-sidebar" class="fixed inset-0 z-[60] xl:hidden hidden">
+    <div class="absolute inset-0 bg-black/50" id="sidebar-overlay" onclick="closeSidebar()"></div>
+    <div class="absolute right-0 top-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform" id="sidebar-content">
+        <div class="p-4">
+            <button onclick="closeSidebar()" class="text-gray-500 text-2xl">&times;</button>
+                <nav class="mt-8">
+                    <ul class="space-y-4">
+                        <li><a href="/" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Home</a></li>
+                        <li><a href="/about.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">About Us</a></li>
+                        <li><a href="/work.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Projects</a></li>
+                        <li><a href="/gallery.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Gallery</a></li>
+                        <li><a href="/blog.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Blog</a></li>
+                        <li><a href="/contact.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Contact</a></li>
+                        <li><a href="/get-involved.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Get Involved</a></li>
+                        <li><a href="/donate.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Donate</a></li>
+                        <li><a href="/free-courses.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Free Courses</a></li>
+                    </ul>
+                </nav>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Set active nav link based on current path
+    const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPath || (currentPath === '/' && link.getAttribute('href') === '/')) {
+            link.classList.add('text-theme');
+        }
+    });
+    // For mobile sidebar
+    const mobileLinks = document.querySelectorAll('#mobile-sidebar nav ul li a');
+    mobileLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPath || (currentPath === '/' && link.getAttribute('href') === '/')) {
+            link.classList.add('bg-gray-100');
+        }
+    });
+</script>

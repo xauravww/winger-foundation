@@ -1,0 +1,452 @@
+<!doctype html>
+<html class="no-js" lang="zxx" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Awareness Campaigns - Winger Global Foundation</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@300;400;500;600;700&display=swapfamily=Crimson+Text:wght@400https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@300;400;500;600;700&display=swapfamily=Montserrat:wght@400;700https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@300;400;500;600;700&display=swapfamily=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@300;400;500;600;700&display=swapfamily=Nunito:ital,wght@0,200..1000;1,200..1000https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@300;400;500;600;700&display=swapfamily=Poppins:wght@300;400;500;600;700https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@300;400;500;600;700&display=swapdisplay=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+
+        tailwind.config = {
+
+            theme: {
+
+                extend: {
+
+                    colors: {
+
+                        theme: '#ff7e02',
+
+                        'theme-dark': '#122F2A',
+
+                        title: '#1F1F1F',
+
+                        body: '#797E88',
+
+                        smoke: '#F8F8F8',
+
+                        'black-4': '#00110E',
+
+                        'black-2': '#141414',
+
+                    },
+
+                    fontFamily: {
+
+                        sans: ['Nunito Sans', 'sans-serif'],
+
+                        title: ['Poppins', 'sans-serif'],
+
+                        caveat: ['Caveat', 'cursive'],
+
+                    },
+
+                    animation: {
+
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+
+                    },
+
+                    keyframes: {
+
+                        fadeInUp: {
+
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+
+                        },
+
+                    },
+
+                }
+
+            }
+
+        }
+
+    </script>
+
+    <style>
+        :root {
+            --primary-orange: #FF6B35;
+            --accent-dark: #D2691E;
+            --text-white: #FFFFFF;
+            --bg-gradient: linear-gradient(135deg, #FF6B35, #FFA500);
+        }
+        
+        .breadcrumb-container {
+            position: relative;
+            background: var(--bg-gradient);
+            padding: 20px 40px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .breadcrumb-bg-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 190px,
+                rgba(255, 255, 255, 0.1) 190px,
+                rgba(255, 255, 255, 0.1) 200px
+            );
+            z-index: 1;
+        }
+        
+        .breadcrumb-bg-text::before {
+            content: "Empower";
+            position: absolute;
+            top: 10%;
+            left: 5%;
+            font-size: 120px;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.05);
+            transform: rotate(-45deg);
+            font-family: 'Montserrat', sans-serif;
+            pointer-events: none;
+        }
+        
+        .breadcrumb-bg-text::after {
+            content: "Empower";
+            position: absolute;
+            top: 60%;
+            right: 10%;
+            font-size: 100px;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.05);
+            transform: rotate(45deg);
+            font-family: 'Montserrat', sans-serif;
+            pointer-events: none;
+        }
+        
+        .breadcrumb-nav {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            animation: fadeInBreadcrumb 1s ease-out;
+        }
+        
+        @keyframes fadeInBreadcrumb {
+            0% { opacity: 0; transform: translateY(10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            .breadcrumb-nav {
+                animation: none;
+            }
+        }
+        
+        .breadcrumb-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .breadcrumb-link {
+            font-family: 'Crimson Text', serif;
+            font-size: 16px;
+            color: var(--text-white);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .breadcrumb-link:hover {
+            color: var(--accent-dark);
+        }
+        
+        .breadcrumb-current {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-white);
+        }
+        
+        .breadcrumb-arrow {
+            width: 16px;
+            height: 16px;
+            fill: var(--text-white);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            .animate-fade-in-up {
+
+                animation: none;
+
+                opacity: 1;
+
+                transform: none;
+
+            }
+
+        }
+
+        .campaign-card {
+
+            background: linear-gradient(135deg, rgba(255,126,2,0.05) 0%, rgba(255,255,255,1) 100%);
+
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+
+        }
+
+        .ripple-bg {
+
+            background: linear-gradient(to bottom, rgba(255,126,2,0.03), white);
+
+        }
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <!--#include virtual="assets/header.html" -->
+
+    <!-- Breadcrumb -->
+
+    <div class="relative bg-theme pt-40 pb-20" data-bg-src="assets/img/breadcumb-bg.jpg">
+
+        <div class="absolute inset-0 bg-black/70"></div>
+
+        <div class="absolute inset-0 bg-cover bg-center z-0"
+
+            style="background-image: url('assets/img/breadcumb-bg.jpg');"></div>
+
+        <div class="container mx-auto px-4 relative z-10 text-center">
+
+            <h1 class="text-5xl font-bold text-white font-title mb-4" style="text-shadow: 3px 3px 6px rgba(0,0,0,0.9);">Awareness Campaigns</h1>
+
+        </div>
+
+    </div>
+
+    <!-- Hero Section -->
+
+    <section class="py-20 ripple-bg relative overflow-hidden">
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+            <div class="max-w-4xl mx-auto opacity-0 animate-fade-in-up">
+
+                <div class="flex items-center justify-center mb-6">
+
+                    <i class="fas fa-bullhorn text-theme text-3xl mr-3"></i>
+
+                    <span class="text-theme font-caveat text-2xl">Spreading Awareness, Building Futures</span>
+
+                    <i class="fas fa-bullhorn text-theme text-3xl ml-3"></i>
+
+                </div>
+
+                <h1 class="text-5xl md:text-7xl font-bold text-title font-title mb-6 leading-tight">Awareness Campaigns</h1>
+
+                <p class="text-lg md:text-xl leading-relaxed mb-8">We at Winger Global Foundation aims at empowering various sections of the society, be it women, youth, elders or children. Our team has launched and is engaged in launching various campaigns in future for creating awareness and ushering a sense of responsibility among people. Our aim is to reach people of every sect, race, religion and gender across the country through our campaigns and social media presence. Some glimpses of awareness campaigns are as under:</p>
+
+                <a href="#campaigns" class="inline-flex items-center px-8 py-4 bg-theme text-white font-bold rounded hover:bg-theme-dark transition-all">Explore Campaigns <i class="fa fa-arrow-down ml-2"></i></a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Campaigns Grid -->
+
+    <section id="campaigns" class="py-20 bg-white">
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Voter Awareness -->
+
+                <div class="campaign-card rounded-2xl p-6 opacity-0 animate-fade-in-up" style="animation-delay: 0.2s;">
+
+                    <img src="assets/img/EDUCATION- A WEAPON FOR EMANCIPATION FOR POOR CHILDREN.avif" alt="Voter Awareness Campaign" class="w-full h-48 object-cover rounded-lg mb-6">
+
+                    <h3 class="text-3xl font-bold text-title font-title mb-4">Voter Awareness Campaign</h3>
+
+                    <p class="leading-relaxed mb-6">Our NGO aims to educate and encourage people to vote and use their legal right to vote. We help marginalised sections, women, elders and new voters to vote and come out of their homes to participate in this democratic process. Various awareness measures like spreading education on voting rights, the importance of participation in the political process and acquainting people with the process have been launched by the team. Besides this, we've been engaged in voter registration drives by motivating people to register themselves as voters. Workshops, seminars, campaigns on how the election process works, the correct usage of EVMs and taking such steps to provide greater accessibility of voting to all has been one of the main aims of our NGO.</p>
+
+                    <a href="/get-involved.html" class="inline-flex items-center text-theme font-bold hover:text-title transition-colors">Learn More <i class="fa fa-arrow-right ml-2"></i></a>
+
+                </div>
+
+                <!-- Water Awareness -->
+
+                <div class="campaign-card rounded-2xl p-6 opacity-0 animate-fade-in-up" style="animation-delay: 0.4s;">
+
+                    <img src="assets/gallery/social_welfare.webp" alt="Water Awareness Campaign" class="w-full h-48 object-cover rounded-lg mb-6">
+
+                    <h3 class="text-3xl font-bold text-title font-title mb-4">Water Awareness Campaign</h3>
+
+                    <p class="leading-relaxed mb-6">Being a precious resource, educating people on the need to save water lays at the core of our value system. Our team has launched various campaign programs to help instil the sense of responsibility towards water. Besides this, our team is constantly evolving by using various engaging techniques of communication, like Nukkad Nataks, short filming and digital campaigns. Our awareness campaigns have helped in developing community engagement, which has helped people in knowing how to judiciously use water.</p>
+
+                    <a href="/get-involved.html" class="inline-flex items-center text-theme font-bold hover:text-title transition-colors">Learn More <i class="fa fa-arrow-right ml-2"></i></a>
+
+                </div>
+
+                <!-- Cleanliness Awareness -->
+
+                <div class="campaign-card rounded-2xl p-6 opacity-0 animate-fade-in-up" style="animation-delay: 0.6s;">
+
+                    <img src="assets/img/Cleanliness Awareness Campaign.avif" alt="Cleanliness Awareness Campaign" class="w-full h-48 object-cover rounded-lg mb-6">
+
+                    <h3 class="text-3xl font-bold text-title font-title mb-4">Cleanliness Awareness Campaign</h3>
+
+                    <p class="leading-relaxed mb-6">Cleanliness campaigns has been one of the most promoted drives in recent years. Our team is engaged in launching campaigns to spread awareness on public cleanliness, personal hygiene, waste segregation, recycling education and support the "Swachh Bharat Mission". Besides awareness measures, we have been collaborating with various schools to conduct competitions, quizzes to help children and youngsters know the importance of cleanliness in their lives. Several public rallies as a part of the cleanliness drive have been organised by us to implement it at the ground level.</p>
+
+                    <a href="/get-involved.html" class="inline-flex items-center text-theme font-bold hover:text-title transition-colors">Learn More <i class="fa fa-arrow-right ml-2"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CTA Section -->
+
+    <section class="py-20 bg-theme-dark text-white text-center">
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="max-w-2xl mx-auto opacity-0 animate-fade-in-up" style="animation-delay: 0.8s;">
+
+                <h2 class="text-4xl font-bold font-title mb-6">Join the Movement</h2>
+
+                <p class="text-lg mb-8">We at Winger Global Foundation, aims at empowering people and helping them know their rights. Education and creating awareness regarding various issues in the society is important, and hence we use various engaging communication ways, be it social media, physical campaigns, nukkad nataks and street plays, dance programs, marathons, school collaborations, quizzes, painting competitions etc. to create a meaningful impact in the society. "Sarve Bhavantu Sukhinah"- May all fellow beings be happy, is what we aspire for.</p>
+
+                <a href="/get-involved.html" class="inline-flex items-center px-8 py-4 bg-white text-theme font-bold rounded hover:bg-gray-100 transition-all">Get Involved <i class="fa fa-arrow-right ml-2"></i></a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--#include virtual="assets/footer.html" -->
+
+    <script>
+
+        // Fallback for header if SSI not supported
+
+        if (!document.querySelector('header')) {
+
+            fetch('assets/header.html')
+
+                .then(response => response.text())
+
+                .then(data => document.body.insertAdjacentHTML('afterbegin', data));
+
+        }
+
+    </script>
+
+    <script>
+
+        // Fallback for footer if SSI not supported
+
+        if (!document.querySelector('footer')) {
+
+            fetch('assets/footer.html')
+
+                .then(response => response.text())
+
+                .then(data => document.body.insertAdjacentHTML('beforeend', data));
+
+        }
+
+    </script>
+
+    <script>
+
+        function toggleSidebar() {
+
+            const sidebar = document.getElementById('mobile-sidebar');
+
+            const content = document.getElementById('sidebar-content');
+
+            if (sidebar.classList.contains('hidden')) {
+
+                sidebar.classList.remove('hidden');
+
+                setTimeout(() => content.classList.remove('translate-x-full'), 10);
+
+            } else {
+
+                content.classList.add('translate-x-full');
+
+                setTimeout(() => sidebar.classList.add('hidden'), 300);
+
+            }
+
+        }
+
+        function closeSidebar() {
+
+            const sidebar = document.getElementById('mobile-sidebar');
+
+            const content = document.getElementById('sidebar-content');
+
+            content.classList.add('translate-x-full');
+
+            setTimeout(() => sidebar.classList.add('hidden'), 300);
+
+        }
+
+        // Intersection Observer for animations
+
+        const observer = new IntersectionObserver((entries) => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add('animate-fade-in-up');
+
+                }
+
+            });
+
+        });
+
+        document.querySelectorAll('.opacity-0').forEach(el => observer.observe(el));
+
+    </script>
+
+</body>
+
+</html>
