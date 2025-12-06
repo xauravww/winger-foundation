@@ -11,16 +11,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@300;400;500;600;700&display=swapfamily=Crimson+Text:wght@400https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@300;400;500;600;700&display=swapfamily=Montserrat:wght@400;700https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@300;400;500;600;700&display=swapfamily=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@300;400;500;600;700&display=swapfamily=Nunito:ital,wght@0,200..1000;1,200..1000https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@300;400;500;600;700&display=swapfamily=Poppins:wght@300;400;500;600;700https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@300;400;500;600;700&display=swapdisplay=swap"
         rel="stylesheet">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-     <style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <style>
         :root {
             --primary-orange: #FF6B35;
             --accent-dark: #D2691E;
             --text-white: #FFFFFF;
             --bg-gradient: linear-gradient(135deg, #FF6B35, #FFA500);
         }
-        
+
         .breadcrumb-container {
             position: relative;
             background: var(--bg-gradient);
@@ -29,23 +29,21 @@
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
-        
+
         .breadcrumb-bg-text {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: repeating-linear-gradient(
-                45deg,
-                transparent,
-                transparent 190px,
-                rgba(255, 255, 255, 0.1) 190px,
-                rgba(255, 255, 255, 0.1) 200px
-            );
+            background-image: repeating-linear-gradient(45deg,
+                    transparent,
+                    transparent 190px,
+                    rgba(255, 255, 255, 0.1) 190px,
+                    rgba(255, 255, 255, 0.1) 200px);
             z-index: 1;
         }
-        
+
         .breadcrumb-bg-text::before {
             content: "Empower";
             position: absolute;
@@ -58,7 +56,7 @@
             font-family: 'Montserrat', sans-serif;
             pointer-events: none;
         }
-        
+
         .breadcrumb-bg-text::after {
             content: "Empower";
             position: absolute;
@@ -71,7 +69,7 @@
             font-family: 'Montserrat', sans-serif;
             pointer-events: none;
         }
-        
+
         .breadcrumb-nav {
             position: relative;
             z-index: 2;
@@ -80,24 +78,31 @@
             gap: 10px;
             animation: fadeInBreadcrumb 1s ease-out;
         }
-        
+
         @keyframes fadeInBreadcrumb {
-            0% { opacity: 0; transform: translateY(10px); }
-            100% { opacity: 1; transform: translateY(0); }
+            0% {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
-        
+
         @media (prefers-reduced-motion: reduce) {
             .breadcrumb-nav {
                 animation: none;
             }
         }
-        
+
         .breadcrumb-item {
             display: flex;
             align-items: center;
             gap: 5px;
         }
-        
+
         .breadcrumb-link {
             font-family: 'Crimson Text', serif;
             font-size: 16px;
@@ -105,36 +110,41 @@
             text-decoration: none;
             transition: color 0.3s ease;
         }
-        
+
         .breadcrumb-link:hover {
             color: var(--accent-dark);
         }
-        
+
         .breadcrumb-current {
             font-family: 'Montserrat', sans-serif;
             font-size: 18px;
             font-weight: 700;
             color: var(--text-white);
         }
-        
+
         .breadcrumb-arrow {
             width: 16px;
             height: 16px;
             fill: var(--text-white);
         }
-         .mfp-img { height: 80vh; width: 100%; object-fit: cover; }
-     </style>
-     <script src="https://cdn.tailwindcss.com"></script>
+
+        .mfp-img {
+            height: 80vh;
+            width: 100%;
+            object-fit: cover;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Fallback for header -->
-<script>
-// Fallback for header if SSI not supported
-if (!document.querySelector('header')) {
-    fetch('assets/header.html')
-        .then(response => response.text())
-        .then(data => document.body.insertAdjacentHTML('afterbegin', data));
-}
-</script>
-<script>
+    <script>
+        // Fallback for header if SSI not supported
+        if (!document.querySelector('header')) {
+            fetch('assets/header.html')
+                .then(response => response.text())
+                .then(data => document.body.insertAdjacentHTML('afterbegin', data));
+        }
+    </script>
+    <script>
         tailwind.config = {
             theme: {
                 extend: {
@@ -169,19 +179,22 @@ if (!document.querySelector('header')) {
         <div class="absolute inset-0 bg-cover bg-center z-0"
             style="background-image: url('assets/img/breadcumb-bg.jpg');"></div>
         <div class="container mx-auto px-4 relative z-10 text-center">
-            <h1 class="text-5xl font-bold text-white font-title mb-4" style="text-shadow: 3px 3px 6px rgba(0,0,0,0.9);">Our Gallery</h1>
+            <h1 class="text-5xl font-bold text-white font-title mb-4" style="text-shadow: 3px 3px 6px rgba(0,0,0,0.9);">
+                Our Gallery</h1>
         </div>
     </div>
 
     <!-- Main Content -->
-    <section id="gallery" class="py-24 lg:py-32 bg-smoke">
+    <section id="gallery" class="py-20 bg-smoke">
         <div class="container mx-auto px-8">
             <div class="text-center mb-16">
                 <div class="flex items-center justify-center mb-4">
                     <i class="fas fa-images text-theme text-3xl mr-3"></i>
                     <span class="text-theme font-caveat text-2xl">Our Stories</span>
                 </div>
-                <h2 class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-theme-dark to-theme bg-clip-text text-transparent font-title mb-6 leading-tight">Our Gallery</h2>
+                <h2
+                    class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-theme-dark to-theme bg-clip-text text-transparent font-title mb-6 leading-snug pb-2">
+                    Our Gallery</h2>
                 <hr class="w-24 border-theme my-6 mx-auto">
                 <p class="mt-4 text-lg text-body max-w-3xl mx-auto">Visual stories of hope, transformation, and
                     community impact from our projects across India.</p>
@@ -246,7 +259,8 @@ if (!document.querySelector('header')) {
                         class="w-full h-auto block transition-transform duration-500 group-hover:scale-110">
                 </div>
                 <div class="gallery-item group mb-4 rounded-xl overflow-hidden cursor-pointer break-inside-avoid"
-                    href="assets/gallery/imgi_1_469822267_1161840358613099_1246968907342951126_n.webp" data-category="kitchen">
+                    href="assets/gallery/imgi_1_469822267_1161840358613099_1246968907342951126_n.webp"
+                    data-category="kitchen">
                     <img src="assets/gallery/imgi_1_469822267_1161840358613099_1246968907342951126_n.webp"
                         alt="Community Meal Distribution"
                         class="w-full h-auto block transition-transform duration-500 group-hover:scale-110">
@@ -259,7 +273,8 @@ if (!document.querySelector('header')) {
                         class="w-full h-auto block transition-transform duration-500 group-hover:scale-110">
                 </div>
                 <div class="gallery-item group mb-4 rounded-xl overflow-hidden cursor-pointer break-inside-avoid"
-                    href="assets/gallery/imgi_1_469661427_1162377088559426_247954896857302322_n.webp" data-category="hospital">
+                    href="assets/gallery/imgi_1_469661427_1162377088559426_247954896857302322_n.webp"
+                    data-category="hospital">
                     <img src="assets/gallery/imgi_1_469661427_1162377088559426_247954896857302322_n.webp"
                         alt="Medical Camp and Health Checkup"
                         class="w-full h-auto block transition-transform duration-500 group-hover:scale-110">
@@ -277,7 +292,8 @@ if (!document.querySelector('header')) {
                         class="w-full h-auto block transition-transform duration-500 group-hover:scale-110">
                 </div>
                 <div class="gallery-item group mb-4 rounded-xl overflow-hidden cursor-pointer break-inside-avoid"
-                    href="assets/gallery/imgi_1_469692362_1161840285279773_1800807948963129622_n.webp" data-category="women">
+                    href="assets/gallery/imgi_1_469692362_1161840285279773_1800807948963129622_n.webp"
+                    data-category="women">
                     <img src="assets/gallery/imgi_1_469692362_1161840285279773_1800807948963129622_n.webp"
                         alt="Skill Development Training for Women"
                         class="w-full h-auto block transition-transform duration-500 group-hover:scale-110">
@@ -290,7 +306,8 @@ if (!document.querySelector('header')) {
                         class="w-full h-auto block transition-transform duration-500 group-hover:scale-110">
                 </div>
                 <div class="gallery-item group mb-4 rounded-xl overflow-hidden cursor-pointer break-inside-avoid"
-                    href="assets/gallery/imgi_1_469757291_1161840291946439_4148944459100343878_n.webp" data-category="elderly">
+                    href="assets/gallery/imgi_1_469757291_1161840291946439_4148944459100343878_n.webp"
+                    data-category="elderly">
                     <img src="assets/gallery/imgi_1_469757291_1161840291946439_4148944459100343878_n.webp"
                         alt="Elderly Care and Support Services"
                         class="w-full h-auto block transition-transform duration-500 group-hover:scale-110">
@@ -298,31 +315,36 @@ if (!document.querySelector('header')) {
 
                 <!-- Additional Community Images -->
                 <div class="gallery-item group mb-4 rounded-xl overflow-hidden cursor-pointer break-inside-avoid"
-                    href="assets/gallery/imgi_1_469874621_1162377135226088_6054519291305410108_n.webp" data-category="school">
+                    href="assets/gallery/imgi_1_469874621_1162377135226088_6054519291305410108_n.webp"
+                    data-category="school">
                     <img src="assets/gallery/imgi_1_469874621_1162377135226088_6054519291305410108_n.webp"
                         alt="Educational Activities and Learning Programs"
                         class="w-full h-auto block transition-transform duration-500 group-hover:scale-110">
                 </div>
                 <div class="gallery-item group mb-4 rounded-xl overflow-hidden cursor-pointer break-inside-avoid"
-                    href="assets/gallery/imgi_1_470023932_1161840298613105_805095088574965975_n.webp" data-category="women">
+                    href="assets/gallery/imgi_1_470023932_1161840298613105_805095088574965975_n.webp"
+                    data-category="women">
                     <img src="assets/gallery/imgi_1_470023932_1161840298613105_805095088574965975_n.webp"
                         alt="Women Community Development Initiatives"
                         class="w-full h-auto block transition-transform duration-500 group-hover:scale-110">
                 </div>
                 <div class="gallery-item group mb-4 rounded-xl overflow-hidden cursor-pointer break-inside-avoid"
-                    href="assets/gallery/imgi_1_470128654_1162377105226091_409371524021346126_n.webp" data-category="hospital">
+                    href="assets/gallery/imgi_1_470128654_1162377105226091_409371524021346126_n.webp"
+                    data-category="hospital">
                     <img src="assets/gallery/imgi_1_470128654_1162377105226091_409371524021346126_n.webp"
                         alt="Healthcare Outreach Programs"
                         class="w-full h-auto block transition-transform duration-500 group-hover:scale-110">
                 </div>
                 <div class="gallery-item group mb-4 rounded-xl overflow-hidden cursor-pointer break-inside-avoid"
-                    href="assets/gallery/imgi_1_470155674_1162377118559423_666579806385131078_n.webp" data-category="kitchen">
+                    href="assets/gallery/imgi_1_470155674_1162377118559423_666579806385131078_n.webp"
+                    data-category="kitchen">
                     <img src="assets/gallery/imgi_1_470155674_1162377118559423_666579806385131078_n.webp"
                         alt="Food Distribution and Nutrition Programs"
                         class="w-full h-auto block transition-transform duration-500 group-hover:scale-110">
                 </div>
                 <div class="gallery-item group mb-4 rounded-xl overflow-hidden cursor-pointer break-inside-avoid"
-                    href="assets/gallery/imgi_1_470160026_1161840348613100_3192022270348660395_n.webp" data-category="elderly">
+                    href="assets/gallery/imgi_1_470160026_1161840348613100_3192022270348660395_n.webp"
+                    data-category="elderly">
                     <img src="assets/gallery/imgi_1_470160026_1161840348613100_3192022270348660395_n.webp"
                         alt="Senior Citizen Welfare Activities"
                         class="w-full h-auto block transition-transform duration-500 group-hover:scale-110">
@@ -334,7 +356,9 @@ if (!document.querySelector('header')) {
     <!--#include virtual="assets/footer.html" -->
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 bg-theme text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 z-40" style="display: none;">
+    <button id="back-to-top"
+        class="fixed bottom-8 right-8 bg-theme text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 z-40"
+        style="display: none;">
         <i class="fas fa-arrow-up"></i>
     </button>
 
@@ -342,16 +366,16 @@ if (!document.querySelector('header')) {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
     <!-- Fallback for header -->
-<script>
-// Fallback for header if SSI not supported
-if (!document.querySelector('header')) {
-    fetch('assets/header.html')
-        .then(response => response.text())
-        .then(data => document.body.insertAdjacentHTML('afterbegin', data));
-}
-</script>
-<script>
-        $(document).ready(function() {
+    <script>
+        // Fallback for header if SSI not supported
+        if (!document.querySelector('header')) {
+            fetch('assets/header.html')
+                .then(response => response.text())
+                .then(data => document.body.insertAdjacentHTML('afterbegin', data));
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
             // Initialize Magnific Popup for gallery images
             $('.gallery-item').magnificPopup({
                 type: 'image',
@@ -359,14 +383,14 @@ if (!document.querySelector('header')) {
                     enabled: true
                 },
                 image: {
-                    titleSrc: function(item) {
+                    titleSrc: function (item) {
                         return item.el.find('img').attr('alt');
                     }
                 }
             });
 
             // Filter functionality
-            $('.filter-btn').on('click', function() {
+            $('.filter-btn').on('click', function () {
                 const filterValue = $(this).data('filter');
 
                 // Update active button
@@ -386,7 +410,7 @@ if (!document.querySelector('header')) {
             });
 
             // Search functionality
-            $('#gallery-search').on('input', function() {
+            $('#gallery-search').on('input', function () {
                 const searchTerm = $(this).val().toLowerCase();
 
                 if (searchTerm === '') {
@@ -400,7 +424,7 @@ if (!document.querySelector('header')) {
                     }
                 } else {
                     // Filter items based on search term
-                    $('.gallery-item').each(function() {
+                    $('.gallery-item').each(function () {
                         const altText = $(this).find('img').attr('alt').toLowerCase();
                         const category = $(this).data('category');
 
@@ -473,15 +497,15 @@ if (!document.querySelector('header')) {
     </script>
 
     <!-- Fallback for header -->
-<script>
-// Fallback for header if SSI not supported
-if (!document.querySelector('header')) {
-    fetch('assets/header.html')
-        .then(response => response.text())
-        .then(data => document.body.insertAdjacentHTML('afterbegin', data));
-}
-</script>
-<script>
+    <script>
+        // Fallback for header if SSI not supported
+        if (!document.querySelector('header')) {
+            fetch('assets/header.html')
+                .then(response => response.text())
+                .then(data => document.body.insertAdjacentHTML('afterbegin', data));
+        }
+    </script>
+    <script>
         function toggleSidebar() {
             const sidebar = document.getElementById('mobile-sidebar');
             const content = document.getElementById('sidebar-content');
@@ -502,22 +526,23 @@ if (!document.querySelector('header')) {
         }
     </script>
 
-<!-- Fallback for header -->
-<script>
-// Fallback for header if SSI not supported
-if (!document.querySelector('header')) {
-    fetch('assets/header.html')
-        .then(response => response.text())
-        .then(data => document.body.insertAdjacentHTML('afterbegin', data));
-}
-</script>
-<script>
-// Fallback for footer if SSI not supported
-if (!document.querySelector('footer')) {
-    fetch('assets/footer.html')
-        .then(response => response.text())
-        .then(data => document.body.insertAdjacentHTML('beforeend', data));
-}
-</script>
+    <!-- Fallback for header -->
+    <script>
+        // Fallback for header if SSI not supported
+        if (!document.querySelector('header')) {
+            fetch('assets/header.html')
+                .then(response => response.text())
+                .then(data => document.body.insertAdjacentHTML('afterbegin', data));
+        }
+    </script>
+    <script>
+        // Fallback for footer if SSI not supported
+        if (!document.querySelector('footer')) {
+            fetch('assets/footer.html')
+                .then(response => response.text())
+                .then(data => document.body.insertAdjacentHTML('beforeend', data));
+        }
+    </script>
 </body>
+
 </html>

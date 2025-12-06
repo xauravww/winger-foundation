@@ -14,15 +14,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Fallback for header -->
-<script>
-// Fallback for header if SSI not supported
-if (!document.querySelector('header')) {
-    fetch('assets/header.html')
-        .then(response => response.text())
-        .then(data => document.body.insertAdjacentHTML('afterbegin', data));
-}
-</script>
-<script>
+    <script>
+        // Fallback for header if SSI not supported
+        if (!document.querySelector('header')) {
+            fetch('assets/header.html')
+                .then(response => response.text())
+                .then(data => document.body.insertAdjacentHTML('afterbegin', data));
+        }
+    </script>
+    <script>
         tailwind.config = {
             theme: {
                 extend: {
@@ -51,7 +51,7 @@ if (!document.querySelector('header')) {
             --text-white: #FFFFFF;
             --bg-gradient: linear-gradient(135deg, #FF6B35, #FFA500);
         }
-        
+
         .breadcrumb-container {
             position: relative;
             background: var(--bg-gradient);
@@ -60,23 +60,21 @@ if (!document.querySelector('header')) {
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
-        
+
         .breadcrumb-bg-text {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: repeating-linear-gradient(
-                45deg,
-                transparent,
-                transparent 190px,
-                rgba(255, 255, 255, 0.1) 190px,
-                rgba(255, 255, 255, 0.1) 200px
-            );
+            background-image: repeating-linear-gradient(45deg,
+                    transparent,
+                    transparent 190px,
+                    rgba(255, 255, 255, 0.1) 190px,
+                    rgba(255, 255, 255, 0.1) 200px);
             z-index: 1;
         }
-        
+
         .breadcrumb-bg-text::before {
             content: "Empower";
             position: absolute;
@@ -89,7 +87,7 @@ if (!document.querySelector('header')) {
             font-family: 'Montserrat', sans-serif;
             pointer-events: none;
         }
-        
+
         .breadcrumb-bg-text::after {
             content: "Empower";
             position: absolute;
@@ -102,7 +100,7 @@ if (!document.querySelector('header')) {
             font-family: 'Montserrat', sans-serif;
             pointer-events: none;
         }
-        
+
         .breadcrumb-nav {
             position: relative;
             z-index: 2;
@@ -111,24 +109,31 @@ if (!document.querySelector('header')) {
             gap: 10px;
             animation: fadeInBreadcrumb 1s ease-out;
         }
-        
+
         @keyframes fadeInBreadcrumb {
-            0% { opacity: 0; transform: translateY(10px); }
-            100% { opacity: 1; transform: translateY(0); }
+            0% {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
-        
+
         @media (prefers-reduced-motion: reduce) {
             .breadcrumb-nav {
                 animation: none;
             }
         }
-        
+
         .breadcrumb-item {
             display: flex;
             align-items: center;
             gap: 5px;
         }
-        
+
         .breadcrumb-link {
             font-family: 'Crimson Text', serif;
             font-size: 16px;
@@ -136,32 +141,36 @@ if (!document.querySelector('header')) {
             text-decoration: none;
             transition: color 0.3s ease;
         }
-        
+
         .breadcrumb-link:hover {
             color: var(--accent-dark);
         }
-        
+
         .breadcrumb-current {
             font-family: 'Montserrat', sans-serif;
             font-size: 18px;
             font-weight: 700;
             color: var(--text-white);
         }
-        
+
         .breadcrumb-arrow {
             width: 16px;
             height: 16px;
             fill: var(--text-white);
         }
+
         .blog-content h2 {
             @apply text-2xl font-bold text-title mt-8 mb-4;
         }
+
         .blog-content h3 {
             @apply text-xl font-bold text-title mt-6 mb-3;
         }
+
         .blog-content p {
             @apply text-body leading-relaxed mb-4;
         }
+
         .blog-content blockquote {
             @apply border-l-4 border-theme pl-4 italic text-title my-6;
         }
@@ -170,42 +179,51 @@ if (!document.querySelector('header')) {
 
 <body>
     <!--#include virtual="assets/header.html" -->
-                <nav class="hidden lg:block">
-                    <ul class="flex space-x-8 text-black font-title font-medium">
-                        <li><a href="/" class="hover:text-theme transition-colors">Home</a></li>
-                        <li><a href="/about.html" class="hover:text-theme transition-colors">About Us</a></li>
-                        <li><a href="/work.html" class="hover:text-theme transition-colors">Projects</a></li>
-                        <li><a href="/gallery.html" class="hover:text-theme transition-colors">Gallery</a></li>
-                        <li><a href="/blog.html" class="hover:text-theme transition-colors">Blog</a></li>
-                        <li><a href="/contact.html" class="hover:text-theme transition-colors">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="flex items-center space-x-4">
-                    <a href="https://rzp.io/l/U8cB2mvK" target="_blank" rel="noopener noreferrer"
-                        class="hidden md:inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-theme hover:bg-theme-dark transition-all duration-300">Donate
-                        Now</a>
-                    <button onclick="toggleSidebar()" class="lg:hidden text-black text-2xl"><i class="fas fa-bars"></i></button>
-                </div>
-            </div>
-        </div>
+    <nav class="hidden lg:block">
+        <ul class="flex space-x-8 text-black font-title font-medium">
+            <li><a href="/" class="hover:text-theme transition-colors">Home</a></li>
+            <li><a href="/about.html" class="hover:text-theme transition-colors">About Us</a></li>
+            <li><a href="/work.html" class="hover:text-theme transition-colors">Projects</a></li>
+            <li><a href="/gallery.html" class="hover:text-theme transition-colors">Gallery</a></li>
+            <li><a href="/blog.html" class="hover:text-theme transition-colors">Blog</a></li>
+            <li><a href="/contact.html" class="hover:text-theme transition-colors">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="flex items-center space-x-4">
+        <a href="https://rzp.io/l/U8cB2mvK" target="_blank" rel="noopener noreferrer"
+            class="hidden md:inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-theme hover:bg-theme-dark transition-all duration-300">Donate
+            Now</a>
+        <button onclick="toggleSidebar()" class="lg:hidden text-black text-2xl"><i class="fas fa-bars"></i></button>
+    </div>
+    </div>
+    </div>
     </header>
     <!-- Mobile Sidebar -->
     <div id="mobile-sidebar" class="fixed inset-0 z-50 lg:hidden hidden">
         <div class="absolute inset-0 bg-black/50" id="sidebar-overlay" onclick="closeSidebar()"></div>
-        <div class="absolute right-0 top-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform" id="sidebar-content">
+        <div class="absolute right-0 top-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform"
+            id="sidebar-content">
             <div class="p-4">
                 <button onclick="closeSidebar()" class="text-gray-500 text-2xl">&times;</button>
                 <nav class="mt-8">
                     <ul class="space-y-4">
                         <li><a href="/" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Home</a></li>
-                        <li><a href="/about.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">About Us</a></li>
-                        <li><a href="/work.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Projects</a></li>
-                        <li><a href="/gallery.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Gallery</a></li>
-                        <li><a href="/blog.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Blog</a></li>
-                        <li><a href="/contact.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Contact</a></li>
-                        <li><a href="/get-involved.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Get Involved</a></li>
-                        <li><a href="/donate.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Donate</a></li>
-                        <li><a href="/free-courses.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Free Courses</a></li>
+                        <li><a href="/about.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">About
+                                Us</a></li>
+                        <li><a href="/work.html"
+                                class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Projects</a></li>
+                        <li><a href="/gallery.html"
+                                class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Gallery</a></li>
+                        <li><a href="/blog.html"
+                                class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Blog</a></li>
+                        <li><a href="/contact.html"
+                                class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Contact</a></li>
+                        <li><a href="/get-involved.html"
+                                class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Get Involved</a></li>
+                        <li><a href="/donate.html"
+                                class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Donate</a></li>
+                        <li><a href="/free-courses.html"
+                                class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Free Courses</a></li>
                     </ul>
                 </nav>
             </div>
@@ -220,17 +238,19 @@ if (!document.querySelector('header')) {
         <div class="absolute inset-0 bg-cover bg-center z-0"
             style="background-image: url('assets/img/breadcumb-bg.jpg');"></div>
         <div class="container mx-auto px-4 relative z-10 text-center">
-            <h1 class="text-5xl font-bold text-white font-title mb-4" style="text-shadow: 3px 3px 6px rgba(0,0,0,0.9);">Blog Details</h1>
+            <h1 class="text-5xl font-bold text-white font-title mb-4" style="text-shadow: 3px 3px 6px rgba(0,0,0,0.9);">
+                Blog Details</h1>
         </div>
     </div>
 
     <!-- Main Content -->
-    <section class="py-24 lg:py-32 bg-white">
+    <section class="py-20 bg-white">
         <div class="container mx-auto px-8 max-w-4xl">
             <article class="prose lg:prose-xl max-w-none">
                 <div class="mb-8">
                     <!-- This is a link to the blog listing page -->
-                    <a href="/blog.html" class="back-to-blog-btn font-bold text-theme hover:underline">&larr; Back to All
+                    <a href="/blog.html" class="back-to-blog-btn font-bold text-theme hover:underline">&larr; Back to
+                        All
                         Posts</a>
                 </div>
                 <!-- Content will be injected here by JavaScript -->
@@ -246,20 +266,22 @@ if (!document.querySelector('header')) {
     <!--#include virtual="assets/footer.html" -->
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 bg-theme text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 z-40" style="display: none;">
+    <button id="back-to-top"
+        class="fixed bottom-8 right-8 bg-theme text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 z-40"
+        style="display: none;">
         <i class="fas fa-arrow-up"></i>
     </button>
 
     <!-- Fallback for header -->
-<script>
-// Fallback for header if SSI not supported
-if (!document.querySelector('header')) {
-    fetch('assets/header.html')
-        .then(response => response.text())
-        .then(data => document.body.insertAdjacentHTML('afterbegin', data));
-}
-</script>
-<script>
+    <script>
+        // Fallback for header if SSI not supported
+        if (!document.querySelector('header')) {
+            fetch('assets/header.html')
+                .then(response => response.text())
+                .then(data => document.body.insertAdjacentHTML('afterbegin', data));
+        }
+    </script>
+    <script>
         // Get blog slug from URL parameters
         function getBlogSlug() {
             const urlParams = new URLSearchParams(window.location.search);
@@ -315,7 +337,7 @@ if (!document.querySelector('header')) {
         }
 
         // Initialize when DOM is loaded
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             loadBlogDetail();
         });
 
@@ -377,22 +399,23 @@ if (!document.querySelector('header')) {
         });
     </script>
 
-<!-- Fallback for header -->
-<script>
-// Fallback for header if SSI not supported
-if (!document.querySelector('header')) {
-    fetch('assets/header.html')
-        .then(response => response.text())
-        .then(data => document.body.insertAdjacentHTML('afterbegin', data));
-}
-</script>
-<script>
-// Fallback for footer if SSI not supported
-if (!document.querySelector('footer')) {
-    fetch('assets/footer.html')
-        .then(response => response.text())
-        .then(data => document.body.insertAdjacentHTML('beforeend', data));
-}
-</script>
+    <!-- Fallback for header -->
+    <script>
+        // Fallback for header if SSI not supported
+        if (!document.querySelector('header')) {
+            fetch('assets/header.html')
+                .then(response => response.text())
+                .then(data => document.body.insertAdjacentHTML('afterbegin', data));
+        }
+    </script>
+    <script>
+        // Fallback for footer if SSI not supported
+        if (!document.querySelector('footer')) {
+            fetch('assets/footer.html')
+                .then(response => response.text())
+                .then(data => document.body.insertAdjacentHTML('beforeend', data));
+        }
+    </script>
 </body>
+
 </html>

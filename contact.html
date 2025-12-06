@@ -14,15 +14,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Fallback for header -->
-<script>
-// Fallback for header if SSI not supported
-if (!document.querySelector('header')) {
-    fetch('assets/header.html')
-        .then(response => response.text())
-        .then(data => document.body.insertAdjacentHTML('afterbegin', data));
-}
-</script>
-<script>
+    <script>
+        // Fallback for header if SSI not supported
+        if (!document.querySelector('header')) {
+            fetch('assets/header.html')
+                .then(response => response.text())
+                .then(data => document.body.insertAdjacentHTML('afterbegin', data));
+        }
+    </script>
+    <script>
         tailwind.config = {
             theme: {
                 extend: {
@@ -48,43 +48,52 @@ if (!document.querySelector('header')) {
 
 <body>
     <!--#include virtual="assets/header.html" -->
-                <nav class="hidden lg:block">
-                    <ul class="flex space-x-8 text-black font-title font-medium">
-                        <li><a href="/" class="hover:text-theme transition-colors">Home</a></li>
-                        <li><a href="/about.html" class="hover:text-theme transition-colors">About Us</a></li>
-                        <li><a href="/work.html" class="hover:text-theme transition-colors">Projects</a></li>
-                        <li><a href="/gallery.html" class="hover:text-theme transition-colors">Gallery</a></li>
-                        <li><a href="/blog.html" class="hover:text-theme transition-colors">Blog</a></li>
-                        <li><a href="/contact.html" class="hover:text-theme transition-colors text-theme">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="flex items-center space-x-4">
-                    <a href="https://rzp.io/l/U8cB2mvK" target="_blank" rel="noopener noreferrer"
-                        class="hidden md:inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-theme hover:bg-theme-dark transition-all duration-300">Donate
-                        Now</a>
-                    <button onclick="toggleSidebar()" class="lg:hidden text-black text-2xl"><i class="fas fa-bars"></i></button>
-                </div>
-            </div>
-        </div>
+    <nav class="hidden lg:block">
+        <ul class="flex space-x-8 text-black font-title font-medium">
+            <li><a href="/" class="hover:text-theme transition-colors">Home</a></li>
+            <li><a href="/about.html" class="hover:text-theme transition-colors">About Us</a></li>
+            <li><a href="/work.html" class="hover:text-theme transition-colors">Projects</a></li>
+            <li><a href="/gallery.html" class="hover:text-theme transition-colors">Gallery</a></li>
+            <li><a href="/blog.html" class="hover:text-theme transition-colors">Blog</a></li>
+            <li><a href="/contact.html" class="hover:text-theme transition-colors text-theme">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="flex items-center space-x-4">
+        <a href="https://rzp.io/l/U8cB2mvK" target="_blank" rel="noopener noreferrer"
+            class="hidden md:inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-theme hover:bg-theme-dark transition-all duration-300">Donate
+            Now</a>
+        <button onclick="toggleSidebar()" class="lg:hidden text-black text-2xl"><i class="fas fa-bars"></i></button>
+    </div>
+    </div>
+    </div>
     </header>
 
     <!-- Mobile Sidebar -->
     <div id="mobile-sidebar" class="fixed inset-0 z-50 lg:hidden hidden">
         <div class="absolute inset-0 bg-black/50" id="sidebar-overlay" onclick="closeSidebar()"></div>
-        <div class="absolute right-0 top-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform" id="sidebar-content">
+        <div class="absolute right-0 top-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform"
+            id="sidebar-content">
             <div class="p-4">
                 <button onclick="closeSidebar()" class="text-gray-500 text-2xl">&times;</button>
                 <nav class="mt-8">
                     <ul class="space-y-4">
                         <li><a href="/" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Home</a></li>
-                        <li><a href="/about.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">About Us</a></li>
-                        <li><a href="/work.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Projects</a></li>
-                        <li><a href="/gallery.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Gallery</a></li>
-                        <li><a href="/blog.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Blog</a></li>
-                        <li><a href="/contact.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Contact</a></li>
-                        <li><a href="/get-involved.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Get Involved</a></li>
-                        <li><a href="/donate.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Donate</a></li>
-                        <li><a href="/free-courses.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Free Courses</a></li>
+                        <li><a href="/about.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">About
+                                Us</a></li>
+                        <li><a href="/work.html"
+                                class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Projects</a></li>
+                        <li><a href="/gallery.html"
+                                class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Gallery</a></li>
+                        <li><a href="/blog.html"
+                                class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Blog</a></li>
+                        <li><a href="/contact.html"
+                                class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Contact</a></li>
+                        <li><a href="/get-involved.html"
+                                class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Get Involved</a></li>
+                        <li><a href="/donate.html"
+                                class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Donate</a></li>
+                        <li><a href="/free-courses.html"
+                                class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Free Courses</a></li>
                     </ul>
                 </nav>
             </div>
@@ -99,12 +108,13 @@ if (!document.querySelector('header')) {
         <div class="absolute inset-0 bg-cover bg-center z-0"
             style="background-image: url('assets/img/breadcumb-bg.jpg');"></div>
         <div class="container mx-auto px-4 relative z-10 text-center">
-            <h1 class="text-5xl font-bold text-white font-title mb-4" style="text-shadow: 3px 3px 6px rgba(0,0,0,0.9);">Contact Us</h1>
+            <h1 class="text-5xl font-bold text-white font-title mb-4" style="text-shadow: 3px 3px 6px rgba(0,0,0,0.9);">
+                Contact Us</h1>
         </div>
     </div>
 
     <!-- Main Content -->
-    <section id="contact" class="py-24 lg:py-32 bg-smoke">
+    <section id="contact" class="py-20 bg-smoke">
         <div class="container mx-auto px-8">
             <!-- Section Header -->
             <div class="text-center mb-16">
@@ -112,7 +122,9 @@ if (!document.querySelector('header')) {
                     <i class="fas fa-envelope text-theme text-3xl mr-3"></i>
                     <span class="text-theme font-caveat text-2xl">Reach Out</span>
                 </div>
-                <h2 class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-theme-dark to-theme bg-clip-text text-transparent font-title mb-6 leading-tight">Get in Touch</h2>
+                <h2
+                    class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-theme-dark to-theme bg-clip-text text-transparent font-title mb-6 leading-snug pb-2">
+                    Get in Touch</h2>
                 <hr class="w-24 border-theme my-6 mx-auto">
                 <p class="mt-4 text-lg text-body max-w-3xl mx-auto">
                     Have questions, ideas, or want to partner with us? We'd love to hear from you. Reach out, and let's
@@ -195,20 +207,22 @@ if (!document.querySelector('header')) {
     <!--#include virtual="assets/footer.html" -->
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 bg-theme text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 z-40" style="display: none;">
+    <button id="back-to-top"
+        class="fixed bottom-8 right-8 bg-theme text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 z-40"
+        style="display: none;">
         <i class="fas fa-arrow-up"></i>
     </button>
 
     <!-- Fallback for header -->
-<script>
-// Fallback for header if SSI not supported
-if (!document.querySelector('header')) {
-    fetch('assets/header.html')
-        .then(response => response.text())
-        .then(data => document.body.insertAdjacentHTML('afterbegin', data));
-}
-</script>
-<script>
+    <script>
+        // Fallback for header if SSI not supported
+        if (!document.querySelector('header')) {
+            fetch('assets/header.html')
+                .then(response => response.text())
+                .then(data => document.body.insertAdjacentHTML('afterbegin', data));
+        }
+    </script>
+    <script>
         function toggleSidebar() {
             const sidebar = document.getElementById('mobile-sidebar');
             const content = document.getElementById('sidebar-content');
@@ -268,15 +282,15 @@ if (!document.querySelector('header')) {
     </script>
 
     <!-- Fallback for header -->
-<script>
-// Fallback for header if SSI not supported
-if (!document.querySelector('header')) {
-    fetch('assets/header.html')
-        .then(response => response.text())
-        .then(data => document.body.insertAdjacentHTML('afterbegin', data));
-}
-</script>
-<script>
+    <script>
+        // Fallback for header if SSI not supported
+        if (!document.querySelector('header')) {
+            fetch('assets/header.html')
+                .then(response => response.text())
+                .then(data => document.body.insertAdjacentHTML('afterbegin', data));
+        }
+    </script>
+    <script>
         function toggleSidebar() {
             const sidebar = document.getElementById('mobile-sidebar');
             const content = document.getElementById('sidebar-content');
@@ -297,22 +311,23 @@ if (!document.querySelector('header')) {
         }
     </script>
 
-<!-- Fallback for header -->
-<script>
-// Fallback for header if SSI not supported
-if (!document.querySelector('header')) {
-    fetch('assets/header.html')
-        .then(response => response.text())
-        .then(data => document.body.insertAdjacentHTML('afterbegin', data));
-}
-</script>
-<script>
-// Fallback for footer if SSI not supported
-if (!document.querySelector('footer')) {
-    fetch('assets/footer.html')
-        .then(response => response.text())
-        .then(data => document.body.insertAdjacentHTML('beforeend', data));
-}
-</script>
+    <!-- Fallback for header -->
+    <script>
+        // Fallback for header if SSI not supported
+        if (!document.querySelector('header')) {
+            fetch('assets/header.html')
+                .then(response => response.text())
+                .then(data => document.body.insertAdjacentHTML('afterbegin', data));
+        }
+    </script>
+    <script>
+        // Fallback for footer if SSI not supported
+        if (!document.querySelector('footer')) {
+            fetch('assets/footer.html')
+                .then(response => response.text())
+                .then(data => document.body.insertAdjacentHTML('beforeend', data));
+        }
+    </script>
 </body>
+
 </html>

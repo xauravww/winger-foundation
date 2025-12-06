@@ -27,15 +27,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Fallback for header -->
-<script>
-// Fallback for header if SSI not supported
-if (!document.querySelector('header')) {
-    fetch('assets/header.html')
-        .then(response => response.text())
-        .then(data => document.body.insertAdjacentHTML('afterbegin', data));
-}
-</script>
-<script>
+    <script>
+        // Fallback for header if SSI not supported
+        if (!document.querySelector('header')) {
+            fetch('assets/header.html')
+                .then(response => response.text())
+                .then(data => document.body.insertAdjacentHTML('afterbegin', data));
+        }
+    </script>
+    <script>
 
         tailwind.config = {
 
@@ -86,43 +86,52 @@ if (!document.querySelector('header')) {
 <body>
 
     <!--#include virtual="assets/header.html" -->
-                <nav class="hidden lg:block">
-                    <ul class="flex space-x-8 text-black font-title font-medium">
-                        <li><a href="/" class="hover:text-theme transition-colors text-theme">Home</a></li>
-                        <li><a href="/about.html" class="hover:text-theme transition-colors">About Us</a></li>
-                        <li><a href="/work.html" class="hover:text-theme transition-colors">Projects</a></li>
-                        <li><a href="/gallery.html" class="hover:text-theme transition-colors">Gallery</a></li>
-                        <li><a href="/blog.html" class="hover:text-theme transition-colors">Blog</a></li>
-                        <li><a href="/contact.html" class="hover:text-theme transition-colors">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="flex items-center space-x-4">
-                    <a href="https://rzp.io/l/U8cB2mvK" target="_blank" rel="noopener noreferrer"
-                        class="hidden md:inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-theme hover:bg-theme-dark transition-all duration-300">Donate
-                        Now</a>
-                    <button onclick="toggleSidebar()" class="lg:hidden text-black text-2xl"><i class="fas fa-bars"></i></button>
-                </div>
-            </div>
-        </div>
+    <nav class="hidden lg:block">
+        <ul class="flex space-x-8 text-black font-title font-medium">
+            <li><a href="/" class="hover:text-theme transition-colors text-theme">Home</a></li>
+            <li><a href="/about.html" class="hover:text-theme transition-colors">About Us</a></li>
+            <li><a href="/work.html" class="hover:text-theme transition-colors">Projects</a></li>
+            <li><a href="/gallery.html" class="hover:text-theme transition-colors">Gallery</a></li>
+            <li><a href="/blog.html" class="hover:text-theme transition-colors">Blog</a></li>
+            <li><a href="/contact.html" class="hover:text-theme transition-colors">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="flex items-center space-x-4">
+        <a href="https://rzp.io/l/U8cB2mvK" target="_blank" rel="noopener noreferrer"
+            class="hidden md:inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-theme hover:bg-theme-dark transition-all duration-300">Donate
+            Now</a>
+        <button onclick="toggleSidebar()" class="lg:hidden text-black text-2xl"><i class="fas fa-bars"></i></button>
+    </div>
+    </div>
+    </div>
     </header>
 
     <!-- Mobile Sidebar -->
     <div id="mobile-sidebar" class="fixed inset-0 z-50 lg:hidden hidden">
         <div class="absolute inset-0 bg-black/50" id="sidebar-overlay" onclick="closeSidebar()"></div>
-        <div class="absolute right-0 top-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform" id="sidebar-content">
+        <div class="absolute right-0 top-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform"
+            id="sidebar-content">
             <div class="p-4">
                 <button onclick="closeSidebar()" class="text-gray-500 text-2xl">&times;</button>
                 <nav class="mt-8">
                     <ul class="space-y-4">
                         <li><a href="/" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Home</a></li>
-                        <li><a href="/about.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">About Us</a></li>
-                        <li><a href="/work.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Projects</a></li>
-                        <li><a href="/gallery.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Gallery</a></li>
-                        <li><a href="/blog.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Blog</a></li>
-                        <li><a href="/contact.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Contact</a></li>
-                        <li><a href="/get-involved.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Get Involved</a></li>
-                        <li><a href="/donate.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Donate</a></li>
-                        <li><a href="/free-courses.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Free Courses</a></li>
+                        <li><a href="/about.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">About
+                                Us</a></li>
+                        <li><a href="/work.html"
+                                class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Projects</a></li>
+                        <li><a href="/gallery.html"
+                                class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Gallery</a></li>
+                        <li><a href="/blog.html"
+                                class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Blog</a></li>
+                        <li><a href="/contact.html"
+                                class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Contact</a></li>
+                        <li><a href="/get-involved.html"
+                                class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Get Involved</a></li>
+                        <li><a href="/donate.html"
+                                class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Donate</a></li>
+                        <li><a href="/free-courses.html"
+                                class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Free Courses</a></li>
                     </ul>
                 </nav>
             </div>
@@ -133,7 +142,8 @@ if (!document.querySelector('header')) {
 
     <!-- Hero -->
 
-    <div class="relative min-h-screen flex items-center pt-20" style="background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('assets/img/hero/hero1.jpg'); background-size: cover; background-position: center;">
+    <div class="relative min-h-screen flex items-center pt-20"
+        style="background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('assets/img/hero/hero1.jpg'); background-size: cover; background-position: center;">
 
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
@@ -142,11 +152,15 @@ if (!document.querySelector('header')) {
                         <i class="fas fa-heart text-theme text-3xl mr-3"></i>
                         <span class="text-theme font-caveat text-2xl">With Love & Hope</span>
                     </div>
-                    <h1 class="text-5xl md:text-7xl font-bold bg-gradient-to-r from-white to-theme bg-clip-text text-transparent font-title mb-6 leading-tight drop-shadow-lg">Feeding Lives. Inspiring Futures</h1>
+                    <h1
+                        class="text-5xl md:text-7xl font-bold bg-gradient-to-r from-white to-theme bg-clip-text text-transparent font-title mb-6 leading-snug pb-2 drop-shadow-lg">
+                        Feeding Lives. Inspiring Futures</h1>
 
                     <hr class="w-24 border-theme my-6 mx-auto lg:mx-0">
 
-                    <p class="text-white/80 text-lg md:text-xl mb-10">We believe that no one should go to bed hungry. Our mission is to provide nutritious meals, support families in need, and build long-term solutions that transform lives and strengthen communities.</p>
+                    <p class="text-white/80 text-lg md:text-xl mb-10">We believe that no one should go to bed hungry.
+                        Our mission is to provide nutritious meals, support families in need, and build long-term
+                        solutions that transform lives and strengthen communities.</p>
 
                     <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
 
@@ -158,12 +172,13 @@ if (!document.querySelector('header')) {
                     </div>
                 </div>
                 <div class="flex justify-center lg:justify-end">
-                    <img src="assets/img/hero.png" class="w-full max-w-md rounded-lg shadow-lg" alt="Hero Image" loading="lazy">
+                    <img src="assets/img/hero.png" class="w-full max-w-md rounded-lg shadow-lg" alt="Hero Image"
+                        loading="lazy">
                 </div>
             </div>
         </div>
 
-        </div>
+    </div>
 
     </div>
 
@@ -190,7 +205,8 @@ if (!document.querySelector('header')) {
 
                     </div>
 
-                    <h3 class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-title to-title group-hover:from-title group-hover:to-theme bg-clip-text text-transparent font-title mb-4 transition-all">
+                    <h3
+                        class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-title to-title group-hover:from-title group-hover:to-theme bg-clip-text text-transparent font-title mb-4 transition-all">
 
                         Food Support Program</h3>
 
@@ -218,7 +234,8 @@ if (!document.querySelector('header')) {
 
                     </div>
 
-                    <h3 class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-title to-title group-hover:from-title group-hover:to-theme bg-clip-text text-transparent font-title mb-4 transition-all">
+                    <h3
+                        class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-title to-title group-hover:from-title group-hover:to-theme bg-clip-text text-transparent font-title mb-4 transition-all">
 
                         Community Welfare</h3>
 
@@ -246,7 +263,8 @@ if (!document.querySelector('header')) {
 
                     </div>
 
-                    <h3 class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-title to-title group-hover:from-title group-hover:to-theme bg-clip-text text-transparent font-title mb-4 transition-all">
+                    <h3
+                        class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-title to-title group-hover:from-title group-hover:to-theme bg-clip-text text-transparent font-title mb-4 transition-all">
 
                         Charity & Donations</h3>
 
@@ -274,7 +292,8 @@ if (!document.querySelector('header')) {
 
                     </div>
 
-                    <h3 class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-title to-title group-hover:from-title group-hover:to-theme bg-clip-text text-transparent font-title mb-4 transition-all">
+                    <h3
+                        class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-title to-title group-hover:from-title group-hover:to-theme bg-clip-text text-transparent font-title mb-4 transition-all">
 
                         Medical Assistance</h3>
 
@@ -456,24 +475,14 @@ if (!document.querySelector('header')) {
 
                 <div class="order-1 lg:order-2">
 
-                    <div class="flex items-center justify-center lg:justify-start mb-4">
-                        <i class="fas fa-eye text-theme text-3xl mr-3"></i>
-                        <span class="text-theme font-caveat text-2xl">With Vision & Purpose</span>
-                    </div>
-                    <h2 class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-title to-theme bg-clip-text text-transparent font-title mb-6 leading-tight">Our Vision</h2>
-                    <hr class="w-24 border-theme my-6 mx-auto lg:mx-0">
 
-                    <p class="text-body mb-8 leading-relaxed">
+                    that no one is hungry in our area. As far as beneficiaries are concerned, it will include
 
-                        Our vision is to ensure that the needy person around us gets good quality nutritious food and
+                    everyone from poor kids, toddlers, beggars, adults; anyone who needs food for his sustenance. We
 
-                        that no one is hungry in our area. As far as beneficiaries are concerned, it will include
+                    aim at reducing the world hunger and play our role in this moral value by honestly devoting
 
-                        everyone from poor kids, toddlers, beggars, adults; anyone who needs food for his sustenance. We
-
-                        aim at reducing the world hunger and play our role in this moral value by honestly devoting
-
-                        ourselves to the cause of humanity and ensuring that every man gets a bread in his hand.
+                    ourselves to the cause of humanity and ensuring that every man gets a bread in his hand.
 
                     </p>
 
@@ -492,7 +501,8 @@ if (!document.querySelector('header')) {
 
     </section>
 
-    <div class="relative py-20" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/img/breadcumb-bg.jpg'); background-size: cover; background-position: center;">
+    <div class="relative py-20"
+        style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/img/breadcumb-bg.jpg'); background-size: cover; background-position: center;">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="max-w-4xl mx-auto">
                 <div class="flex items-center justify-center mb-6">
@@ -500,7 +510,12 @@ if (!document.querySelector('header')) {
                     <span class="text-theme font-caveat text-3xl">Winger Global School</span>
                     <i class="fas fa-heart text-theme text-3xl ml-3"></i>
                 </div>
-                <p class="text-white text-lg md:text-xl leading-relaxed">Our NGO, Winger Global Foundation aims at providing holistic development of children across the country. Our primary focus are the children of the nation, who will be the future of our nation one day. Hence, cherishing the objectives of our Constitution along with keeping up with philosophical view of nurturing the children of our country, our NGO has aimed at opening up Winger Global School for poor children across the country, to provide them quality education free of cost</p>
+                <p class="text-white text-lg md:text-xl leading-relaxed">Our NGO, Winger Global Foundation aims at
+                    providing holistic development of children across the country. Our primary focus are the children of
+                    the nation, who will be the future of our nation one day. Hence, cherishing the objectives of our
+                    Constitution along with keeping up with philosophical view of nurturing the children of our country,
+                    our NGO has aimed at opening up Winger Global School for poor children across the country, to
+                    provide them quality education free of cost</p>
             </div>
         </div>
     </div>
@@ -551,20 +566,22 @@ if (!document.querySelector('header')) {
     <!--#include virtual="assets/footer.html" -->
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 bg-theme text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 z-40" style="display: none;">
+    <button id="back-to-top"
+        class="fixed bottom-8 right-8 bg-theme text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 z-40"
+        style="display: none;">
         <i class="fas fa-arrow-up"></i>
     </button>
 
     <!-- Fallback for header -->
-<script>
-// Fallback for header if SSI not supported
-if (!document.querySelector('header')) {
-    fetch('assets/header.html')
-        .then(response => response.text())
-        .then(data => document.body.insertAdjacentHTML('afterbegin', data));
-}
-</script>
-<script>
+    <script>
+        // Fallback for header if SSI not supported
+        if (!document.querySelector('header')) {
+            fetch('assets/header.html')
+                .then(response => response.text())
+                .then(data => document.body.insertAdjacentHTML('afterbegin', data));
+        }
+    </script>
+    <script>
         function toggleSidebar() {
             const sidebar = document.getElementById('mobile-sidebar');
             const content = document.getElementById('sidebar-content');
@@ -624,15 +641,15 @@ if (!document.querySelector('header')) {
     </script>
 
     <!-- Fallback for header -->
-<script>
-// Fallback for header if SSI not supported
-if (!document.querySelector('header')) {
-    fetch('assets/header.html')
-        .then(response => response.text())
-        .then(data => document.body.insertAdjacentHTML('afterbegin', data));
-}
-</script>
-<script>
+    <script>
+        // Fallback for header if SSI not supported
+        if (!document.querySelector('header')) {
+            fetch('assets/header.html')
+                .then(response => response.text())
+                .then(data => document.body.insertAdjacentHTML('afterbegin', data));
+        }
+    </script>
+    <script>
         function toggleSidebar() {
             const sidebar = document.getElementById('mobile-sidebar');
             const content = document.getElementById('sidebar-content');
@@ -653,23 +670,23 @@ if (!document.querySelector('header')) {
         }
     </script>
 
-<!-- Fallback for header -->
-<script>
-// Fallback for header if SSI not supported
-if (!document.querySelector('header')) {
-    fetch('assets/header.html')
-        .then(response => response.text())
-        .then(data => document.body.insertAdjacentHTML('afterbegin', data));
-}
-</script>
-<script>
-// Fallback for footer if SSI not supported
-if (!document.querySelector('footer')) {
-    fetch('assets/footer.html')
-        .then(response => response.text())
-        .then(data => document.body.insertAdjacentHTML('beforeend', data));
-}
-</script>
+    <!-- Fallback for header -->
+    <script>
+        // Fallback for header if SSI not supported
+        if (!document.querySelector('header')) {
+            fetch('assets/header.html')
+                .then(response => response.text())
+                .then(data => document.body.insertAdjacentHTML('afterbegin', data));
+        }
+    </script>
+    <script>
+        // Fallback for footer if SSI not supported
+        if (!document.querySelector('footer')) {
+            fetch('assets/footer.html')
+                .then(response => response.text())
+                .then(data => document.body.insertAdjacentHTML('beforeend', data));
+        }
+    </script>
 </body>
 
 </html>

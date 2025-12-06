@@ -14,15 +14,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Fallback for header -->
-<script>
-// Fallback for header if SSI not supported
-if (!document.querySelector('header')) {
-    fetch('assets/header.html')
-        .then(response => response.text())
-        .then(data => document.body.insertAdjacentHTML('afterbegin', data));
-}
-</script>
-<script>
+    <script>
+        // Fallback for header if SSI not supported
+        if (!document.querySelector('header')) {
+            fetch('assets/header.html')
+                .then(response => response.text())
+                .then(data => document.body.insertAdjacentHTML('afterbegin', data));
+        }
+    </script>
+    <script>
         tailwind.config = {
             theme: {
                 extend: {
@@ -51,7 +51,7 @@ if (!document.querySelector('header')) {
             --text-white: #FFFFFF;
             --bg-gradient: linear-gradient(135deg, #FF6B35, #FFA500);
         }
-        
+
         .breadcrumb-container {
             position: relative;
             background: var(--bg-gradient);
@@ -60,23 +60,21 @@ if (!document.querySelector('header')) {
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
-        
+
         .breadcrumb-bg-text {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: repeating-linear-gradient(
-                45deg,
-                transparent,
-                transparent 190px,
-                rgba(255, 255, 255, 0.1) 190px,
-                rgba(255, 255, 255, 0.1) 200px
-            );
+            background-image: repeating-linear-gradient(45deg,
+                    transparent,
+                    transparent 190px,
+                    rgba(255, 255, 255, 0.1) 190px,
+                    rgba(255, 255, 255, 0.1) 200px);
             z-index: 1;
         }
-        
+
         .breadcrumb-bg-text::before {
             content: "Empower";
             position: absolute;
@@ -89,7 +87,7 @@ if (!document.querySelector('header')) {
             font-family: 'Montserrat', sans-serif;
             pointer-events: none;
         }
-        
+
         .breadcrumb-bg-text::after {
             content: "Empower";
             position: absolute;
@@ -102,7 +100,7 @@ if (!document.querySelector('header')) {
             font-family: 'Montserrat', sans-serif;
             pointer-events: none;
         }
-        
+
         .breadcrumb-nav {
             position: relative;
             z-index: 2;
@@ -111,24 +109,31 @@ if (!document.querySelector('header')) {
             gap: 10px;
             animation: fadeInBreadcrumb 1s ease-out;
         }
-        
+
         @keyframes fadeInBreadcrumb {
-            0% { opacity: 0; transform: translateY(10px); }
-            100% { opacity: 1; transform: translateY(0); }
+            0% {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
-        
+
         @media (prefers-reduced-motion: reduce) {
             .breadcrumb-nav {
                 animation: none;
             }
         }
-        
+
         .breadcrumb-item {
             display: flex;
             align-items: center;
             gap: 5px;
         }
-        
+
         .breadcrumb-link {
             font-family: 'Crimson Text', serif;
             font-size: 16px;
@@ -136,29 +141,31 @@ if (!document.querySelector('header')) {
             text-decoration: none;
             transition: color 0.3s ease;
         }
-        
+
         .breadcrumb-link:hover {
             color: var(--accent-dark);
         }
-        
+
         .breadcrumb-current {
             font-family: 'Montserrat', sans-serif;
             font-size: 18px;
             font-weight: 700;
             color: var(--text-white);
         }
-        
+
         .breadcrumb-arrow {
             width: 16px;
             height: 16px;
             fill: var(--text-white);
         }
+
         .line-clamp-2 {
             display: -webkit-box;
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
+
         .line-clamp-3 {
             display: -webkit-box;
             -webkit-line-clamp: 3;
@@ -179,12 +186,13 @@ if (!document.querySelector('header')) {
         <div class="absolute inset-0 bg-cover bg-center z-0"
             style="background-image: url('assets/img/breadcumb-bg.jpg');"></div>
         <div class="container mx-auto px-4 relative z-10 text-center">
-            <h1 class="text-5xl font-bold text-white font-title mb-4" style="text-shadow: 3px 3px 6px rgba(0,0,0,0.9);">Our Blog</h1>
+            <h1 class="text-5xl font-bold text-white font-title mb-4" style="text-shadow: 3px 3px 6px rgba(0,0,0,0.9);">
+                Our Blog</h1>
         </div>
     </div>
 
     <!-- Main Content -->
-    <section id="blog" class="py-24 lg:py-32 bg-smoke">
+    <section id="blog" class="py-20 bg-smoke">
         <div class="container mx-auto px-8">
             <!-- Section Header -->
             <div class="text-center mb-16">
@@ -192,19 +200,22 @@ if (!document.querySelector('header')) {
                     <i class="fas fa-blog text-theme text-3xl mr-3"></i>
                     <span class="text-theme font-caveat text-2xl">Our Insights</span>
                 </div>
-                <h2 class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-theme-dark to-theme bg-clip-text text-transparent font-title mb-6 leading-tight">From the Field: Our Stories</h2>
+                <h2
+                    class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-theme-dark to-theme bg-clip-text text-transparent font-title mb-6 leading-snug pb-2">
+                    From the Field: Our Stories</h2>
                 <hr class="w-24 border-theme my-6 mx-auto">
                 <p class="mt-4 text-lg text-body max-w-3xl mx-auto">
                     Insights, stories, and updates from our ongoing work to empower communities across India.
                 </p>
-             </div>
+            </div>
 
-             <!-- Search Bar -->
-             <div class="mb-12 text-center">
-                 <input type="text" id="blog-search" placeholder="Search posts..." class="px-4 py-2 border border-gray-300 rounded-lg w-full max-w-md focus:outline-none focus:ring-2 focus:ring-theme">
-             </div>
+            <!-- Search Bar -->
+            <div class="mb-12 text-center">
+                <input type="text" id="blog-search" placeholder="Search posts..."
+                    class="px-4 py-2 border border-gray-300 rounded-lg w-full max-w-md focus:outline-none focus:ring-2 focus:ring-theme">
+            </div>
 
-             <!-- Blog Grid - This will be populated by JavaScript -->
+            <!-- Blog Grid - This will be populated by JavaScript -->
             <div id="blog-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
                 <!-- Loading indicator or placeholder can go here -->
                 <p class="text-body col-span-full text-center">Loading posts...</p>
@@ -215,20 +226,22 @@ if (!document.querySelector('header')) {
     <!--#include virtual="assets/footer.html" -->
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 bg-theme text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 z-40" style="display: none;">
+    <button id="back-to-top"
+        class="fixed bottom-8 right-8 bg-theme text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 z-40"
+        style="display: none;">
         <i class="fas fa-arrow-up"></i>
     </button>
 
     <!-- Fallback for header -->
-<script>
-// Fallback for header if SSI not supported
-if (!document.querySelector('header')) {
-    fetch('assets/header.html')
-        .then(response => response.text())
-        .then(data => document.body.insertAdjacentHTML('afterbegin', data));
-}
-</script>
-<script>
+    <script>
+        // Fallback for header if SSI not supported
+        if (!document.querySelector('header')) {
+            fetch('assets/header.html')
+                .then(response => response.text())
+                .then(data => document.body.insertAdjacentHTML('afterbegin', data));
+        }
+    </script>
+    <script>
         let allBlogs = [];
 
         // Load blog posts from JSON
@@ -279,7 +292,7 @@ if (!document.querySelector('header')) {
         function setupSearch() {
             const searchInput = document.getElementById('blog-search');
 
-            searchInput.addEventListener('input', function() {
+            searchInput.addEventListener('input', function () {
                 const searchTerm = this.value.toLowerCase().trim();
 
                 if (searchTerm === '') {
@@ -296,7 +309,7 @@ if (!document.querySelector('header')) {
         }
 
         // Initialize when DOM is loaded
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             loadBlogs();
             setupSearch();
         });
@@ -360,15 +373,15 @@ if (!document.querySelector('header')) {
     </script>
 
     <!-- Fallback for header -->
-<script>
-// Fallback for header if SSI not supported
-if (!document.querySelector('header')) {
-    fetch('assets/header.html')
-        .then(response => response.text())
-        .then(data => document.body.insertAdjacentHTML('afterbegin', data));
-}
-</script>
-<script>
+    <script>
+        // Fallback for header if SSI not supported
+        if (!document.querySelector('header')) {
+            fetch('assets/header.html')
+                .then(response => response.text())
+                .then(data => document.body.insertAdjacentHTML('afterbegin', data));
+        }
+    </script>
+    <script>
         function toggleSidebar() {
             const sidebar = document.getElementById('mobile-sidebar');
             const content = document.getElementById('sidebar-content');
@@ -389,22 +402,23 @@ if (!document.querySelector('header')) {
         }
     </script>
 
-<!-- Fallback for header -->
-<script>
-// Fallback for header if SSI not supported
-if (!document.querySelector('header')) {
-    fetch('assets/header.html')
-        .then(response => response.text())
-        .then(data => document.body.insertAdjacentHTML('afterbegin', data));
-}
-</script>
-<script>
-// Fallback for footer if SSI not supported
-if (!document.querySelector('footer')) {
-    fetch('assets/footer.html')
-        .then(response => response.text())
-        .then(data => document.body.insertAdjacentHTML('beforeend', data));
-}
-</script>
+    <!-- Fallback for header -->
+    <script>
+        // Fallback for header if SSI not supported
+        if (!document.querySelector('header')) {
+            fetch('assets/header.html')
+                .then(response => response.text())
+                .then(data => document.body.insertAdjacentHTML('afterbegin', data));
+        }
+    </script>
+    <script>
+        // Fallback for footer if SSI not supported
+        if (!document.querySelector('footer')) {
+            fetch('assets/footer.html')
+                .then(response => response.text())
+                .then(data => document.body.insertAdjacentHTML('beforeend', data));
+        }
+    </script>
 </body>
+
 </html>
